@@ -75,11 +75,11 @@ function renderCommand(){
  const c=config(),remote=c.mode==="remote";
  $("#skill-directory").hidden=c.agent!=="custom";$("#remote-source").hidden=!remote;$("#email").hidden=c.delivery!=="email";
  $("#source-note").textContent=remote?"默认使用GitHub公开JSON，无需账号。也可以指定自己维护的公开目录。":"本地文件只反映当前快照；上游版本探测仍可用。";
- const source=remote?(c.source||"https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json"):"./dist/data/catalog.json";
+ const source=remote?(c.source||"https://cynara517.github.io/chemwatch/data/catalog.json"):"./dist/data/catalog.json";
  const flags=c.topics.map(t=>" --topic "+t).join("");
  const mail=c.delivery==="email"?" --email "+shellQuote(c.email||"you@example.com"):"";
  const cmd="~/.local/bin/chemwatch follow --source "+shellQuote(source)+flags+mail;
- const install="curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh | sh -s -- "+(c.agent==="custom"?"--skill-dir "+shellQuote(c.skillDirectory||"./.agents/skills"):"--agent codex");
+ const install="curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- "+(c.agent==="custom"?"--skill-dir "+shellQuote(c.skillDirectory||"./.agents/skills"):"--agent codex");
  const selected=c.topics.length?c.topics.map(t=>LABELS[t]).join("、"):"全部方向";
  let text;
  if(codeMode==="install")text=install+"\n\n# 然后在你的 AI 中说：\n# 使用 $chemwatch-monitor 每天监测："+selected+"。\n# 有变化或检查失败时报告，无变化保持安静。\n\n# 安装只添加 CLI + skill；持续监测由 harness 调度\n# 或 chemwatch watch --background 执行。";
@@ -90,7 +90,7 @@ function renderCommand(){
  $("#command-hint").textContent=codeMode==="install"?"标准 Agent Skill · 无需平台账号 · 不修改模型设置":"CLI + SKILL.md · 使用公开GitHub数据源";
  $$("[data-code]").forEach(b=>b.classList.toggle("active",b.dataset.code===codeMode));
 }
-function setupConnect(){let saved;try{saved=JSON.parse(localStorage.getItem("chemwatch-subscription")||"null");}catch{}$("#subscribe-topics").innerHTML=[...TOPICS,...EXTRA].map(t=>`<label><input type="checkbox" value="${t.id}" ${(saved?.topics||["retrosynthesis"]).includes(t.id)?"checked":""}>${t.name}</label>`).join("");$("#remote-source").value="https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json";if(saved){$("#agent-type").value=saved.agent||"codex";$("#skill-directory").value=saved.skillDirectory||"./.agents/skills";$("#source-mode").value=saved.mode||"remote";$("#remote-source").value=saved.source||"https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json";$("#delivery").value=saved.delivery||"report";$("#email").value=saved.email||"";}$$("#subscribe-topics input, #source-mode, #remote-source, #delivery, #email, #agent-type, #skill-directory").forEach(el=>el.addEventListener("input",renderCommand));$$("[data-code]").forEach(b=>b.addEventListener("click",()=>{codeMode=b.dataset.code;renderCommand();}));renderCommand();}
+function setupConnect(){let saved;try{saved=JSON.parse(localStorage.getItem("chemwatch-subscription")||"null");}catch{}$("#subscribe-topics").innerHTML=[...TOPICS,...EXTRA].map(t=>`<label><input type="checkbox" value="${t.id}" ${(saved?.topics||["retrosynthesis"]).includes(t.id)?"checked":""}>${t.name}</label>`).join("");$("#remote-source").value="https://cynara517.github.io/chemwatch/data/catalog.json";if(saved){$("#agent-type").value=saved.agent||"codex";$("#skill-directory").value=saved.skillDirectory||"./.agents/skills";$("#source-mode").value=saved.mode||"remote";$("#remote-source").value=saved.source||"https://cynara517.github.io/chemwatch/data/catalog.json";$("#delivery").value=saved.delivery||"report";$("#email").value=saved.email||"";}$$("#subscribe-topics input, #source-mode, #remote-source, #delivery, #email, #agent-type, #skill-directory").forEach(el=>el.addEventListener("input",renderCommand));$$("[data-code]").forEach(b=>b.addEventListener("click",()=>{codeMode=b.dataset.code;renderCommand();}));renderCommand();}
 async function init(){try{
  const r=await fetch("data/catalog.json",{cache:"no-cache"});if(!r.ok)throw Error("目录HTTP "+r.status);catalog=await r.json();if(catalog.schema_version!=="1.0")throw Error("目录版本不兼容");
  const optional=await Promise.allSettled([fetch("data/observations.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null),fetch("data/history.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null)]);observations=optional[0].status==="fulfilled"?optional[0].value:null;history=optional[1].status==="fulfilled"?optional[1].value:null;

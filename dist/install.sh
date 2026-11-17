@@ -1,7 +1,7 @@
 #!/bin/sh
 # ChemWatch portable installer: CLI + standard Agent Skill. macOS / Linux; Python 3.10+.
 set -eu
-CHEMWATCH_ASSET_BASE=${CHEMWATCH_ASSET_BASE:-https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/downloads}
+CHEMWATCH_ASSET_BASE=${CHEMWATCH_ASSET_BASE:-https://cynara517.github.io/chemwatch/downloads}
 CHEMWATCH_INSTALL_PREFIX=${CHEMWATCH_INSTALL_PREFIX:-${XDG_DATA_HOME:-$HOME/.local/share}/chemwatch}
 CHEMWATCH_BIN_DIR=${CHEMWATCH_BIN_DIR:-$HOME/.local/bin}
 CHEMWATCH_SKILL_DIR=${CHEMWATCH_SKILL_DIR:-$HOME/.agents/skills}
@@ -28,8 +28,8 @@ command -v curl >/dev/null 2>&1 || { echo 'curl is required.' >&2; exit 1; }
 python3 -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 1)' || { echo 'Python 3.10+ is required.' >&2; exit 1; }
 chemwatch_tmp=$(mktemp -d)
 trap 'rm -rf "$chemwatch_tmp"' EXIT HUP INT TERM
-curl -fsSL --retry 3 "${CHEMWATCH_ASSET_BASE%/}/chemwatch-skill.zip" -o "$chemwatch_tmp/skill.zip"
-curl -fsSL --retry 3 "${CHEMWATCH_ASSET_BASE%/}/skill-manifest.json" -o "$chemwatch_tmp/manifest.json"
+curl -fsSL --connect-timeout 10 --max-time 45 --retry 2 "${CHEMWATCH_ASSET_BASE%/}/chemwatch-skill.zip" -o "$chemwatch_tmp/skill.zip"
+curl -fsSL --connect-timeout 10 --max-time 45 --retry 2 "${CHEMWATCH_ASSET_BASE%/}/skill-manifest.json" -o "$chemwatch_tmp/manifest.json"
 python3 - "$chemwatch_tmp/skill.zip" "$chemwatch_tmp/manifest.json" "$CHEMWATCH_INSTALL_PREFIX" "$CHEMWATCH_BIN_DIR" "$CHEMWATCH_SKILL_DIR" <<'PY'
 import hashlib,json,os,pathlib,shlex,shutil,stat,sys,tempfile,zipfile
 bundle,manifest,prefix,bin_dir,skill_root=map(pathlib.Path,sys.argv[1:])

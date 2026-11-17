@@ -17,9 +17,9 @@ from email.message import EmailMessage
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 ROOT = Path(__file__).resolve().parent
-PUBLIC_CATALOG = "https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json"
+PUBLIC_CATALOG = "https://cynara517.github.io/chemwatch/data/catalog.json"
 STATE_ROOT = Path(os.getenv("XDG_STATE_HOME", str(Path.home() / ".local/state"))) / "chemwatch"
 TOPICS = {"retrosynthesis", "coupling", "materials", "yield", "free-energy", "selectivity", "bioactivity", "bioprocess", "penicillin", "erythromycin"}
 

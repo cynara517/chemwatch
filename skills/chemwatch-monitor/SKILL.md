@@ -68,4 +68,4 @@ Use `follow --email recipient@example.com` only for the recipient and notificati
 
 Project: https://github.com/cynara517/chemwatch
 
-Catalog: https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json
+Catalog: https://cynara517.github.io/chemwatch/data/catalog.json

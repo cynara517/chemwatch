@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "sha256": "bae7584c5aac89a916ca68a1530fbd9ab76c96a1a14ae2c104035d592261954d",
+  "version": "0.2.1",
+  "sha256": "fdde082ae6eb79aa4a3f753943dfdae14f6d9014b9c5929fe8393e99230b1a37",
   "format": "agent-skill",
   "python": ">=3.10"
 }

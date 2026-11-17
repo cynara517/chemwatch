@@ -2,7 +2,7 @@
 
 **公开的化学数据集与 benchmark 目录，以及可嵌入你自己 AI 的监测 skill。**
 
-[打开网页](https://cynara517.github.io/chemwatch/) · [公开目录 JSON](https://raw.githubusercontent.com/cynara517/chemwatch/main/dist/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
+[打开网页](https://cynara517.github.io/chemwatch/) · [公开目录 JSON](https://cynara517.github.io/chemwatch/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
 
 浏览网页、安装工具、读取目录都无需 ChatGPT 或 GitHub 登录。CLI只依赖Python 3.10+标准库；你的AI负责理解报告，运行和调度由你选择的harness或本地watcher承担。
 
@@ -11,7 +11,7 @@
 macOS / Linux，安装到当前用户，不需要sudo：
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh | sh -s -- --agent codex
+curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --agent codex
 ```
 
 安装内容：`~/.local/bin/chemwatch` CLI、`~/.local/share/chemwatch/chemwatch-monitor`运行时，以及`~/.agents/skills/chemwatch-monitor` skill链接。Codex可发现标准SKILL.md；若未显示，请刷新skills或重启客户端。[Codex skills文档](https://learn.chatgpt.com/docs/build-skills)
@@ -19,7 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh
 对于DeepSeek Harness或其他支持Agent Skills的AI，把实际加载的skills根目录传给安装器。例如使用项目级标准目录：
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh | sh -s -- --skill-dir ./.agents/skills
+curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --skill-dir ./.agents/skills
 ```
 
 不同harness的技能目录与调度能力可能不同；使用该harness实际支持的目录。安装器不会更改模型提供商、API key或无关配置。它验证技能包SHA-256，并拒绝覆盖不属于它的同名skill或CLI。
