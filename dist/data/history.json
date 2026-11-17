@@ -7,7 +7,69 @@
       "entries": 20,
       "dataset_families": 10,
       "benchmark_suites": 5,
-      "databases": 3
+      "databases": 3,
+      "topics": {
+        "bioactivity": {
+          "entries": 3,
+          "dataset_families": 0,
+          "benchmark_suites": 1,
+          "databases": 2
+        },
+        "bioprocess": {
+          "entries": 2,
+          "dataset_families": 2,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "coupling": {
+          "entries": 4,
+          "dataset_families": 3,
+          "benchmark_suites": 0,
+          "databases": 1
+        },
+        "erythromycin": {
+          "entries": 1,
+          "dataset_families": 1,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "free-energy": {
+          "entries": 3,
+          "dataset_families": 2,
+          "benchmark_suites": 1,
+          "databases": 0
+        },
+        "materials": {
+          "entries": 2,
+          "dataset_families": 0,
+          "benchmark_suites": 2,
+          "databases": 0
+        },
+        "penicillin": {
+          "entries": 1,
+          "dataset_families": 1,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "retrosynthesis": {
+          "entries": 4,
+          "dataset_families": 1,
+          "benchmark_suites": 1,
+          "databases": 0
+        },
+        "selectivity": {
+          "entries": 2,
+          "dataset_families": 2,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "yield": {
+          "entries": 4,
+          "dataset_families": 3,
+          "benchmark_suites": 0,
+          "databases": 1
+        }
+      }
     }
   ]
 }
