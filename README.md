@@ -70,7 +70,7 @@ curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh
 
 只有显式指定邮箱才会发变化邮件。初始基线不发；失败报告保留待重试。SMTP响应丢失仍可能重复投递，Message-ID保持稳定。
 
-云端个人订阅见`.github/workflows/subscribe.yml`：修改主题和公开源，配置自己的SMTP Secrets，再启用其schedule。状态通过Actions cache保存。安装者无需向本项目提供邮箱密码。
+云端个人订阅见`templates/subscribe.yml`：复制到你自己仓库的`.github/workflows/subscribe.yml`，修改主题和公开源，配置自己的SMTP Secrets，再启用其schedule。状态通过Actions cache保存。安装者无需向本项目提供邮箱密码。
 
 ## 公开站点如何更新
 

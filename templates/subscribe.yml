@@ -1,0 +1,52 @@
+name: My ChemWatch subscription
+on:
+  workflow_dispatch:
+  # Uncomment to enable daily runs (02:30 UTC = 10:30 Asia/Shanghai).
+  # schedule:
+  #   - cron: '30 2 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: chemwatch-subscription
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      # Replace with a public catalog URL to receive newly curated entries too.
+      CHEMWATCH_SOURCE: dist/data/catalog.json
+      CHEMWATCH_TOPICS: retrosynthesis bioprocess
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache/restore@v4
+        with:
+          path: .chemwatch/state
+          key: chemwatch-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: chemwatch-
+      - name: Sync and optionally email changed reports
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHEMWATCH_RECIPIENT: ${{ secrets.CHEMWATCH_RECIPIENT }}
+          CHEMWATCH_SMTP_HOST: ${{ secrets.CHEMWATCH_SMTP_HOST }}
+          CHEMWATCH_SMTP_FROM: ${{ secrets.CHEMWATCH_SMTP_FROM }}
+          CHEMWATCH_SMTP_USER: ${{ secrets.CHEMWATCH_SMTP_USER }}
+          CHEMWATCH_SMTP_PASSWORD: ${{ secrets.CHEMWATCH_SMTP_PASSWORD }}
+        run: |
+          args=()
+          for topic in $CHEMWATCH_TOPICS; do args+=(--topic "$topic"); done
+          if [ -n "$CHEMWATCH_RECIPIENT" ]; then args+=(--email "$CHEMWATCH_RECIPIENT"); fi
+          python chemwatch.py sync --source "$CHEMWATCH_SOURCE" --probe --state-dir .chemwatch/state --report-dir .chemwatch/reports "${args[@]}"
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .chemwatch/state
+          key: chemwatch-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chemwatch-reports
+          path: .chemwatch/reports
+          if-no-files-found: ignore

@@ -28,6 +28,15 @@ def now():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
+def tls_context():
+    # Python.org macOS builds may have an uninitialized private CA directory.
+    # Use the system PEM bundle without disabling certificate verification.
+    system_ca = Path("/etc/ssl/cert.pem")
+    if sys.platform == "darwin" and not os.getenv("SSL_CERT_FILE") and system_ca.is_file():
+        return ssl.create_default_context(cafile=str(system_ca))
+    return ssl.create_default_context()
+
+
 def atomic_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -44,7 +53,7 @@ def atomic_json(path, value):
 def read_json(source):
     if str(source).startswith(("http://", "https://")):
         req = Request(str(source), headers={"User-Agent": "ChemWatch/" + VERSION, "Accept": "application/json"})
-        with urlopen(req, timeout=30) as response:
+        with urlopen(req, timeout=30, context=tls_context()) as response:
             raw = response.read(10_000_001)
         if len(raw) > 10_000_000:
             raise ValueError("JSON exceeds 10 MB limit")
@@ -92,7 +101,7 @@ def api_json(url, github=False):
     headers = {"User-Agent": "ChemWatch/" + VERSION, "Accept": "application/json"}
     if github and os.getenv("GITHUB_TOKEN"):
         headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
-    with urlopen(Request(url, headers=headers), timeout=25) as response:
+    with urlopen(Request(url, headers=headers), timeout=25, context=tls_context()) as response:
         return json.load(response)
 
 
@@ -166,10 +175,10 @@ def send_email(recipient, content, report_id):
     msg["Message-ID"] = "<chemwatch-" + report_id + "@" + sender.split("@")[-1] + ">"
     msg.set_content(content)
     port = int(os.getenv("CHEMWATCH_SMTP_PORT", "465" if mode == "ssl" else "587"))
-    client = smtplib.SMTP_SSL(host, port, timeout=30, context=ssl.create_default_context()) if mode == "ssl" else smtplib.SMTP(host, port, timeout=30)
+    client = smtplib.SMTP_SSL(host, port, timeout=30, context=tls_context()) if mode == "ssl" else smtplib.SMTP(host, port, timeout=30)
     with client:
         if mode == "starttls":
-            client.starttls(context=ssl.create_default_context())
+            client.starttls(context=tls_context())
         if os.getenv("CHEMWATCH_SMTP_USER"):
             client.login(os.environ["CHEMWATCH_SMTP_USER"], os.environ.get("CHEMWATCH_SMTP_PASSWORD", ""))
         client.send_message(msg)

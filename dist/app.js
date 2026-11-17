@@ -81,11 +81,10 @@ function renderCommand(){
  const cmd="~/.local/bin/chemwatch follow --source "+shellQuote(source)+flags+mail;
  const install="curl -fsSL https://raw.githubusercontent.com/cynara517/chemwatch/main/install.sh | sh -s -- "+(c.agent==="custom"?"--skill-dir "+shellQuote(c.skillDirectory||"./.agents/skills"):"--agent codex");
  const selected=c.topics.length?c.topics.map(t=>LABELS[t]).join("、"):"全部方向";
- const toolkitURL=location.origin.startsWith("http")?new URL("downloads/chemwatch-toolkit.zip",location.href).href:"当前网页的完整工具包";
  let text;
  if(codeMode==="install")text=install+"\n\n# 然后在你的 AI 中说：\n# 使用 $chemwatch-monitor 每天监测："+selected+"。\n# 有变化或检查失败时报告，无变化保持安静。\n\n# 安装只添加 CLI + skill；持续监测由 harness 调度\n# 或 chemwatch watch --background 执行。";
  else if(codeMode==="cli")text="# 安装后保存订阅，首次建立基线\n\n"+cmd+"\n\n# 每天在本机检查（电脑需开机）\n~/.local/bin/chemwatch watch --background --interval 86400\n\n# 随时检查 / 查看状态 / 停止\n~/.local/bin/chemwatch check --json\n~/.local/bin/chemwatch watch --status\n~/.local/bin/chemwatch watch --stop";
- else if(codeMode==="schedule")text="# harness 原生调度可执行：\n~/.local/bin/chemwatch check --json\n\n# 无调度器时可用本地 watcher：\n~/.local/bin/chemwatch watch --background --interval 86400\n\n# 云端个人订阅：\n.github/workflows/subscribe.yml\n# 设置主题与可选SMTP Secrets，再启用schedule。\n\n# 公开站点自身每日更新，个人监测由订阅者运行。";
+ else if(codeMode==="schedule")text="# harness 原生调度可执行：\n~/.local/bin/chemwatch check --json\n\n# 无调度器时可用本地 watcher：\n~/.local/bin/chemwatch watch --background --interval 86400\n\n# 云端个人订阅：\ntemplates/subscribe.yml\n# 设置主题与可选SMTP Secrets，再启用schedule。\n\n# 公开站点自身每日更新，个人监测由订阅者运行。";
  else text="请从 https://github.com/cynara517/chemwatch 安装并使用 chemwatch-monitor Agent Skill。\n\n一行安装命令：\n"+install+"\n\n关注："+selected+"。保存订阅：\n"+cmd+"\n\n请先阅读 SKILL.md。若当前不是Codex，使用本harness真正支持的skills根目录，不假定DeepSeek有固定安装路径。\n首次只建立基线。之后每天检查；优先使用本harness实际可用的调度器，没有调度能力时运行CLI的watch --background，并告诉我实际启动了哪种机制。\n无变化保持安静；目录新增、元数据变化或上游版本信号出现时，读取报告并附原始来源。仓库提交变化须核实后才能认定为数据发布。\n"+(c.delivery==="email"?"邮件发给 "+(c.email||"待填写的地址")+"；从运行环境读取SMTP配置，未配置就明确报告。":"通过当前harness支持的通知方式报告；如不支持则保存在本地报告中并明确说明。");
  $("#command").textContent=text;
  $("#command-hint").textContent=codeMode==="install"?"标准 Agent Skill · 无需平台账号 · 不修改模型设置":"CLI + SKILL.md · 使用公开GitHub数据源";
