@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-11-17T07:13:58.185487Z",
+  "items": [
+    {
+      "id": "uspto-full",
+      "revision": "b5bd7b181a61a8289cc1d1a33825b2c417bed0ef",
+      "url": "https://github.com/Hanjun-Dai/GLN/commit/b5bd7b181a61a8289cc1d1a33825b2c417bed0ef",
+      "upstream_date": "2022-12-10T06:54:20Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "paroutes",
+      "revision": "bc5e69568092246f7c7bb5405216f8a3a334adbc",
+      "url": "https://github.com/MolecularAI/PaRoutes/commit/bc5e69568092246f7c7bb5405216f8a3a334adbc",
+      "upstream_date": "2024-08-05T06:44:21Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "ord",
+      "revision": "398d7349d4218eccf8782a350a13588c7c7fb88f",
+      "url": "https://github.com/open-reaction-database/ord-data/commit/398d7349d4218eccf8782a350a13588c7c7fb88f",
+      "upstream_date": "2026-11-12T16:26:44Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "buchwald-hartwig",
+      "revision": "d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "url": "https://github.com/rxn4chemistry/rxn_yields/commit/d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "upstream_date": "2022-01-13T10:01:15Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "suzuki-hte",
+      "revision": "d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "url": "https://github.com/rxn4chemistry/rxn_yields/commit/d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "upstream_date": "2022-01-13T10:01:15Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "direct-arylation",
+      "revision": "f7890ae84ca6347de7010cfd9dad9a3df3bd8a8f",
+      "url": "https://github.com/b-shields/edbo/commit/f7890ae84ca6347de7010cfd9dad9a3df3bd8a8f",
+      "upstream_date": "2020-06-04T14:12:53Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "sad",
+      "revision": "08bbc9fe846c883356f9aa189df35a5047ece33f",
+      "url": "https://github.com/SEDenmarkLab/SAD/commit/08bbc9fe846c883356f9aa189df35a5047ece33f",
+      "upstream_date": "2025-07-29T22:59:31Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "rgd1",
+      "revision": "7b789298d1324ead895fd25cdec5fbc929d4c48b",
+      "url": "https://github.com/zhaoqy1996/RGD1/commit/7b789298d1324ead895fd25cdec5fbc929d4c48b",
+      "upstream_date": "2023-11-26T23:21:57Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "freesolv",
+      "revision": "134cd763f95d54d818fc0618095aa01cbe470fc3",
+      "url": "https://github.com/MobleyLab/FreeSolv/commit/134cd763f95d54d818fc0618095aa01cbe470fc3",
+      "upstream_date": "2017-06-15T20:54:48Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "sampl6",
+      "revision": "9432edd949255e4b909d6d9992bcf5805fd15ce6",
+      "url": "https://github.com/samplchallenges/SAMPL6/commit/9432edd949255e4b909d6d9992bcf5805fd15ce6",
+      "upstream_date": "2022-03-29T16:59:31Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "matbench",
+      "revision": "4ff48ffcca0e35ba7e01421ad87271ab3c802e36",
+      "url": "https://github.com/materialsproject/matbench/commit/4ff48ffcca0e35ba7e01421ad87271ab3c802e36",
+      "upstream_date": "2026-11-16T07:44:13Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "matbench-discovery",
+      "revision": "6d587c184cdb4a4865dc0b15b04a5e6d77ed464f",
+      "url": "https://github.com/janosh/matbench-discovery/commit/6d587c184cdb4a4865dc0b15b04a5e6d77ed464f",
+      "upstream_date": "2026-11-15T15:30:33Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "tdc",
+      "revision": "c310c35f27e3f506411018ac43d97b8ba23ca652",
+      "url": "https://github.com/mims-harvard/TDC/commit/c310c35f27e3f506411018ac43d97b8ba23ca652",
+      "upstream_date": "2025-04-18T19:02:03Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "indpensim",
+      "revision": "5a9cc97ec4d1f7805638b6e2d07fee5e7010fbff",
+      "url": "https://github.com/StephenGoldie/indpensim-notebook/commit/5a9cc97ec4d1f7805638b6e2d07fee5e7010fbff",
+      "upstream_date": "2019-10-08T15:03:32Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "uspto-50k",
+      "revision": "fe66d76040f6f695dd78fa868a60669cccf8143b",
+      "url": "https://github.com/connorcoley/retrosim/commit/fe66d76040f6f695dd78fa868a60669cccf8143b",
+      "upstream_date": "2017-06-29T21:05:10Z",
+      "signal": "repository_change",
+      "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+    },
+    {
+      "id": "erythromycin-efp",
+      "revision": "478b1fd55b7e647c6febceb6de0aff42756b8db3fcc58b74a6199a36529eb0a3",
+      "url": "https://zenodo.org/records/14619074",
+      "upstream_date": "2025-01-09T02:49:48.001194+00:00",
+      "signal": "archive_version_or_files",
+      "note": "存档版本或文件校验和变化；需核验具体内容"
+    }
+  ],
+  "errors": [],
+  "events": [],
+  "note": "Upstream revision signals, not dataset record counts. Failures retain the last successful observation."
+}

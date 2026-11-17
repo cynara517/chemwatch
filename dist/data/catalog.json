@@ -1,0 +1,720 @@
+{
+  "schema_version": "1.0",
+  "title": "ChemWatch",
+  "catalog_version": "0.1.0",
+  "reviewed_at": "2026-11-17",
+  "scope": "人工核验的种子目录，非全领域普查。数据集按family_id去重；benchmark按套件计；数据库单列。",
+  "entries": [
+    {
+      "id": "uspto-raw",
+      "name": "USPTO · Lowe 原始专利反应",
+      "kind": "dataset",
+      "family_id": "uspto",
+      "topics": [
+        "retrosynthesis"
+      ],
+      "description": "美国专利抽取反应的基础语料；用于反应预测与逆合成衍生数据。",
+      "url": "https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873",
+      "publication_year": 2017,
+      "targets": [
+        "反应物预测",
+        "反应预测"
+      ],
+      "data_origin": "专利抽取",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": "10.6084/m9.figshare.5104873",
+      "notes": "专利覆盖1976–2016年9月。与50k、Full同源，家族计数只计一次；记录数及数据许可待逐版本核实。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873"
+        }
+      ]
+    },
+    {
+      "id": "uspto-50k",
+      "name": "USPTO-50k",
+      "kind": "dataset",
+      "family_id": "uspto",
+      "topics": [
+        "retrosynthesis"
+      ],
+      "description": "约五万条、十类反应的常用单步逆合成数据版本。",
+      "url": "https://github.com/connorcoley/retrosim",
+      "publication_year": 2017,
+      "targets": [
+        "单步逆合成"
+      ],
+      "data_origin": "专利抽取 / 处理版本",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "50k是版本名称，不在本目录中当作实时精确记录数。软件许可与数据许可分开核验。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/connorcoley/retrosim"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "connorcoley/retrosim",
+        "path": "retrosim/data"
+      }
+    },
+    {
+      "id": "uspto-full",
+      "name": "USPTO-Full · GLN 处理版本",
+      "kind": "dataset",
+      "family_id": "uspto",
+      "topics": [
+        "retrosynthesis"
+      ],
+      "description": "GLN项目提供的清洗、去重与划分流程，用于大规模单步逆合成。",
+      "url": "https://github.com/Hanjun-Dai/GLN",
+      "publication_year": 2019,
+      "targets": [
+        "单步逆合成"
+      ],
+      "data_origin": "专利抽取 / 处理版本",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "具体清洗版本和划分决定记录数；不与其他USPTO版本相加声称独立反应总量。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/Hanjun-Dai/GLN"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "Hanjun-Dai/GLN"
+      }
+    },
+    {
+      "id": "paroutes",
+      "name": "PaRoutes",
+      "kind": "benchmark",
+      "family_id": "paroutes",
+      "topics": [
+        "retrosynthesis"
+      ],
+      "description": "多步逆合成路线规划的评估框架，提供路线集与评估工具。",
+      "url": "https://github.com/MolecularAI/PaRoutes",
+      "publication_year": 2022,
+      "targets": [
+        "多步逆合成",
+        "路线恢复",
+        "路线多样性"
+      ],
+      "data_origin": "专利路线整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "n1 / n5各含10,000条路线；集合可能重叠，不合计为20,000条独立路线。按一个benchmark套件计。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/MolecularAI/PaRoutes"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "MolecularAI/PaRoutes"
+      }
+    },
+    {
+      "id": "ord",
+      "name": "Open Reaction Database",
+      "kind": "database",
+      "family_id": "ord",
+      "topics": [
+        "coupling",
+        "yield"
+      ],
+      "description": "开放反应数据与标准化schema，可按具体反应类型继续整理子集。",
+      "url": "https://github.com/open-reaction-database/ord-data",
+      "publication_year": 2021,
+      "targets": [
+        "反应条件",
+        "产率",
+        "反应数据管理"
+      ],
+      "data_origin": "实验 / 专利等多来源",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "CC-BY-SA-4.0（数据）",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "这是持续数据库，不按其内含的每个Dataset文件再重复计为独立数据集家族；具体偶联和杂环子集待整理。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/open-reaction-database/ord-data"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "open-reaction-database/ord-data",
+        "path": "data"
+      }
+    },
+    {
+      "id": "buchwald-hartwig",
+      "name": "Buchwald–Hartwig HTE",
+      "kind": "dataset",
+      "family_id": "bh-hte",
+      "topics": [
+        "coupling",
+        "yield"
+      ],
+      "description": "Doyle / Ahneman高通量C–N偶联实验，常用于产率预测。",
+      "url": "https://doi.org/10.1126/science.aar5169",
+      "publication_year": 2018,
+      "targets": [
+        "产率",
+        "C–N偶联",
+        "杂环添加剂效应"
+      ],
+      "data_origin": "高通量实验",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "公开处理表与完整实验/控制实验的计数口径不同，暂不填精确条数；杂环标签指添加剂，不泛指所有底物。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://doi.org/10.1126/science.aar5169"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "rxn4chemistry/rxn_yields",
+        "path": "data"
+      }
+    },
+    {
+      "id": "suzuki-hte",
+      "name": "Suzuki–Miyaura HTE · Perera",
+      "kind": "dataset",
+      "family_id": "suzuki-hte",
+      "topics": [
+        "coupling",
+        "yield"
+      ],
+      "description": "流动化学平台的Suzuki–Miyaura C–C偶联高通量实验。",
+      "url": "https://doi.org/10.1126/science.aap9112",
+      "publication_year": 2018,
+      "targets": [
+        "产率",
+        "C–C偶联",
+        "反应条件优化"
+      ],
+      "data_origin": "流动化学 / 高通量实验",
+      "record_count": 5760,
+      "record_unit": "实验",
+      "count_note": "原始论文报告规模，非实时更新数",
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "与Buchwald–Hartwig可位于同一处理仓库，但它们是不同实验家族。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://doi.org/10.1126/science.aap9112"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "rxn4chemistry/rxn_yields",
+        "path": "data"
+      }
+    },
+    {
+      "id": "direct-arylation",
+      "name": "Direct Arylation · EDBO",
+      "kind": "dataset",
+      "family_id": "direct-arylation",
+      "topics": [
+        "coupling",
+        "yield"
+      ],
+      "description": "Shields等的咪唑直接C–H芳基化数据，用于贝叶斯反应优化。",
+      "url": "https://doi.org/10.1038/s41586-021-03213-y",
+      "publication_year": 2021,
+      "targets": [
+        "产率",
+        "C–H官能团化",
+        "C–C成键",
+        "杂环",
+        "条件优化"
+      ],
+      "data_origin": "实验 / 条件网格",
+      "record_count": 1728,
+      "record_unit": "条件",
+      "count_note": "12×4×4×3×3条件网格；不是1728类反应",
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "关联EDBO优化工具；数据集和软件不重复计数。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://doi.org/10.1038/s41586-021-03213-y"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "b-shields/edbo",
+        "path": "experiments/data/direct_arylation"
+      }
+    },
+    {
+      "id": "denmark-selectivity",
+      "name": "Denmark · CPA 选择性数据",
+      "kind": "dataset",
+      "family_id": "denmark-cpa",
+      "topics": [
+        "selectivity"
+      ],
+      "description": "手性磷酸催化N,S-acetal相关反应的选择性建模数据。",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6417887/",
+      "publication_year": 2019,
+      "targets": [
+        "选择性",
+        "ee相关",
+        "ΔΔG‡"
+      ],
+      "data_origin": "实验",
+      "record_count": 1075,
+      "record_unit": "均值记录",
+      "count_note": "43×25组合；原始独立重复实验为2150次",
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "选择性自由能差ΔΔG‡不同于反应热力学ΔG。ee标签与转换方式需保留温度和符号约定。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6417887/"
+        }
+      ]
+    },
+    {
+      "id": "sad",
+      "name": "Sharpless Asymmetric Dihydroxylation",
+      "kind": "dataset",
+      "family_id": "sad",
+      "topics": [
+        "selectivity"
+      ],
+      "description": "Denmark组公开的不对称双羟基化反应数据与相关工具。",
+      "url": "https://github.com/SEDenmarkLab/SAD",
+      "publication_year": 2025,
+      "targets": [
+        "ee",
+        "不对称催化"
+      ],
+      "data_origin": "文献 / 实验整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "数据条数与数据许可待核实；仓库软件许可不能直接等同于数据许可。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/SEDenmarkLab/SAD"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "SEDenmarkLab/SAD"
+      }
+    },
+    {
+      "id": "rgd1",
+      "name": "RGD1",
+      "kind": "dataset",
+      "family_id": "rgd1",
+      "topics": [
+        "free-energy"
+      ],
+      "description": "计算反应数据库，包含反应物、产物、过渡态与Gibbs自由能字段。",
+      "url": "https://github.com/zhaoqy1996/RGD1",
+      "publication_year": 2023,
+      "targets": [
+        "反应ΔG",
+        "势垒ΔG‡",
+        "过渡态"
+      ],
+      "data_origin": "量子化学计算",
+      "record_count": 126857,
+      "record_unit": "独立反应",
+      "count_note": "官方组页报告；另有176,992过渡态，两个数量不相加",
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "R_F / P_F / TS_F等字段及温度、理论水平必须随数据使用说明保存。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/zhaoqy1996/RGD1"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "zhaoqy1996/RGD1"
+      }
+    },
+    {
+      "id": "freesolv",
+      "name": "FreeSolv",
+      "kind": "dataset",
+      "family_id": "freesolv",
+      "topics": [
+        "free-energy"
+      ],
+      "description": "小分子水合自由能的实验值、计算值及模拟输入文件。",
+      "url": "https://github.com/MobleyLab/FreeSolv",
+      "publication_year": 2014,
+      "targets": [
+        "水合ΔG",
+        "不确定性"
+      ],
+      "data_origin": "实验 + 分子模拟",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "CC-BY-4.0（数据）；MIT（代码）",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "水合自由能不是化学反应自由能；预测任务必须分开。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/MobleyLab/FreeSolv"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "MobleyLab/FreeSolv",
+        "path": "database.txt"
+      }
+    },
+    {
+      "id": "sampl6",
+      "name": "SAMPL6 · Host–Guest / SAMPLing",
+      "kind": "benchmark",
+      "family_id": "sampl6",
+      "topics": [
+        "free-energy"
+      ],
+      "description": "主客体结合自由能与采样方法的盲测挑战及公开结果。",
+      "url": "https://github.com/samplchallenges/SAMPL6",
+      "publication_year": 2018,
+      "targets": [
+        "结合ΔG",
+        "采样收敛",
+        "方法评估"
+      ],
+      "data_origin": "实验 + 模拟评估",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "按SAMPL6一个挑战套件计；不将不同轮次和所有子任务直接视作同一数据集。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/samplchallenges/SAMPL6"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "samplchallenges/SAMPL6",
+        "path": "host_guest"
+      }
+    },
+    {
+      "id": "matbench",
+      "name": "Matbench",
+      "kind": "benchmark",
+      "family_id": "matbench",
+      "topics": [
+        "materials"
+      ],
+      "description": "材料性质机器学习的标准化数据与交叉验证框架。",
+      "url": "https://github.com/materialsproject/matbench",
+      "publication_year": 2020,
+      "targets": [
+        "材料性质",
+        "分类与回归"
+      ],
+      "data_origin": "实验 + 计算整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "v0.1包含13个任务，本目录按一个benchmark套件计；每个任务有自己的样本与单位。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/materialsproject/matbench"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "materialsproject/matbench"
+      }
+    },
+    {
+      "id": "matbench-discovery",
+      "name": "Matbench Discovery",
+      "kind": "benchmark",
+      "family_id": "matbench-discovery",
+      "topics": [
+        "materials"
+      ],
+      "description": "评估机器学习能量模型发现稳定无机晶体的能力。",
+      "url": "https://docs.materialsproject.org/services/ml-and-ai-applications/matbench-discovery",
+      "publication_year": 2023,
+      "targets": [
+        "晶体稳定性",
+        "材料发现"
+      ],
+      "data_origin": "第一性原理计算 / 评估",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "与Matbench是不同评估套件；其底层数据与Materials Project可能重叠。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://docs.materialsproject.org/services/ml-and-ai-applications/matbench-discovery"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "janosh/matbench-discovery",
+        "path": "data"
+      }
+    },
+    {
+      "id": "tdc",
+      "name": "Therapeutics Data Commons",
+      "kind": "benchmark",
+      "family_id": "tdc",
+      "topics": [
+        "bioactivity"
+      ],
+      "description": "药物发现任务的数据加载、划分与评估套件。",
+      "url": "https://tdcommons.ai/benchmark/overview/",
+      "publication_year": 2021,
+      "targets": [
+        "药物活性",
+        "ADMET",
+        "多任务评估"
+      ],
+      "data_origin": "多来源整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "按一个套件计；每个子任务需要继续拆解来源、划分、指标和许可。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://tdcommons.ai/benchmark/overview/"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "mims-harvard/TDC"
+      }
+    },
+    {
+      "id": "chembl",
+      "name": "ChEMBL",
+      "kind": "database",
+      "family_id": "chembl",
+      "topics": [
+        "bioactivity"
+      ],
+      "description": "人工整理的化合物、生物活性、靶点和实验信息数据库。",
+      "url": "https://www.ebi.ac.uk/chembl/",
+      "publication_year": 2009,
+      "targets": [
+        "活性",
+        "效力",
+        "靶点"
+      ],
+      "data_origin": "文献 / 实验整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "实时库与固定版本benchmark分开；暂未接入本平台的ChEMBL版本采集器。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://www.ebi.ac.uk/chembl/"
+        }
+      ]
+    },
+    {
+      "id": "bindingdb",
+      "name": "BindingDB",
+      "kind": "database",
+      "family_id": "bindingdb",
+      "topics": [
+        "bioactivity"
+      ],
+      "description": "分子结合亲和力数据，可用于药物活性和亲和力任务。",
+      "url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp",
+      "publication_year": 2000,
+      "targets": [
+        "Ki",
+        "Kd",
+        "IC50等"
+      ],
+      "data_origin": "实验 / 文献整理",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": null,
+      "notes": "不同终点、实验条件和测量单位不可直接混合；许可和具体快照需再核实。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp"
+        }
+      ]
+    },
+    {
+      "id": "indpensim",
+      "name": "IndPenSim · 工业青霉素发酵",
+      "kind": "dataset",
+      "family_id": "indpensim",
+      "topics": [
+        "bioprocess",
+        "penicillin"
+      ],
+      "description": "100,000 L工业规模青霉素补料发酵的模拟过程与Raman数据。",
+      "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2",
+      "publication_year": 2019,
+      "targets": [
+        "浓度软测量",
+        "过程控制",
+        "故障检测",
+        "生产工艺优化"
+      ],
+      "data_origin": "工业规模机理模拟",
+      "record_count": 100,
+      "record_unit": "模拟批次",
+      "count_note": "Mendeley v2，2019-10-08；模拟数据，不是真实工厂逐批测量",
+      "data_license": "CC-BY-4.0",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": "10.17632/pdnjz7zz5x.2",
+      "notes": "按一个数据集家族计。仓库探测的是作者notebook提交，不代表Mendeley数据新版本。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "StephenGoldie/indpensim-notebook"
+      }
+    },
+    {
+      "id": "erythromycin-efp",
+      "name": "EFP · 红霉素工业发酵",
+      "kind": "dataset",
+      "family_id": "erythromycin-efp",
+      "topics": [
+        "bioprocess",
+        "erythromycin"
+      ],
+      "description": "宜昌东阳光长江药业2022年历史生产数据，小时采样，23项过程变量。",
+      "url": "https://zenodo.org/records/14619074",
+      "publication_year": 2025,
+      "targets": [
+        "发酵效价",
+        "过程软测量"
+      ],
+      "data_origin": "真实工业生产测量",
+      "record_count": 406,
+      "record_unit": "发酵批次",
+      "count_note": "Zenodo v1，平均每批154小时；406是批次而非时间点数",
+      "data_license": "CC-BY-4.0（Zenodo元数据）",
+      "verified_at": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "doi": "10.5281/zenodo.14619074",
+      "notes": "目标是chemical potency。不能直接宣称包含得率、生产强度或分离纯化标签；数据许可已通过Zenodo API核实。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://zenodo.org/records/14619074"
+        }
+      ],
+      "monitor": {
+        "type": "zenodo",
+        "record": "14619074"
+      }
+    }
+  ]
+}

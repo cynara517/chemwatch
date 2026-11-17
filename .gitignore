@@ -1,0 +1,6 @@
+.chemwatch/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.tar.gz

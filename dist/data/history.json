@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "metric": "catalog_coverage",
+  "points": [
+    {
+      "date": "2026-11-17",
+      "entries": 20,
+      "dataset_families": 10,
+      "benchmark_suites": 5,
+      "databases": 3
+    }
+  ]
+}
