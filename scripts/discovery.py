@@ -3,6 +3,8 @@ import json
 import html
 import re
 import sys
+import time
+from urllib.error import HTTPError
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, timedelta
 from pathlib import Path
@@ -43,6 +45,22 @@ def plain_title(title):
 
 
 
+def crossref_json(url):
+    # The public pool publishes a rate limit and may send Retry-After.
+    for attempt in range(3):
+        time.sleep(2)
+        try:
+            return api_json(url)
+        except HTTPError as exc:
+            if exc.code != 429 or attempt == 2:
+                raise
+            hint = (exc.headers or {}).get("Retry-After", "")
+            delay = int(hint) if hint.isdigit() else 5 * (attempt+1)
+            if delay > 45:
+                raise
+            time.sleep(max(1, delay))
+
+
 def search(source, topic):
     term, slug = TERMS[topic]
     if source == "papers":
@@ -59,7 +77,7 @@ def search(source, topic):
             "rows":30, "select":"DOI,title,published",
         })
         items = []
-        for row in api_json(url)["message"]["items"]:
+        for row in crossref_json(url)["message"]["items"]:
             title = plain_title(next(iter(row.get("title",[])),""))
             words = title.lower().replace("-", " ").replace("–"," ")
             tokens = term.lower().replace("-", " ").split()

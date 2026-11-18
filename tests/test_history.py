@@ -1,6 +1,7 @@
 import json
 import unittest
 from unittest.mock import patch
+from urllib.error import HTTPError
 
 import chemwatch
 from scripts import discovery, timeseries
@@ -50,6 +51,11 @@ class HistoryTest(unittest.TestCase):
             r=chemwatch.probe({"monitor":{"type":"huggingface","repo":"company/data"}})
         self.assertEqual(r["revision"],response["sha"])
         self.assertIn("datasets/company/data/commit/",r["url"])
+
+    def test_crossref_retries_a_short_rate_limit(self):
+        limited = HTTPError("https://api.crossref.org",429,"limited",{"Retry-After":"1"},None)
+        with patch.object(discovery.time,"sleep"), patch.object(discovery,"api_json",side_effect=[limited, {"ok":1}]):
+            self.assertEqual(discovery.crossref_json("https://api.crossref.org"),{"ok":1})
 
     def test_off_topic_candidates_and_failed_queries(self):
         self.assertFalse(discovery.relevant("erythromycin","robot grasp a tea cup"))
