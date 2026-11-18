@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-18T07:14:57.874895Z",
+  "checked_at": "2026-11-18T07:18:46.618994Z",
   "items": [
     {
       "id": "uspto-full",
@@ -84,9 +84,9 @@
     },
     {
       "id": "matbench",
-      "revision": "4ff48ffcca0e35ba7e01421ad87271ab3c802e36",
-      "url": "https://github.com/materialsproject/matbench/commit/4ff48ffcca0e35ba7e01421ad87271ab3c802e36",
-      "upstream_date": "2026-11-16T07:44:13Z",
+      "revision": "39b7571022c3833b9ad8abeedbb35db5f02492f5",
+      "url": "https://github.com/materialsproject/matbench/commit/39b7571022c3833b9ad8abeedbb35db5f02492f5",
+      "upstream_date": "2026-11-18T07:16:23Z",
       "signal": "repository_change",
       "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
     },
@@ -156,6 +156,19 @@
     }
   ],
   "errors": [],
-  "events": [],
+  "events": [
+    {
+      "id": "matbench",
+      "name": "Matbench",
+      "observation": {
+        "revision": "39b7571022c3833b9ad8abeedbb35db5f02492f5",
+        "url": "https://github.com/materialsproject/matbench/commit/39b7571022c3833b9ad8abeedbb35db5f02492f5",
+        "upstream_date": "2026-11-18T07:16:23Z",
+        "signal": "repository_change",
+        "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+      },
+      "observed_at": "2026-11-18T07:18:46.618994Z"
+    }
+  ],
   "note": "Upstream revision signals, not dataset record counts. Failures retain the last successful observation."
 }
