@@ -76,7 +76,7 @@ curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --skill-d
 
 `.github/workflows/refresh-and-publish.yml`在main推送、手动运行，以及每天02:00 UTC（北京时间10:00）执行：测试 → 来源探测 → 保存真实快照 → 打包skill → 发布GitHub Pages。
 
-来源探测针对GitHub数据路径/仓库提交，以及Zenodo存档版本/文件校验和。新资源收录仍需人工核验；编辑`scripts/build_catalog.py`并运行它。目录按family_id统计数据集家族，benchmark套件与持续数据库单列；保留记录的原单位。
+已登记的来源分别监测 GitHub 数据路径或仓库提交、Hugging Face 数据集修订，以及 Zenodo 存档版本与校验和。新资源收录仍需人工核验；编辑`scripts/build_catalog.py`并运行它。目录按family_id统计数据集家族，benchmark套件与持续数据库单列；保留记录的原单位。
 
 在新fork中使用时，在Settings → Pages选择GitHub Actions。将公开源与安装器地址改为自己的仓库；此项目没有网站账户系统，也没有私有平台托管依赖。
 
@@ -92,8 +92,24 @@ python3 -m http.server 8888 --directory dist
 
 打开http://localhost:8888。网页静态，无前端构建依赖。`scripts/package.py`将根目录CLI复制进自包含skill，生成技能ZIP、SHA-256清单、完整源码包与站点安装器。根目录`chemwatch.py`是运行时源码。
 
-当前20个种子条目、10个数据集家族、5个benchmark套件、3个持续数据库。已覆盖逆合成、C–C/C–N/C–H与杂环实验、材料评估、自由能、选择性、药物活性及工业青霉素/红霉素。IndPenSim是100批工业规模模拟；EFP是406批真实工业生产数据。C–O/C–S/C–B专用集和分离纯化等数据待补，不将覆盖缺口伪装成全领域数量。
+当前计数与逐项证据见 [公开目录](dist/data/catalog.json)。已覆盖逆合成、C–C/C–N/C–H与杂环实验、材料评估、自由能、选择性、药物活性及工业青霉素/红霉素。IndPenSim是100批工业规模模拟；EFP是406批真实工业生产数据。C–O/C–S/C–B专用集和分离纯化等数据待补，不将覆盖缺口伪装成全领域数量。
 
-历史曲线按真实观测日积累，不按论文年份伪造。本目录提供资源元数据与链接，不分发原始化学实验数据；各来源许可独立核实，软件许可不自动用于数据。
+### 历史时间线
+
+首页可按指标与专题切换累计、年度和对数视图。每个点可查数值与来源。[历史序列 JSON](dist/data/timeseries.json) 与建站以来的 [收录快照](dist/data/history.json) 分开发布。
+
+| 指标 | 日期及计量方式 |
+| --- | --- |
+| 数据集家族、benchmark 套件 | 据本目录最早已核实的论文或公开版本年份回溯，家族或套件计一次。尚未收录的资源不会出现在曲线上。 |
+| CSD 晶体结构 | 按 CCDC 统计表中的文献发表年。1965 年前的 4,045 条为合并基数，年度图从 1965 年开始。末两年带部分数据标记。[官方统计表](https://www.ccdc.cam.ac.uk/media/CSD-Publication-Year-Statistics-2026.pdf) |
+| ChEMBL 活性记录 | 从 release notes 取准备日期、activities 总数，逐年选择最后版本。只计算相邻年份的净差，缺测保持空值，订正可带来负值。[EMBL-EBI 版本档案](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/) |
+
+每日发布任务扫描 ChEMBL 新版本并校验当年 CSD 统计文件。更换 CSD 版本时使用 pdftotext 或 pypdf 解析表格。采集异常会在历史 JSON 中标记，同时保留上次成功观测。论文版及镜像可提供年代或修订证据，一个来源对应的候选数不作为新增资源数。
+
+### 新资源线索
+
+每日对 9 个专题分别查询 Europe PMC、Crossref、GitHub 和 Hugging Face，发布每个平台各专题最近一批待审核线索。论文查询限近 365 天。Europe PMC 按发表日期排序，Crossref 从相关度前 30 条中筛选题名再按日期排序；仓库和数据卡按更新时间取样，按关键词筛选后每组最多展示 5 项。每组附实际查询、最后成功时间与失败状态。完整查询与结果见 [发现记录](dist/data/discovery.json)，已核验资源另存入目录。论文检索覆盖受 Europe PMC 学科范围影响，历史盘点还使用出版社、作者与数据存档。
+
+本目录提供资源元数据与链接，不分发原始化学实验数据；各来源许可独立核实，软件许可不自动用于数据。
 
 代码MIT许可。设计受[Scaling Biology](https://wconnell.github.io/scaling-bio/)启发，独立实现。

@@ -25,7 +25,7 @@ with zipfile.ZipFile(skill_zip, "w") as z:
     for path in sorted(skill.rglob("*")):
         if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc":
             add_file(z, path, str(Path("chemwatch-monitor") / path.relative_to(skill)))
-manifest = {"version":"0.2.1", "sha256":hashlib.sha256(skill_zip.read_bytes()).hexdigest(), "format":"agent-skill", "python":">=3.10"}
+manifest = {"version":"0.3.0", "sha256":hashlib.sha256(skill_zip.read_bytes()).hexdigest(), "format":"agent-skill", "python":">=3.10"}
 (target.parent / "skill-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 shutil.copyfile(root / "install.sh", root / "dist/install.sh")
 with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as z:

@@ -42,7 +42,12 @@ def main():
     history["points"] = [p for p in history["points"] if p["date"]!=date] + [point]
     atomic_json(history_file, history)
     print(json.dumps({"checked_at":report["checked_at"], "observations":len(report["observations"]), "changes":len(report["upstream_changes"]), "errors":report["errors"]}, ensure_ascii=False, indent=2))
-    return 2 if report["errors"] else 0
+    from timeseries import refresh as refresh_series
+    from discovery import refresh as refresh_discovery
+    extra_errors = refresh_series() + refresh_discovery()
+    if extra_errors:
+        print(json.dumps(extra_errors, ensure_ascii=False))
+    return 2 if report["errors"] or extra_errors else 0
 
 
 if __name__ == "__main__":

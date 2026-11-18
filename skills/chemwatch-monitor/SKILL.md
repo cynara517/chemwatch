@@ -69,3 +69,8 @@ Use `follow --email recipient@example.com` only for the recipient and notificati
 Project: https://github.com/cynara517/chemwatch
 
 Catalog: https://cynara517.github.io/chemwatch/data/catalog.json
+
+## 历史与论文线索
+
+回答历史增长问题时，使用公开的 [历史序列](https://cynara517.github.io/chemwatch/data/timeseries.json)，保留指标、单位、年度、来源及缺测标记。目录发布年、CSD 结构发表年、ChEMBL 版本准备年分别解释。GitHub 提交和 Hugging Face 数据仓库修订均可能仅改动说明。
+需要核查新论文和仓库时，读取 [公开检索线索](https://cynara517.github.io/chemwatch/data/discovery.json)，按主题取每组最后成功结果并标注候选身份。常规订阅报告使用审核后的目录及登记来源的实际修订。

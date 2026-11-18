@@ -1,0 +1,2872 @@
+{
+  "checked_at": "2026-11-18T06:26:32.091325Z",
+  "errors": [],
+  "publications": {
+    "dataset": {
+      "": [
+        {
+          "year": 1981,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "Dunn · 甾体结合亲和力",
+              "url": "https://doi.org/10.1210/jcem-53-1-58"
+            }
+          ]
+        },
+        {
+          "year": 1982,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1983,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1984,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1985,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1986,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1987,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1988,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1989,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1990,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1991,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1992,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1993,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "NIST · 氧化还原酶反应平衡数据表",
+              "url": "https://doi.org/10.1063/1.555939"
+            }
+          ]
+        },
+        {
+          "year": 1994,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 1995,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 1996,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 1997,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 1998,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 1999,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2000,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2001,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2002,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2003,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2004,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2005,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2006,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2007,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2008,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2009,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2010,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2011,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2012,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 2,
+          "total": 4,
+          "sources": [
+            {
+              "label": "FreeSolv",
+              "url": "https://doi.org/10.1007/s10822-014-9747-x"
+            },
+            {
+              "label": "USPTO · Lowe 2014 公开版",
+              "url": "https://nextmovesoftware.com/blog/2014/02/27/unleashing-over-a-million-reactions-into-the-wild/"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 3,
+          "total": 7,
+          "sources": [
+            {
+              "label": "Buchwald–Hartwig HTE",
+              "url": "https://doi.org/10.1126/science.aar5169"
+            },
+            {
+              "label": "RetroTransformDB",
+              "url": "https://doi.org/10.3390/data3020014"
+            },
+            {
+              "label": "Suzuki–Miyaura HTE · Perera",
+              "url": "https://doi.org/10.1126/science.aap9112"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "annual": 2,
+          "total": 9,
+          "sources": [
+            {
+              "label": "Denmark · CPA 选择性数据",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6417887/"
+            },
+            {
+              "label": "IndPenSim · 工业青霉素发酵",
+              "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 9,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 1,
+          "total": 10,
+          "sources": [
+            {
+              "label": "Direct Arylation · EDBO",
+              "url": "https://doi.org/10.1038/s41586-021-03213-y"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 10,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 1,
+          "total": 11,
+          "sources": [
+            {
+              "label": "RGD1",
+              "url": "https://doi.org/10.1038/s41597-023-02043-z"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "annual": 1,
+          "total": 12,
+          "sources": [
+            {
+              "label": "OMat24 · 无机材料计算数据",
+              "url": "https://arxiv.org/abs/2410.12771"
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "annual": 3,
+          "total": 15,
+          "sources": [
+            {
+              "label": "EFP · 红霉素工业发酵",
+              "url": "https://zenodo.org/records/14619074"
+            },
+            {
+              "label": "Het-retro · CJHIF 杂环成环子集",
+              "url": "https://doi.org/10.1021/acs.jcim.4c02041"
+            },
+            {
+              "label": "Sharpless Asymmetric Dihydroxylation",
+              "url": "https://doi.org/10.1021/acscentsci.5c00900"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 1,
+          "total": 16,
+          "sources": [
+            {
+              "label": "AbSynth · 全合成路线集",
+              "url": "https://doi.org/10.1021/jacs.6c08434"
+            }
+          ]
+        }
+      ],
+      "bioactivity": [
+        {
+          "year": 1981,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "Dunn · 甾体结合亲和力",
+              "url": "https://doi.org/10.1210/jcem-53-1-58"
+            }
+          ]
+        },
+        {
+          "year": 1982,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1983,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1984,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1985,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1986,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1987,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1988,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1989,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1990,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1991,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1992,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1993,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1994,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1995,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1996,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1997,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1998,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1999,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2000,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2001,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2002,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2003,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2004,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2005,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2006,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2007,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2008,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2009,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2010,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2011,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2012,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        }
+      ],
+      "bioprocess": [
+        {
+          "year": 2019,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "IndPenSim · 工业青霉素发酵",
+              "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "EFP · 红霉素工业发酵",
+              "url": "https://zenodo.org/records/14619074"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        }
+      ],
+      "coupling": [
+        {
+          "year": 2018,
+          "annual": 2,
+          "total": 2,
+          "sources": [
+            {
+              "label": "Buchwald–Hartwig HTE",
+              "url": "https://doi.org/10.1126/science.aar5169"
+            },
+            {
+              "label": "Suzuki–Miyaura HTE · Perera",
+              "url": "https://doi.org/10.1126/science.aap9112"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "Direct Arylation · EDBO",
+              "url": "https://doi.org/10.1038/s41586-021-03213-y"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        }
+      ],
+      "erythromycin": [
+        {
+          "year": 2025,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "EFP · 红霉素工业发酵",
+              "url": "https://zenodo.org/records/14619074"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        }
+      ],
+      "free-energy": [
+        {
+          "year": 1993,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "NIST · 氧化还原酶反应平衡数据表",
+              "url": "https://doi.org/10.1063/1.555939"
+            }
+          ]
+        },
+        {
+          "year": 1994,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1995,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1996,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1997,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1998,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1999,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2000,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2001,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2002,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2003,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2004,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2005,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2006,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2007,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2008,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2009,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2010,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2011,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2012,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "FreeSolv",
+              "url": "https://doi.org/10.1007/s10822-014-9747-x"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "RGD1",
+              "url": "https://doi.org/10.1038/s41597-023-02043-z"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        }
+      ],
+      "materials": [
+        {
+          "year": 2024,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "OMat24 · 无机材料计算数据",
+              "url": "https://arxiv.org/abs/2410.12771"
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        }
+      ],
+      "penicillin": [
+        {
+          "year": 2019,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "IndPenSim · 工业青霉素发酵",
+              "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        }
+      ],
+      "retrosynthesis": [
+        {
+          "year": 2014,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "USPTO · Lowe 2014 公开版",
+              "url": "https://nextmovesoftware.com/blog/2014/02/27/unleashing-over-a-million-reactions-into-the-wild/"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "RetroTransformDB",
+              "url": "https://doi.org/10.3390/data3020014"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "Het-retro · CJHIF 杂环成环子集",
+              "url": "https://doi.org/10.1021/acs.jcim.4c02041"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 1,
+          "total": 4,
+          "sources": [
+            {
+              "label": "AbSynth · 全合成路线集",
+              "url": "https://doi.org/10.1021/jacs.6c08434"
+            }
+          ]
+        }
+      ],
+      "selectivity": [
+        {
+          "year": 2019,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "Denmark · CPA 选择性数据",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6417887/"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "Sharpless Asymmetric Dihydroxylation",
+              "url": "https://doi.org/10.1021/acscentsci.5c00900"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        }
+      ],
+      "yield": [
+        {
+          "year": 2018,
+          "annual": 2,
+          "total": 2,
+          "sources": [
+            {
+              "label": "Buchwald–Hartwig HTE",
+              "url": "https://doi.org/10.1126/science.aar5169"
+            },
+            {
+              "label": "Suzuki–Miyaura HTE · Perera",
+              "url": "https://doi.org/10.1126/science.aap9112"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "Direct Arylation · EDBO",
+              "url": "https://doi.org/10.1038/s41586-021-03213-y"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        }
+      ]
+    },
+    "benchmark": {
+      "": [
+        {
+          "year": 1988,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "CoMFA · 甾体 QSAR 评估",
+              "url": "https://doi.org/10.1021/ja00226a005"
+            }
+          ]
+        },
+        {
+          "year": 1989,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1990,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1991,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1992,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1993,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1994,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1995,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1996,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1997,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1998,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1999,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2000,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2001,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2002,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2003,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2004,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2005,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2006,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "DUD · 虚拟筛选评估",
+              "url": "https://dud.docking.org/"
+            }
+          ]
+        },
+        {
+          "year": 2007,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2008,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2009,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2010,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2011,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2012,
+          "annual": 2,
+          "total": 4,
+          "sources": [
+            {
+              "label": "DUD-E · 虚拟筛选评估",
+              "url": "https://dude.docking.org/"
+            },
+            {
+              "label": "Heifets–Jurisica · 合成规划题集",
+              "url": "https://www.cs.toronto.edu/~aheifets/ChemicalPlanning/"
+            }
+          ]
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 1,
+          "total": 5,
+          "sources": [
+            {
+              "label": "SAMPL6 · Host–Guest / SAMPLing",
+              "url": "https://github.com/samplchallenges/SAMPL6"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 5,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 5,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 2,
+          "total": 7,
+          "sources": [
+            {
+              "label": "Matbench",
+              "url": "https://doi.org/10.1038/s41524-020-00406-3"
+            },
+            {
+              "label": "Retro* · 190 个多步规划目标",
+              "url": "https://arxiv.org/abs/2006.15820"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "annual": 1,
+          "total": 8,
+          "sources": [
+            {
+              "label": "Therapeutics Data Commons",
+              "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/4c56ff4ce4aaf9573aa5dff913df997a-Abstract-round1.html"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "annual": 1,
+          "total": 9,
+          "sources": [
+            {
+              "label": "PaRoutes",
+              "url": "https://doi.org/10.1039/D2DD00015F"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "annual": 1,
+          "total": 10,
+          "sources": [
+            {
+              "label": "Matbench Discovery",
+              "url": "https://arxiv.org/abs/2308.14920"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 10,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 10,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 10,
+          "sources": []
+        }
+      ],
+      "bioactivity": [
+        {
+          "year": 1988,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "CoMFA · 甾体 QSAR 评估",
+              "url": "https://doi.org/10.1021/ja00226a005"
+            }
+          ]
+        },
+        {
+          "year": 1989,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1990,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1991,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1992,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1993,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1994,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1995,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1996,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1997,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1998,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 1999,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2000,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2001,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2002,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2003,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2004,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2005,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2006,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "DUD · 虚拟筛选评估",
+              "url": "https://dud.docking.org/"
+            }
+          ]
+        },
+        {
+          "year": 2007,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2008,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2009,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2010,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2011,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2012,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "DUD-E · 虚拟筛选评估",
+              "url": "https://dude.docking.org/"
+            }
+          ]
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 1,
+          "total": 4,
+          "sources": [
+            {
+              "label": "Therapeutics Data Commons",
+              "url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/4c56ff4ce4aaf9573aa5dff913df997a-Abstract-round1.html"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 4,
+          "sources": []
+        }
+      ],
+      "bioprocess": [],
+      "coupling": [],
+      "erythromycin": [],
+      "free-energy": [
+        {
+          "year": 2017,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "SAMPL6 · Host–Guest / SAMPLing",
+              "url": "https://github.com/samplchallenges/SAMPL6"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        }
+      ],
+      "materials": [
+        {
+          "year": 2020,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "Matbench",
+              "url": "https://doi.org/10.1038/s41524-020-00406-3"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2023,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "Matbench Discovery",
+              "url": "https://arxiv.org/abs/2308.14920"
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        }
+      ],
+      "penicillin": [],
+      "retrosynthesis": [
+        {
+          "year": 2012,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "Heifets–Jurisica · 合成规划题集",
+              "url": "https://www.cs.toronto.edu/~aheifets/ChemicalPlanning/"
+            }
+          ]
+        },
+        {
+          "year": 2013,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2014,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2015,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2016,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2017,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2018,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2019,
+          "annual": 0,
+          "total": 1,
+          "sources": []
+        },
+        {
+          "year": 2020,
+          "annual": 1,
+          "total": 2,
+          "sources": [
+            {
+              "label": "Retro* · 190 个多步规划目标",
+              "url": "https://arxiv.org/abs/2006.15820"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "annual": 0,
+          "total": 2,
+          "sources": []
+        },
+        {
+          "year": 2022,
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "PaRoutes",
+              "url": "https://doi.org/10.1039/D2DD00015F"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2024,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2025,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        },
+        {
+          "year": 2026,
+          "annual": 0,
+          "total": 3,
+          "sources": []
+        }
+      ],
+      "selectivity": [],
+      "yield": []
+    }
+  },
+  "csd": {
+    "edition": 2026,
+    "url": "https://www.ccdc.cam.ac.uk/media/CSD-Publication-Year-Statistics-2026.pdf",
+    "baseline": 4045,
+    "points": [
+      {
+        "year": 1965,
+        "annual": 656,
+        "total": 4701,
+        "partial": false
+      },
+      {
+        "year": 1966,
+        "annual": 690,
+        "total": 5391,
+        "partial": false
+      },
+      {
+        "year": 1967,
+        "annual": 942,
+        "total": 6333,
+        "partial": false
+      },
+      {
+        "year": 1968,
+        "annual": 977,
+        "total": 7310,
+        "partial": false
+      },
+      {
+        "year": 1969,
+        "annual": 1133,
+        "total": 8443,
+        "partial": false
+      },
+      {
+        "year": 1970,
+        "annual": 1268,
+        "total": 9711,
+        "partial": false
+      },
+      {
+        "year": 1971,
+        "annual": 1552,
+        "total": 11263,
+        "partial": false
+      },
+      {
+        "year": 1972,
+        "annual": 1981,
+        "total": 13244,
+        "partial": false
+      },
+      {
+        "year": 1973,
+        "annual": 1995,
+        "total": 15239,
+        "partial": false
+      },
+      {
+        "year": 1974,
+        "annual": 2145,
+        "total": 17384,
+        "partial": false
+      },
+      {
+        "year": 1975,
+        "annual": 2180,
+        "total": 19564,
+        "partial": false
+      },
+      {
+        "year": 1976,
+        "annual": 2749,
+        "total": 22313,
+        "partial": false
+      },
+      {
+        "year": 1977,
+        "annual": 3101,
+        "total": 25414,
+        "partial": false
+      },
+      {
+        "year": 1978,
+        "annual": 3425,
+        "total": 28839,
+        "partial": false
+      },
+      {
+        "year": 1979,
+        "annual": 3885,
+        "total": 32724,
+        "partial": false
+      },
+      {
+        "year": 1980,
+        "annual": 4257,
+        "total": 36981,
+        "partial": false
+      },
+      {
+        "year": 1981,
+        "annual": 4667,
+        "total": 41648,
+        "partial": false
+      },
+      {
+        "year": 1982,
+        "annual": 5241,
+        "total": 46889,
+        "partial": false
+      },
+      {
+        "year": 1983,
+        "annual": 5255,
+        "total": 52144,
+        "partial": false
+      },
+      {
+        "year": 1984,
+        "annual": 6516,
+        "total": 58660,
+        "partial": false
+      },
+      {
+        "year": 1985,
+        "annual": 6924,
+        "total": 65584,
+        "partial": false
+      },
+      {
+        "year": 1986,
+        "annual": 6875,
+        "total": 72459,
+        "partial": false
+      },
+      {
+        "year": 1987,
+        "annual": 7500,
+        "total": 79959,
+        "partial": false
+      },
+      {
+        "year": 1988,
+        "annual": 7699,
+        "total": 87658,
+        "partial": false
+      },
+      {
+        "year": 1989,
+        "annual": 7826,
+        "total": 95484,
+        "partial": false
+      },
+      {
+        "year": 1990,
+        "annual": 8965,
+        "total": 104449,
+        "partial": false
+      },
+      {
+        "year": 1991,
+        "annual": 9975,
+        "total": 114424,
+        "partial": false
+      },
+      {
+        "year": 1992,
+        "annual": 10737,
+        "total": 125161,
+        "partial": false
+      },
+      {
+        "year": 1993,
+        "annual": 12082,
+        "total": 137243,
+        "partial": false
+      },
+      {
+        "year": 1994,
+        "annual": 12304,
+        "total": 149547,
+        "partial": false
+      },
+      {
+        "year": 1995,
+        "annual": 13030,
+        "total": 162577,
+        "partial": false
+      },
+      {
+        "year": 1996,
+        "annual": 15615,
+        "total": 178192,
+        "partial": false
+      },
+      {
+        "year": 1997,
+        "annual": 15971,
+        "total": 194163,
+        "partial": false
+      },
+      {
+        "year": 1998,
+        "annual": 17370,
+        "total": 211533,
+        "partial": false
+      },
+      {
+        "year": 1999,
+        "annual": 18928,
+        "total": 230461,
+        "partial": false
+      },
+      {
+        "year": 2000,
+        "annual": 20098,
+        "total": 250559,
+        "partial": false
+      },
+      {
+        "year": 2001,
+        "annual": 21915,
+        "total": 272474,
+        "partial": false
+      },
+      {
+        "year": 2002,
+        "annual": 24478,
+        "total": 296952,
+        "partial": false
+      },
+      {
+        "year": 2003,
+        "annual": 26462,
+        "total": 323414,
+        "partial": false
+      },
+      {
+        "year": 2004,
+        "annual": 28277,
+        "total": 351691,
+        "partial": false
+      },
+      {
+        "year": 2005,
+        "annual": 31950,
+        "total": 383641,
+        "partial": false
+      },
+      {
+        "year": 2006,
+        "annual": 34940,
+        "total": 418581,
+        "partial": false
+      },
+      {
+        "year": 2007,
+        "annual": 36901,
+        "total": 455482,
+        "partial": false
+      },
+      {
+        "year": 2008,
+        "annual": 37292,
+        "total": 492774,
+        "partial": false
+      },
+      {
+        "year": 2009,
+        "annual": 41546,
+        "total": 534320,
+        "partial": false
+      },
+      {
+        "year": 2010,
+        "annual": 42467,
+        "total": 576787,
+        "partial": false
+      },
+      {
+        "year": 2011,
+        "annual": 45008,
+        "total": 621795,
+        "partial": false
+      },
+      {
+        "year": 2012,
+        "annual": 48190,
+        "total": 669985,
+        "partial": false
+      },
+      {
+        "year": 2013,
+        "annual": 49115,
+        "total": 719100,
+        "partial": false
+      },
+      {
+        "year": 2014,
+        "annual": 52105,
+        "total": 771205,
+        "partial": false
+      },
+      {
+        "year": 2015,
+        "annual": 55285,
+        "total": 826490,
+        "partial": false
+      },
+      {
+        "year": 2016,
+        "annual": 56901,
+        "total": 883391,
+        "partial": false
+      },
+      {
+        "year": 2017,
+        "annual": 59633,
+        "total": 943024,
+        "partial": false
+      },
+      {
+        "year": 2018,
+        "annual": 58390,
+        "total": 1001414,
+        "partial": false
+      },
+      {
+        "year": 2019,
+        "annual": 61172,
+        "total": 1062586,
+        "partial": false
+      },
+      {
+        "year": 2020,
+        "annual": 64116,
+        "total": 1126702,
+        "partial": false
+      },
+      {
+        "year": 2021,
+        "annual": 60934,
+        "total": 1187636,
+        "partial": false
+      },
+      {
+        "year": 2022,
+        "annual": 60952,
+        "total": 1248588,
+        "partial": false
+      },
+      {
+        "year": 2023,
+        "annual": 60892,
+        "total": 1309480,
+        "partial": false
+      },
+      {
+        "year": 2024,
+        "annual": 61927,
+        "total": 1371407,
+        "partial": false
+      },
+      {
+        "year": 2025,
+        "annual": 58600,
+        "total": 1430007,
+        "partial": true
+      },
+      {
+        "year": 2026,
+        "annual": 1340,
+        "total": 1431347,
+        "partial": true
+      }
+    ],
+    "sha256": "f958f6a03b49399ac645f594d8699bab5cdf95b31b32d36120cc8429a60b3701"
+  },
+  "chembl": {
+    "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/",
+    "releases": [
+      {
+        "version": "chembl_03",
+        "date": "2010-04-18",
+        "total": 2490742,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_03/chembl_03_release_notes.txt"
+      },
+      {
+        "version": "chembl_04",
+        "date": "2010-05-18",
+        "total": 2705136,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_04/chembl_04_release_notes.txt"
+      },
+      {
+        "version": "chembl_05",
+        "date": "2010-06-24",
+        "total": 2787240,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_05/chembl_05_release_notes.txt"
+      },
+      {
+        "version": "chembl_06",
+        "date": "2010-08-27",
+        "total": 2925588,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_06/chembl_06_release_notes.txt"
+      },
+      {
+        "version": "chembl_07",
+        "date": "2010-09-29",
+        "total": 2948069,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_07/chembl_07_release_notes.txt"
+      },
+      {
+        "version": "chembl_08",
+        "date": "2010-10-26",
+        "total": 2973034,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_08/chembl_08_release_notes.txt"
+      },
+      {
+        "version": "chembl_09",
+        "date": "2011-01-20",
+        "total": 3030317,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_09/chembl_09_release_notes.txt"
+      },
+      {
+        "version": "chembl_10",
+        "date": "2011-05-26",
+        "total": 4668202,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_10/chembl_10_release_notes.txt"
+      },
+      {
+        "version": "chembl_11",
+        "date": "2011-08-01",
+        "total": 5479146,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_11/chembl_11_release_notes.txt"
+      },
+      {
+        "version": "chembl_12",
+        "date": "2011-11-18",
+        "total": 5654847,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_12/chembl_12_release_notes.txt"
+      },
+      {
+        "version": "chembl_13",
+        "date": "2012-02-21",
+        "total": 6933068,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_13/chembl_13_release_notes.txt"
+      },
+      {
+        "version": "chembl_14",
+        "date": "2012-06-27",
+        "total": 10129256,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_14/chembl_14_release_notes.txt"
+      },
+      {
+        "version": "chembl_15",
+        "date": "2013-01-23",
+        "total": 10509572,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_15/chembl_15_release_notes.txt"
+      },
+      {
+        "version": "chembl_16",
+        "date": "2013-05-07",
+        "total": 11420351,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_16/chembl_16_release_notes.txt"
+      },
+      {
+        "version": "chembl_17",
+        "date": "2013-08-29",
+        "total": 12077491,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_17/chembl_17_release_notes.txt"
+      },
+      {
+        "version": "chembl_18",
+        "date": "2014-03-12",
+        "total": 12419715,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_18/chembl_18_release_notes.txt"
+      },
+      {
+        "version": "chembl_19",
+        "date": "2014-07-03",
+        "total": 12843338,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_19/chembl_19_release_notes.txt"
+      },
+      {
+        "version": "chembl_20",
+        "date": "2015-01-14",
+        "total": 13520737,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_20/chembl_20_release_notes.txt"
+      },
+      {
+        "version": "chembl_21",
+        "date": "2016-02-01",
+        "total": 13968617,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_21/chembl_21_release_notes.txt"
+      },
+      {
+        "version": "chembl_22_1",
+        "date": "2016-11-08",
+        "total": 14371197,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_22_1/chembl_22_1_release_notes.txt"
+      },
+      {
+        "version": "chembl_23",
+        "date": "2017-05-01",
+        "total": 14675320,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_23/chembl_23_release_notes.txt"
+      },
+      {
+        "version": "chembl_24_1",
+        "date": "2018-04-23",
+        "total": 15207914,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_24_1/chembl_24_1_release_notes.txt"
+      },
+      {
+        "version": "chembl_25",
+        "date": "2018-12-10",
+        "total": 15504603,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_25/chembl_25_release_notes.txt"
+      },
+      {
+        "version": "chembl_26",
+        "date": "2020-01-10",
+        "total": 15996368,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_26/chembl_26_release_notes.txt"
+      },
+      {
+        "version": "chembl_27",
+        "date": "2020-05-18",
+        "total": 16066124,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_27/chembl_27_release_notes.txt"
+      },
+      {
+        "version": "chembl_28",
+        "date": "2021-01-15",
+        "total": 17276334,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_28/chembl_28_release_notes.txt"
+      },
+      {
+        "version": "chembl_29",
+        "date": "2021-07-01",
+        "total": 18635916,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_29/chembl_29_release_notes.txt"
+      },
+      {
+        "version": "chembl_30",
+        "date": "2022-02-22",
+        "total": 19286751,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_30/chembl_30_release_notes.txt"
+      },
+      {
+        "version": "chembl_31",
+        "date": "2022-07-12",
+        "total": 19780369,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/chembl_31_release_notes.txt"
+      },
+      {
+        "version": "chembl_32",
+        "date": "2023-01-26",
+        "total": 20038828,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_32/chembl_32_release_notes.txt"
+      },
+      {
+        "version": "chembl_33",
+        "date": "2023-05-31",
+        "total": 20334684,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_33/chembl_33_release_notes.txt"
+      },
+      {
+        "version": "chembl_34",
+        "date": "2024-03-28",
+        "total": 20772701,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_34/chembl_34_release_notes.txt"
+      },
+      {
+        "version": "chembl_35",
+        "date": "2024-12-01",
+        "total": 21123501,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_35/chembl_35_release_notes.txt"
+      },
+      {
+        "version": "chembl_36",
+        "date": "2025-07-28",
+        "total": 24267312,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_36/chembl_36_release_notes.txt"
+      },
+      {
+        "version": "chembl_37",
+        "date": "2026-05-01",
+        "total": 24527044,
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/chembl_37_release_notes.txt"
+      }
+    ],
+    "points": [
+      {
+        "year": 2010,
+        "total": 2973034,
+        "annual": null,
+        "sources": [
+          {
+            "label": "chembl_08 · 2010-10-26",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_08/chembl_08_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2011,
+        "total": 5654847,
+        "annual": 2681813,
+        "sources": [
+          {
+            "label": "chembl_12 · 2011-11-18",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_12/chembl_12_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2012,
+        "total": 10129256,
+        "annual": 4474409,
+        "sources": [
+          {
+            "label": "chembl_14 · 2012-06-27",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_14/chembl_14_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2013,
+        "total": 12077491,
+        "annual": 1948235,
+        "sources": [
+          {
+            "label": "chembl_17 · 2013-08-29",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_17/chembl_17_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2014,
+        "total": 12843338,
+        "annual": 765847,
+        "sources": [
+          {
+            "label": "chembl_19 · 2014-07-03",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_19/chembl_19_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2015,
+        "total": 13520737,
+        "annual": 677399,
+        "sources": [
+          {
+            "label": "chembl_20 · 2015-01-14",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_20/chembl_20_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2016,
+        "total": 14371197,
+        "annual": 850460,
+        "sources": [
+          {
+            "label": "chembl_22_1 · 2016-11-08",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_22_1/chembl_22_1_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2017,
+        "total": 14675320,
+        "annual": 304123,
+        "sources": [
+          {
+            "label": "chembl_23 · 2017-05-01",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_23/chembl_23_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2018,
+        "total": 15504603,
+        "annual": 829283,
+        "sources": [
+          {
+            "label": "chembl_25 · 2018-12-10",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_25/chembl_25_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2020,
+        "total": 16066124,
+        "annual": null,
+        "sources": [
+          {
+            "label": "chembl_27 · 2020-05-18",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_27/chembl_27_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "total": 18635916,
+        "annual": 2569792,
+        "sources": [
+          {
+            "label": "chembl_29 · 2021-07-01",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_29/chembl_29_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "total": 19780369,
+        "annual": 1144453,
+        "sources": [
+          {
+            "label": "chembl_31 · 2022-07-12",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_31/chembl_31_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "total": 20334684,
+        "annual": 554315,
+        "sources": [
+          {
+            "label": "chembl_33 · 2023-05-31",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_33/chembl_33_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "total": 21123501,
+        "annual": 788817,
+        "sources": [
+          {
+            "label": "chembl_35 · 2024-12-01",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_35/chembl_35_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2025,
+        "total": 24267312,
+        "annual": 3143811,
+        "sources": [
+          {
+            "label": "chembl_36 · 2025-07-28",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_36/chembl_36_release_notes.txt"
+          }
+        ]
+      },
+      {
+        "year": 2026,
+        "total": 24527044,
+        "annual": 259732,
+        "sources": [
+          {
+            "label": "chembl_37 · 2026-05-01",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/chembl_37_release_notes.txt"
+          }
+        ]
+      }
+    ]
+  }
+}

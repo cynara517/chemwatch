@@ -35,7 +35,7 @@ class SubscriptionTests(unittest.TestCase):
         self.assertEqual((code,json.loads(text)["status"]), (0,"baseline"))
         _, text = self.cli("check", "--config", str(self.config), "--json")
         self.assertEqual(json.loads(text)["status"], "unchanged")
-        self.assertEqual(json.loads(text)["selected_count"], 4)
+        self.assertEqual(json.loads(text)["selected_count"], len(cw.select(cw.read_json(self.source), ["retrosynthesis"])))
 
     def test_real_background_watcher_starts_and_stops(self):
         self.cli("follow", "--config", str(self.config), "--source", str(self.source), "--no-probe", "--json")
@@ -84,7 +84,7 @@ class InstallerTests(unittest.TestCase):
         skill = self.root / "harness skills/chemwatch-monitor"
         self.assertTrue((skill / "SKILL.md").is_file())
         result = subprocess.run([str(launcher),"list","--source",str(cw.ROOT / "dist/data/catalog.json"),"--topic","retrosynthesis","--json"],env=self.env,check=True,capture_output=True,text=True)
-        self.assertEqual(len(json.loads(result.stdout)),4)
+        self.assertEqual({r["id"] for r in json.loads(result.stdout)}, {r["id"] for r in cw.select(cw.read_json(cw.ROOT / "dist/data/catalog.json"), ["retrosynthesis"])})
         config = self.root / "state/chemwatch/subscription.json"
         config.parent.mkdir(parents=True,exist_ok=True)
         config.write_text('{"user_preference":"keep me"}')

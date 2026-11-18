@@ -128,7 +128,7 @@ class SyncTests(unittest.TestCase):
         self.assertEqual(len({e["id"] for e in data["entries"]}), len(data["entries"]))
         self.assertTrue(all(set(e["topics"]) <= cw.TOPICS for e in data["entries"]))
         retro = cw.select(data,["retrosynthesis"])
-        self.assertEqual(len({e["family_id"] for e in retro if e["kind"]=="dataset"}), 1)
+        self.assertEqual({e["family_id"] for e in retro if e["id"].startswith("uspto-")}, {"uspto"})
         industrial = cw.select(data,["penicillin","erythromycin"])
         self.assertEqual(len(industrial), 2)
 

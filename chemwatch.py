@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import secrets
 import subprocess
@@ -17,7 +18,7 @@ from email.message import EmailMessage
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
-VERSION = "0.2.1"
+VERSION = "0.3.0"
 ROOT = Path(__file__).resolve().parent
 PUBLIC_CATALOG = "https://cynara517.github.io/chemwatch/data/catalog.json"
 STATE_ROOT = Path(os.getenv("XDG_STATE_HOME", str(Path.home() / ".local/state"))) / "chemwatch"
@@ -121,6 +122,17 @@ def probe(entry):
             raise ValueError("No commit found for monitored path")
         r = rows[0]
         return {"revision": r["sha"], "url": r["html_url"], "upstream_date": r["commit"]["committer"]["date"], "signal": "repository_change", "note": "仓库或指定路径提交变化；不代表数据记录数量增长"}
+    if monitor["type"] == "huggingface":
+        repo = monitor["repo"]
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo) or ".." in repo:
+            raise ValueError("Invalid Hugging Face dataset ID")
+        data = api_json("https://huggingface.co/api/datasets/" + repo)
+        sha = data.get("sha")
+        if not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{40,64}", sha):
+            raise ValueError("Missing Hugging Face dataset revision")
+        return {"revision":sha, "upstream_date":data.get("lastModified"),
+                "url":f"https://huggingface.co/datasets/{repo}/commit/{sha}",
+                "signal":"dataset_repository_revision", "note":"Hugging Face 数据仓库修订，含数据卡和文件更新"}
     if monitor["type"] == "zenodo":
         record = str(monitor["record"])
         if not record.isdigit():
