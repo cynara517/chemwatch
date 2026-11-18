@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-18T07:09:16.002684Z",
+  "checked_at": "2026-11-18T07:15:42.565427Z",
   "last_success": "2026-11-18T07:09:16.002684Z",
-  "error": null,
+  "error": "HTTP Error 429: Too Many Requests",
   "terms": {
     "retrosynthesis": [
       "retrosynthesis",
