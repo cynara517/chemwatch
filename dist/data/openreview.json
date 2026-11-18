@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-18T08:15:28.041085Z",
-  "last_success": "2026-11-18T08:15:28.041085Z",
+  "checked_at": "2026-11-18T09:31:47.310028Z",
+  "last_success": "2026-11-18T09:31:47.310028Z",
   "error": null,
   "terms": {
     "retrosynthesis": [
@@ -548,6 +548,66 @@
       ]
     },
     {
+      "forum": "trT9R6Kr0G",
+      "title": "Efficient Retrosynthesis Prediction with Integral Flow Matching and Latent Inversion",
+      "url": "https://openreview.net/forum?id=trT9R6Kr0G",
+      "date": "2026-05-04",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "KD4i8hE0Rc",
+      "title": "Fast Organic Crystal Structure Prediction with Unit Cell Flow Matching",
+      "url": "https://openreview.net/forum?id=KD4i8hE0Rc",
+      "date": "2026-05-04",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "zc9Yuz8txr",
+      "title": "EP-Flow: Disordered Crystal Structure Prediction without Site-Level Annotations",
+      "url": "https://openreview.net/forum?id=zc9Yuz8txr",
+      "date": "2026-05-01",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "uh3Ctp0Yfw",
+      "title": "Matching-while-Decoding: Enhancing Template-Free Retrosynthesis via Explicit Structural Alignment",
+      "url": "https://openreview.net/forum?id=uh3Ctp0Yfw",
+      "date": "2026-05-01",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "tNsRvxgwYk",
+      "title": "RECIPE: Learning to Rank Complete Precursor Sets for Inorganic Retrosynthesis",
+      "url": "https://openreview.net/forum?id=tNsRvxgwYk",
+      "date": "2026-05-01",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
       "forum": "CUpqGH72hv",
       "title": "Pre-training on noncovalent interactions in synthetic protein-ligand structures to better predict binding affinity",
       "url": "https://openreview.net/forum?id=CUpqGH72hv",
@@ -569,6 +629,18 @@
       "venue_id": "ICML.cc/2026/Workshop/SPIGM",
       "topics": [
         "free-energy"
+      ]
+    },
+    {
+      "forum": "QnViF2joi3",
+      "title": "Trustworthy Retrosynthesis: Eliminating Hallucinations with a Diverse Ensemble of Reaction Scorers",
+      "url": "https://openreview.net/forum?id=QnViF2joi3",
+      "date": "2026-04-22",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
       ]
     },
     {
