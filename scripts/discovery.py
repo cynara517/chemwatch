@@ -121,7 +121,12 @@ def refresh():
     with ThreadPoolExecutor(max_workers=4) as pool:
         results = list(pool.map(platform, ("papers","crossref","github","huggingface")))
     feeds = {key:value for group in results for key,value in group.items()}
-    errors = [key+" "+value["error"] for key,value in feeds.items() if "error" in value]
+    from scripts import openreview_source
+    openreview_source.refresh()
+    snapshot = json.loads(openreview_source.PATH.read_text())
+    for topic in openreview_source.TERMS:
+        feeds["openreview/"+topic] = openreview_source.inbox(snapshot,topic,LIMIT)
+    errors = [key+" "+value["error"] for key,value in feeds.items() if value.get("error")]
     atomic_json(path, {"checked_at":now(), "limit_per_query":LIMIT, "feeds":feeds, "errors":errors})
     return errors
 

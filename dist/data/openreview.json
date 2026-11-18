@@ -1,0 +1,2351 @@
+{
+  "checked_at": "2026-11-18T07:09:16.002684Z",
+  "last_success": "2026-11-18T07:09:16.002684Z",
+  "error": null,
+  "terms": {
+    "retrosynthesis": [
+      "retrosynthesis",
+      "retrosynthetic"
+    ],
+    "coupling": [
+      "cross coupling",
+      "Suzuki coupling",
+      "Suzuki Miyaura",
+      "Buchwald Hartwig",
+      "direct arylation"
+    ],
+    "materials": [
+      "materials property",
+      "material property",
+      "materials benchmark",
+      "crystal structure prediction"
+    ],
+    "yield": [
+      "reaction yield"
+    ],
+    "free-energy": [
+      "free energy"
+    ],
+    "selectivity": [
+      "enantioselectivity",
+      "enantioselective",
+      "enantiomeric excess"
+    ],
+    "bioactivity": [
+      "bioactivity",
+      "binding affinity"
+    ],
+    "penicillin": [
+      "penicillin"
+    ],
+    "erythromycin": [
+      "erythromycin"
+    ]
+  },
+  "queries": {
+    "retrosynthesis": [
+      "https://api2.openreview.net/notes/search?term=retrosynthesis&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=retrosynthesis&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=retrosynthetic&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=retrosynthetic&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "coupling": [
+      "https://api2.openreview.net/notes/search?term=cross+coupling&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=cross+coupling&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=Suzuki+coupling&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=Suzuki+coupling&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=Suzuki+Miyaura&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=Suzuki+Miyaura&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=Buchwald+Hartwig&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=Buchwald+Hartwig&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=direct+arylation&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=direct+arylation&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "materials": [
+      "https://api2.openreview.net/notes/search?term=materials+property&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=materials+property&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=material+property&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=material+property&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=materials+benchmark&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=materials+benchmark&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=crystal+structure+prediction&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=crystal+structure+prediction&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "yield": [
+      "https://api2.openreview.net/notes/search?term=reaction+yield&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=reaction+yield&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "free-energy": [
+      "https://api2.openreview.net/notes/search?term=free+energy&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=free+energy&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "selectivity": [
+      "https://api2.openreview.net/notes/search?term=enantioselectivity&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=enantioselectivity&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=enantioselective&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=enantioselective&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=enantiomeric+excess&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=enantiomeric+excess&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "bioactivity": [
+      "https://api2.openreview.net/notes/search?term=bioactivity&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=bioactivity&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=binding+affinity&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=binding+affinity&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "penicillin": [
+      "https://api2.openreview.net/notes/search?term=penicillin&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=penicillin&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
+    "erythromycin": [
+      "https://api2.openreview.net/notes/search?term=erythromycin&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=erythromycin&type=exact&content=title&source=forum&limit=100&offset=0"
+    ]
+  },
+  "items": [
+    {
+      "forum": "gIVBFYZVJH",
+      "title": "AffinitySym: Sequence-based Interpretable Protein–Protein Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=gIVBFYZVJH",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Withdrawn_Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "fLINn5pFHN",
+      "title": "Compound-Conditioned Bioactivity Graphs: Structuring Intermediate Supervision for Low-Data Toxicity Prediction",
+      "url": "https://openreview.net/forum?id=fLINn5pFHN",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Desk Rejected Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Desk_Rejected_Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "Y1NLuaSLPC",
+      "title": "Retro-Forge: A Multi-Step Pairwise Retrosynthesis Framework for Solid-State Materials Synthesis",
+      "url": "https://openreview.net/forum?id=Y1NLuaSLPC",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LBJGNAXYao",
+      "title": "STORM: A Lightweight Structure-Free Model for Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=LBJGNAXYao",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "6C23oPAMff",
+      "title": "Improving the generalization capabilities of equivariant message passing neural networks for binding affinity prediction",
+      "url": "https://openreview.net/forum?id=6C23oPAMff",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "4LaYArhYvS",
+      "title": "The NNP Score Completeness Boundary: Physics Decomposition for Crystal Structure Prediction with Neural Network Potentials",
+      "url": "https://openreview.net/forum?id=4LaYArhYvS",
+      "date": "2026-09-19",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Withdrawn_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "jIC15rJ2Fq",
+      "title": "RetroRoute: Route-Level Agentic Decision Making for Multi-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=jIC15rJ2Fq",
+      "date": "2026-09-18",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "egJdZ6mBZG",
+      "title": "Attention Tracks Reaction Centers, But Doesn't Need Them: A Causal Study of a Retrosynthesis Transformer",
+      "url": "https://openreview.net/forum?id=egJdZ6mBZG",
+      "date": "2026-09-18",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "1R7ZYlTBcb",
+      "title": "RetroVirtSyn: Adaptive Multi-Center Virtual Synthons for Single-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=1R7ZYlTBcb",
+      "date": "2026-09-18",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "sZyzLB3n00",
+      "title": "Before the Furnace: Training LLM Agents for Inorganic Retrosynthesis",
+      "url": "https://openreview.net/forum?id=sZyzLB3n00",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Qn3raWg2t7",
+      "title": "PACT: A Self-Explaining Scoring Function for Protein-Ligand Binding Affinity with Context-Dependent Interaction Terms",
+      "url": "https://openreview.net/forum?id=Qn3raWg2t7",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "QD0aK2CZGA",
+      "title": "Direct or \\(\\Delta\\)? Understanding Two Routes to Mutant Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=QD0aK2CZGA",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "1kO8b2U6Uj",
+      "title": "Few-Shot Bioactivity Prediction with Meta-Learning under Assay Heterogeneity",
+      "url": "https://openreview.net/forum?id=1kO8b2U6Uj",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "1UQZaJGqrI",
+      "title": "Solvent: Long-Horizon Reasoning for Multi-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=1UQZaJGqrI",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "vCj0hO56G3",
+      "title": "Escalate Only When Necessary: Marginal-Value-Aware Feedback Acquisition for Retrosynthetic Planning",
+      "url": "https://openreview.net/forum?id=vCj0hO56G3",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "lPH4WENtbe",
+      "title": "Making the Most of Molecular Dynamics Simulations for Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=lPH4WENtbe",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "XMi7zSOSrI",
+      "title": "Beyond Structure Generation: Co-Folding Representations for Binding Affinity and CYP Substrate Prediction",
+      "url": "https://openreview.net/forum?id=XMi7zSOSrI",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "Uh7j7ylaw5",
+      "title": "EnergyRetro: Bridging Bond Energetics and Reaction Knowledge for Multi-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=Uh7j7ylaw5",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Pex9JtqEoy",
+      "title": "Dynamics-Driven Protein–Ligand Binding Affinity Prediction via Conformational Flexibility Modeling",
+      "url": "https://openreview.net/forum?id=Pex9JtqEoy",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "oHyVTHnPte",
+      "title": "Developing a Crystal Structure Prediction Algorithm with Agent-Guided Search",
+      "url": "https://openreview.net/forum?id=oHyVTHnPte",
+      "date": "2026-09-15",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Withdrawn_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "iYPGjL79Qx",
+      "title": "Packora: Systematic Design for Generative Molecular Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=iYPGjL79Qx",
+      "date": "2026-09-15",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "FZkUWYev4T",
+      "title": "Steering Autoregressive Retrosynthesis with Calibration",
+      "url": "https://openreview.net/forum?id=FZkUWYev4T",
+      "date": "2026-09-15",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "3GDTfB50ms",
+      "title": "Provenance-Trace Policy Optimization for Agentic Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=3GDTfB50ms",
+      "date": "2026-09-14",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "1Hxs6ms9Fz",
+      "title": "MechET: Learning Retrosynthesis through Executable Electron Flow",
+      "url": "https://openreview.net/forum?id=1Hxs6ms9Fz",
+      "date": "2026-09-14",
+      "public_date": null,
+      "venue": "ICLR 2027 Conference Desk Rejected Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Desk_Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "SHFqETTO64",
+      "title": "RetroPlanner: Multi-Route Expansion and Multi-Objective Reasoning for LLM-Based Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=SHFqETTO64",
+      "date": "2026-09-10",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LjzppChcCe",
+      "title": "MGSEKformer: Multi-Granularity Graph-Sequence Enhanced Knowledge Transformer for Single-Step Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=LjzppChcCe",
+      "date": "2026-09-09",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "QXL8Bni8x6",
+      "title": "PAIRank: A MODEL-AGNOSTIC RELIABILITY PLUGIN FOR PROTEIN–LIGAND BINDING AFFINITY PREDIC\u0002TION",
+      "url": "https://openreview.net/forum?id=QXL8Bni8x6",
+      "date": "2026-09-07",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "SRFF84EaD0",
+      "title": "Coverage Before Control: Route-Instruction Grounding and Steering for Controllable Retrosynthesis",
+      "url": "https://openreview.net/forum?id=SRFF84EaD0",
+      "date": "2026-09-01",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "kxnucBCSfv",
+      "title": "Steerable Single-step Retrosynthesis with Electron-pushing Discrete Flow Matching and Feynman-Kac steering",
+      "url": "https://openreview.net/forum?id=kxnucBCSfv",
+      "date": "2026-08-30",
+      "public_date": "2026-10-06",
+      "venue": "ML4Molecules 2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/ML4Molecules",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "fyJcmlVID0",
+      "title": "BindingBench: Assessing Factors Affecting the Performance of in silico Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=fyJcmlVID0",
+      "date": "2026-08-30",
+      "public_date": "2026-10-06",
+      "venue": "ML4Molecules 2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/ML4Molecules",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "8Am5AW5eZZ",
+      "title": "Enhanced Drift Sampling: Rare-Event Free-Energy Estimation with Tilted Drift Targets",
+      "url": "https://openreview.net/forum?id=8Am5AW5eZZ",
+      "date": "2026-08-26",
+      "public_date": "2026-10-05",
+      "venue": "RPS Workshop 2026 Poster",
+      "venue_id": "NeurIPS.cc/2026/Workshop/RPS",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "0FjWo4CGTU",
+      "title": "No Ligand Binds in Isolation: Competition-Aware Bioactivity Prediction",
+      "url": "https://openreview.net/forum?id=0FjWo4CGTU",
+      "date": "2026-08-24",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "GVDVnpUhUy",
+      "title": "What to Learn and What to Trust: Multimodal Learning with Reliable Supervision for Bioactivity Prediction",
+      "url": "https://openreview.net/forum?id=GVDVnpUhUy",
+      "date": "2026-08-20",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "99zu7h8Lor",
+      "title": "RetroGEF: Dynamic Graph Edit Flow for Single-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=99zu7h8Lor",
+      "date": "2026-08-20",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "ZoDqbMN6uT",
+      "title": "RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=ZoDqbMN6uT",
+      "date": "2026-05-26",
+      "public_date": "2026-06-02",
+      "venue": "ACL ARR 2026 May Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2026/May/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "wZVHPYvc65",
+      "title": "PROTEUS: Predicting How Post-Translational Modifications Alter Drug Binding Affinity",
+      "url": "https://openreview.net/forum?id=wZVHPYvc65",
+      "date": "2026-05-11",
+      "public_date": "2026-05-28",
+      "venue": "ICML 2026 FM4LS Workshop Poster",
+      "venue_id": "ICML.cc/2026/Workshop/FM4LS",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "8fiwPeCmrQ",
+      "title": "Fisher-constrained flow matching for transferable free energy estimation",
+      "url": "https://openreview.net/forum?id=8fiwPeCmrQ",
+      "date": "2026-05-09",
+      "public_date": "2026-05-30",
+      "venue": "SPIGM @ ICML Poster",
+      "venue_id": "ICML.cc/2026/Workshop/SPIGM",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "CUpqGH72hv",
+      "title": "Pre-training on noncovalent interactions in synthetic protein-ligand structures to better predict binding affinity",
+      "url": "https://openreview.net/forum?id=CUpqGH72hv",
+      "date": "2026-05-01",
+      "public_date": "2026-05-28",
+      "venue": "ICML 2026 FM4LS Workshop Poster",
+      "venue_id": "ICML.cc/2026/Workshop/FM4LS",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "sEFCI9J8lG",
+      "title": "Enhanced Diffusion Sampling: Efficient Rare Event Sampling and Free Energy Calculation with Diffusion Models",
+      "url": "https://openreview.net/forum?id=sEFCI9J8lG",
+      "date": "2026-04-30",
+      "public_date": "2026-05-30",
+      "venue": "SPIGM @ ICML Oral",
+      "venue_id": "ICML.cc/2026/Workshop/SPIGM",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "AqtQc7KO77",
+      "title": "Retro-Forge: A Multi-Step Pairwise Retrosynthesis Framework for Solid-State Materials Synthesis",
+      "url": "https://openreview.net/forum?id=AqtQc7KO77",
+      "date": "2026-04-21",
+      "public_date": "2026-05-30",
+      "venue": "ICML2026-AI4Science Poster",
+      "venue_id": "ICML.cc/2026/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "5f4giKbVOo",
+      "title": "ChemPRM: Improving Retrosynthesis by Structured Intermediate Process Reward",
+      "url": "https://openreview.net/forum?id=5f4giKbVOo",
+      "date": "2026-04-21",
+      "public_date": "2026-05-30",
+      "venue": "ICML2026-AI4Science Poster",
+      "venue_id": "ICML.cc/2026/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "SScu0lShAc",
+      "title": "RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking",
+      "url": "https://openreview.net/forum?id=SScu0lShAc",
+      "date": "2026-04-20",
+      "public_date": "2026-05-30",
+      "venue": "ICML2026-AI4Science Poster",
+      "venue_id": "ICML.cc/2026/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "h8yARiHZeW",
+      "title": "Pre-training on noncovalent interactions in synthetic protein-ligand structures to better predict binding affinity",
+      "url": "https://openreview.net/forum?id=h8yARiHZeW",
+      "date": "2026-04-19",
+      "public_date": "2026-05-30",
+      "venue": "ICML2026-AI4Science Poster",
+      "venue_id": "ICML.cc/2026/Workshop/AI4Science",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "BImTx0KldG",
+      "title": "RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=BImTx0KldG",
+      "date": "2026-03-25",
+      "public_date": "2026-08-24",
+      "venue": "COLM 2026",
+      "venue_id": "colmweb.org/COLM/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "7wDBiQbTVd",
+      "title": "Towards Reliable Chemical Retrosynthesis: A Self-Reflection Approach for Robust Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=7wDBiQbTVd",
+      "date": "2026-03-17",
+      "public_date": "2026-06-07",
+      "venue": "ACL ARR 2026 March Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2026/March/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "kWZcgn1tmX",
+      "title": "SynTwins: A Retrosynthesis-Guided Framework for Synthesizable Molecular Analog Generation",
+      "url": "https://openreview.net/forum?id=kWZcgn1tmX",
+      "date": "2026-03-02",
+      "public_date": "2026-03-25",
+      "venue": "AI4X-AC 2026 Oral",
+      "venue_id": "AI4X.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "i4EkO5cpxz",
+      "title": "SemiMat: A Semi-Supervised Toolkit for Data-Scarce Materials Property Prediction",
+      "url": "https://openreview.net/forum?id=i4EkO5cpxz",
+      "date": "2026-02-28",
+      "public_date": "2026-03-25",
+      "venue": "AI4X-AC 2026 Oral",
+      "venue_id": "AI4X.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "gx1gU7QrVT",
+      "title": "Closed-loop Optimization of Mono-functionalization via Suzuki-Miyaura Reaction",
+      "url": "https://openreview.net/forum?id=gx1gU7QrVT",
+      "date": "2026-02-27",
+      "public_date": "2026-03-25",
+      "venue": "AI4X-AC 2026 Oral",
+      "venue_id": "AI4X.cc/2026/Conference",
+      "topics": [
+        "coupling"
+      ]
+    },
+    {
+      "forum": "aiQyNhZ3s5",
+      "title": "On improving experimental binding affinity predictions with synthetic data",
+      "url": "https://openreview.net/forum?id=aiQyNhZ3s5",
+      "date": "2026-02-05",
+      "public_date": "2026-03-05",
+      "venue": "GEM 2026",
+      "venue_id": "ICLR.cc/2026/Workshop/GEM",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "1WftHV5vqT",
+      "title": "Exploring Transfer Learning for Materials Property Prediction",
+      "url": "https://openreview.net/forum?id=1WftHV5vqT",
+      "date": "2026-01-31",
+      "public_date": "2026-03-02",
+      "venue": "AI4Mat-ICLR-2026 Poster",
+      "venue_id": "ICLR.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "xlevHY3oJO",
+      "title": "TerraBind: Fast and Accurate Binding Affinity Prediction through Coarse Structural Representations",
+      "url": "https://openreview.net/forum?id=xlevHY3oJO",
+      "date": "2026-01-23",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "Kdc1UvnMKk",
+      "title": "CARD: Coarse-to-fine Autoregressive Modeling with Radix-based Decomposition for Transferable Free Energy Estimation",
+      "url": "https://openreview.net/forum?id=Kdc1UvnMKk",
+      "date": "2026-01-23",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "IBDryWLx87",
+      "title": "Physics-Informed Pre-training on Efficient Electron-Density Images for Organic Material Property Prediction",
+      "url": "https://openreview.net/forum?id=IBDryWLx87",
+      "date": "2026-01-23",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "CPrSz9pqv7",
+      "title": "Retro-Expert: Collaborative Reasoning for Interpretable Retrosynthesis",
+      "url": "https://openreview.net/forum?id=CPrSz9pqv7",
+      "date": "2026-01-23",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "ABhGgV7pov",
+      "title": "When Single Answer Is Not Enough: Rethinking Single-Step Retrosynthesis Benchmarks for LLMs",
+      "url": "https://openreview.net/forum?id=ABhGgV7pov",
+      "date": "2026-01-23",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "p6gN6f8pdy",
+      "title": "RetrOrchestrator: A Multi-Step Retrosynthesis Agent Dynamically Orchestrating Single-Step Transition Models",
+      "url": "https://openreview.net/forum?id=p6gN6f8pdy",
+      "date": "2026-01-11",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "xeH37plPS3",
+      "title": "Order Matters in Retrosynthesis: Structure-aware Generation via Reaction-Center-Guided Discrete Flow Matching",
+      "url": "https://openreview.net/forum?id=xeH37plPS3",
+      "date": "2026-01-08",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "n1CwrKbyrf",
+      "title": "Towards Reliable Chemical Retrosynthesis: A Self-Reflection Approach for Robust Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=n1CwrKbyrf",
+      "date": "2026-01-06",
+      "public_date": "2026-03-20",
+      "venue": "ACL ARR 2026 January Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2026/January/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "MsIi78JXXZ",
+      "title": "Challenges in Non-Polymeric Crystal Structure Prediction: Why a Geometric, Permutation-Invariant Loss is Needed",
+      "url": "https://openreview.net/forum?id=MsIi78JXXZ",
+      "date": "2026-01-06",
+      "public_date": "2026-01-17",
+      "venue": "Accepted by TMLR",
+      "venue_id": "TMLR",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "kx2xMHvAaO",
+      "title": "Evaluating Molecule Synthesizability via Retrosynthetic Planning and Reaction Prediction",
+      "url": "https://openreview.net/forum?id=kx2xMHvAaO",
+      "date": "2025-10-19",
+      "public_date": "2025-10-27",
+      "venue": "Rejected by TMLR",
+      "venue_id": "TMLR/Rejected",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "FrCL5fDLJl",
+      "title": "Chemist-aligned retrosynthesis  by ensembling diverse inductive bias models",
+      "url": "https://openreview.net/forum?id=FrCL5fDLJl",
+      "date": "2025-10-13",
+      "public_date": "2025-11-12",
+      "venue": "SIMBIOCHEM 2025",
+      "venue_id": "EurIPS.cc/2025/Workshop/SIMBIOCHEM",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "ytvi5Hrapm",
+      "title": "Finding Harmony in Chemical Data: Hierarchical and Balanced multimodal Fusion for Reaction Yield Prediction",
+      "url": "https://openreview.net/forum?id=ytvi5Hrapm",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
+      "topics": [
+        "yield"
+      ]
+    },
+    {
+      "forum": "jiSt3M25TP",
+      "title": "MoMa: A Simple Modular Learning Framework for Material Property Prediction",
+      "url": "https://openreview.net/forum?id=jiSt3M25TP",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Poster",
+      "venue_id": "ICLR.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "iok8ebFKPQ",
+      "title": "Atom-anchored LLMs speak Chemistry: A Retrosynthesis Demonstration",
+      "url": "https://openreview.net/forum?id=iok8ebFKPQ",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Oit5bHPmjx",
+      "title": "MoCE: Mixture of Experts Representation for Robust Crystal Material Property Prediction",
+      "url": "https://openreview.net/forum?id=Oit5bHPmjx",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "JSNdIzVGeO",
+      "title": "PRICIN: Principle-Centered Inorganic Retrosynthesis",
+      "url": "https://openreview.net/forum?id=JSNdIzVGeO",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Hs4WbkJqsm",
+      "title": "Wef-GNN: A Generalizable Graph Neural Network for Crystalline Material Property Prediction",
+      "url": "https://openreview.net/forum?id=Hs4WbkJqsm",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "Gyy6clUUHD",
+      "title": "Trustworthy Retrosynthesis: Eliminating Hallucinations with a Diverse Ensemble of Reaction Scorers",
+      "url": "https://openreview.net/forum?id=Gyy6clUUHD",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "6Jd5aBml0y",
+      "title": "OXtal: An All-Atom Diffusion Model for Organic Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=6Jd5aBml0y",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Poster",
+      "venue_id": "ICLR.cc/2026/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "1s1OqbPnBG",
+      "title": "Learning Chemical Knowledge from Large-Scale Unlabeled Molecular Data for Retrosynthesis",
+      "url": "https://openreview.net/forum?id=1s1OqbPnBG",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "o0Qfsq1fK8",
+      "title": "Towards All-Atom Foundation Models for Biomolecular Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=o0Qfsq1fK8",
+      "date": "2025-09-18",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Poster",
+      "venue_id": "ICLR.cc/2026/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "WQsaxpFutF",
+      "title": "Challenges in Non-Polymeric Crystal Structure Prediction: Why a Geometric, Permutation-Invariant Loss is Needed",
+      "url": "https://openreview.net/forum?id=WQsaxpFutF",
+      "date": "2025-09-18",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "Nh1mW8sYd3",
+      "title": "DiffER$^2$: Diffusion Ensembles for Retrosynthesis Prediction with SMILES Adapted Particle Guidance",
+      "url": "https://openreview.net/forum?id=Nh1mW8sYd3",
+      "date": "2025-09-18",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "0R6HLWvWYk",
+      "title": "Test-Time Adaptation without Source Data for Out-of-Domain Bioactivity Prediction",
+      "url": "https://openreview.net/forum?id=0R6HLWvWYk",
+      "date": "2025-09-18",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Poster",
+      "venue_id": "ICLR.cc/2026/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "UBPZSdsztb",
+      "title": "Comparative Analysis of Template-Based and Neural Network Approaches for Computer-Aided Retrosynthesis: ASKCOS vs. IBM RXN",
+      "url": "https://openreview.net/forum?id=UBPZSdsztb",
+      "date": "2025-09-11",
+      "public_date": "2025-09-17",
+      "venue": "Agents4Science 2025 Conference Desk Rejected Submission",
+      "venue_id": "Agents4Science/2025/Conference/Desk_Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "qN0Il4dtGg",
+      "title": "HARMAP: Hierarchical Atomic Representation for Materials Property Prediction",
+      "url": "https://openreview.net/forum?id=qN0Il4dtGg",
+      "date": "2025-09-10",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "b3wLATJtAH",
+      "title": "Learning to Align Molecules and Proteins: A Geometry-Aware Approach to Binding Affinity",
+      "url": "https://openreview.net/forum?id=b3wLATJtAH",
+      "date": "2025-09-04",
+      "public_date": "2025-10-06",
+      "venue": "NeurIPS 2025 2nd Workshop FM4LS Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/FM4LS",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "vbCzpP7eQy",
+      "title": "RetroAux: Boosting Retrosynthesis via Molecular Property-Aware Learning",
+      "url": "https://openreview.net/forum?id=vbCzpP7eQy",
+      "date": "2025-09-03",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "F05pziBqOg",
+      "title": "Chemist-aligned retrosynthesis by ensembling diverse inductive bias models",
+      "url": "https://openreview.net/forum?id=F05pziBqOg",
+      "date": "2025-08-25",
+      "public_date": "2025-10-15",
+      "venue": "NeurIPS2025-AI4Science Oral",
+      "venue_id": "NeurIPS.cc/2025/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "3WZkuWlzmN",
+      "title": "Cross Modal Predictive architecture for Material Property prediction",
+      "url": "https://openreview.net/forum?id=3WZkuWlzmN",
+      "date": "2025-08-24",
+      "public_date": "2025-10-29",
+      "venue": "AI4Mat-NeurIPS-2025 Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "MHyw9gyZi2",
+      "title": "Trustworthy Retrosynthesis: Eliminating Hallucinations with a Diverse Ensemble of Reaction Scorers",
+      "url": "https://openreview.net/forum?id=MHyw9gyZi2",
+      "date": "2025-08-21",
+      "public_date": "2025-10-15",
+      "venue": "NeurIPS2025-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "H7YqXQL4C6",
+      "title": "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+      "url": "https://openreview.net/forum?id=H7YqXQL4C6",
+      "date": "2025-08-21",
+      "public_date": "2025-10-15",
+      "venue": "NeurIPS2025-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LftFQ35l47",
+      "title": "deCIFer: Crystal Structure Prediction from Powder Diffraction Data using Autoregressive Language Models",
+      "url": "https://openreview.net/forum?id=LftFQ35l47",
+      "date": "2025-08-08",
+      "public_date": "2025-09-14",
+      "venue": "Accepted by TMLR",
+      "venue_id": "TMLR",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "eUiZg9uUt4",
+      "title": "An exploration of dataset bias in single-step retrosynthesis prediction",
+      "url": "https://openreview.net/forum?id=eUiZg9uUt4",
+      "date": "2025-08-07",
+      "public_date": "2025-10-29",
+      "venue": "AI4Mat-NeurIPS-2025 Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/AI4Mat",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "dlQzbaYTsW",
+      "title": "TICA-Based Free Energy Matching for Machine-Learned Molecular Dynamics",
+      "url": "https://openreview.net/forum?id=dlQzbaYTsW",
+      "date": "2025-05-27",
+      "public_date": "2025-07-12",
+      "venue": "FM4LS 2025",
+      "venue_id": "ICML.cc/2025/Workshop/FM4LS",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "5lpHuVsE94",
+      "title": "ToxBench: A Binding Affinity Prediction Benchmark with AB-FEP-Calculated Labels for Human Estrogen Receptor Alpha",
+      "url": "https://openreview.net/forum?id=5lpHuVsE94",
+      "date": "2025-05-21",
+      "public_date": "2025-07-18",
+      "venue": "GenBio 2025 Poster",
+      "venue_id": "ICML.cc/2025/Workshop/GenBio",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "dzDt8eadLs",
+      "title": "Retro-Expert: Collaborative Reasoning for Interpretable Retrosynthesis",
+      "url": "https://openreview.net/forum?id=dzDt8eadLs",
+      "date": "2025-05-19",
+      "public_date": "2025-07-29",
+      "venue": "ACL ARR 2025 May Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2025/May/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "lzLo5bRgQC",
+      "title": "DecoyDB: A Dataset for Graph Contrastive Learning in Protein-Ligand Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=lzLo5bRgQC",
+      "date": "2025-05-12",
+      "public_date": "2025-10-30",
+      "venue": "NeurIPS 2025 Datasets and Benchmarks Track poster",
+      "venue_id": "NeurIPS.cc/2025/Datasets_and_Benchmarks_Track",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "Swik6KVV4u",
+      "title": "Enhancing Bioactivity Prediction via Spatial Emptiness Representation of Protein-ligand Complex and Union of Multiple Pockets",
+      "url": "https://openreview.net/forum?id=Swik6KVV4u",
+      "date": "2025-05-11",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "30iBKSQMXn",
+      "title": "Retro-R1: LLM-based Agentic Retrosynthesis",
+      "url": "https://openreview.net/forum?id=30iBKSQMXn",
+      "date": "2025-05-11",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "5nBwN6XQOD",
+      "title": "Zero-shot protein stability prediction by inverse folding models: a free energy interpretation",
+      "url": "https://openreview.net/forum?id=5nBwN6XQOD",
+      "date": "2025-05-09",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "m7uj1vIZ62",
+      "title": "Retrosynthesis Planning via Worst-path Policy Optimisation in Tree-structured MDPs",
+      "url": "https://openreview.net/forum?id=m7uj1vIZ62",
+      "date": "2025-05-07",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "GQXeLGYMda",
+      "title": "FEAT: Free energy Estimators with Adaptive Transport",
+      "url": "https://openreview.net/forum?id=GQXeLGYMda",
+      "date": "2025-05-07",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "cdgVrsu7T5",
+      "title": "RETRO SYNFLOW: Discrete Flow-Matching for Accurate and Diverse Single-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=cdgVrsu7T5",
+      "date": "2025-05-05",
+      "public_date": "2025-10-29",
+      "venue": "NeurIPS 2025 poster",
+      "venue_id": "NeurIPS.cc/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "hMbZSJz1C3",
+      "title": "Accelerating crystal structure prediction and liquid electrolyte simulations using actively-trained moment tensor potentials",
+      "url": "https://openreview.net/forum?id=hMbZSJz1C3",
+      "date": "2025-03-14",
+      "public_date": "2025-04-21",
+      "venue": "AI4X 2025 Poster",
+      "venue_id": "AI4X.cc/2025/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "VTKPOXKXlx",
+      "title": "FreeFlow: Latent Flow Matching for Free Energy Difference Estimation",
+      "url": "https://openreview.net/forum?id=VTKPOXKXlx",
+      "date": "2025-02-24",
+      "public_date": "2025-03-06",
+      "venue": "ICLR 2025 Workshop MLMP Poster",
+      "venue_id": "ICLR.cc/2025/Workshop/MLMP",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "ANMm248cHY",
+      "title": "ChatProp: Integrating Large Language Models and Physical Chemistry Tools for Enhanced Material Property Prediction",
+      "url": "https://openreview.net/forum?id=ANMm248cHY",
+      "date": "2025-02-14",
+      "public_date": "2025-05-09",
+      "venue": "ACL ARR 2025 February Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2025/February/Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "pN4Zg6HBlq",
+      "title": "MATMMFUSE: MULTI-MODAL FUSION MODEL FOR MATERIAL PROPERTY PREDICTION",
+      "url": "https://openreview.net/forum?id=pN4Zg6HBlq",
+      "date": "2025-02-06",
+      "public_date": "2025-04-09",
+      "venue": "AI4MAT-ICLR-2025 Poster",
+      "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "ntXAzxKPTh",
+      "title": "MatFusion: A Multi-Modal Framework Bridging LLMs and Structural Embeddings for Experimental Materials Property Prediction",
+      "url": "https://openreview.net/forum?id=ntXAzxKPTh",
+      "date": "2025-02-04",
+      "public_date": "2025-04-09",
+      "venue": "AI4MAT-ICLR-2025 Poster",
+      "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "Qjv1Kh1vs8",
+      "title": "MoMa: A Modular Deep Learning Framework for Material Property Prediction",
+      "url": "https://openreview.net/forum?id=Qjv1Kh1vs8",
+      "date": "2025-02-02",
+      "public_date": "2025-04-09",
+      "venue": "AI4MAT-ICLR-2025 Spotlight",
+      "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "GL5yVOFPpf",
+      "title": "Towards Extrapolation in Deep Material Property Regression",
+      "url": "https://openreview.net/forum?id=GL5yVOFPpf",
+      "date": "2025-02-01",
+      "public_date": "2025-04-09",
+      "venue": "AI4MAT-ICLR-2025 Spotlight",
+      "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "sqjQ6p56GR",
+      "title": "Learning Condensed Graph via Differentiable Atom Mapping for Reaction Yield Prediction",
+      "url": "https://openreview.net/forum?id=sqjQ6p56GR",
+      "date": "2025-01-24",
+      "public_date": "2025-06-18",
+      "venue": "ICML 2025 poster",
+      "venue_id": "ICML.cc/2025/Conference",
+      "topics": [
+        "yield"
+      ]
+    },
+    {
+      "forum": "dgU6hevzPd",
+      "title": "APEX: An Automated Cloud-Native Material Property Explorer",
+      "url": "https://openreview.net/forum?id=dgU6hevzPd",
+      "date": "2025-01-19",
+      "public_date": "2025-04-21",
+      "venue": "AI4X 2025 Poster",
+      "venue_id": "AI4X.cc/2025/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "xVBfdltHST",
+      "title": "Relational Invariant Learning for Robust Solvation Free Energy Prediction",
+      "url": "https://openreview.net/forum?id=xVBfdltHST",
+      "date": "2025-01-10",
+      "public_date": "2025-06-18",
+      "venue": "ICML 2025 spotlightposter",
+      "venue_id": "ICML.cc/2025/Conference",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "hPbJbp6x1l",
+      "title": "[AML] Unified Material Transformer as Scalable Material Property Predictor",
+      "url": "https://openreview.net/forum?id=hPbJbp6x1l",
+      "date": "2024-12-11",
+      "public_date": "2024-12-12",
+      "venue": "THU 2024 Winter AML Submission",
+      "venue_id": "tsinghua.edu.cn/THU/2024/Winter/AML/Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "ZBrSA6x9HN",
+      "title": "Learning Protocols for Non-Equilibrium Conformational Free-Energy Estimation Using Optimal Transport and Conditional Flow Matching",
+      "url": "https://openreview.net/forum?id=ZBrSA6x9HN",
+      "date": "2024-10-02",
+      "public_date": "2024-12-01",
+      "venue": "AIDrugX Poster",
+      "venue_id": "NeurIPS.cc/2024/Workshop/AIDrugX",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "GOoxdIkniP",
+      "title": "RetroDiff: Retrosynthesis as Multi-stage Distribution Interpolation",
+      "url": "https://openreview.net/forum?id=GOoxdIkniP",
+      "date": "2024-10-02",
+      "public_date": "2025-02-07",
+      "venue": "AISTATS 2025 Poster",
+      "venue_id": "aistats.org/AISTATS/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "czVzzXPCkw",
+      "title": "ON EXTRAPOLATION IN MATERIAL PROPERTY REGRESSION",
+      "url": "https://openreview.net/forum?id=czVzzXPCkw",
+      "date": "2024-09-28",
+      "public_date": "2024-10-04",
+      "venue": "Submitted to ICLR 2025",
+      "venue_id": "ICLR.cc/2025/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "b89OyrljJD",
+      "title": "How Well Can LLMs Synthesize Molecules? An LLM-Powered Framework for Multi-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=b89OyrljJD",
+      "date": "2024-09-28",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2025/Conference/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "D2EdWRWEQo",
+      "title": "FreeFlow: Latent Flow Matching for Free Energy Difference Estimation",
+      "url": "https://openreview.net/forum?id=D2EdWRWEQo",
+      "date": "2024-09-28",
+      "public_date": "2024-10-04",
+      "venue": "Submitted to ICLR 2025",
+      "venue_id": "ICLR.cc/2025/Conference/Rejected_Submission",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "o1efpbvR6v",
+      "title": "Application of Metric Transformation in One-Step Retrosynthesis",
+      "url": "https://openreview.net/forum?id=o1efpbvR6v",
+      "date": "2024-09-27",
+      "public_date": "2024-10-04",
+      "venue": "Submitted to ICLR 2025",
+      "venue_id": "ICLR.cc/2025/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "S8gbnkCgxZ",
+      "title": "Redefining the task of Bioactivity Prediction",
+      "url": "https://openreview.net/forum?id=S8gbnkCgxZ",
+      "date": "2024-09-27",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Poster",
+      "venue_id": "ICLR.cc/2025/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "J6e4hurEKd",
+      "title": "RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning",
+      "url": "https://openreview.net/forum?id=J6e4hurEKd",
+      "date": "2024-09-27",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Poster",
+      "venue_id": "ICLR.cc/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "A1HhtITVEi",
+      "title": "CheapNet: Cross-attention on Hierarchical representations for Efficient protein-ligand binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=A1HhtITVEi",
+      "date": "2024-09-27",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Poster",
+      "venue_id": "ICLR.cc/2025/Conference",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "rQ7fz9NO7f",
+      "title": "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+      "url": "https://openreview.net/forum?id=rQ7fz9NO7f",
+      "date": "2024-09-25",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Poster",
+      "venue_id": "ICLR.cc/2025/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "p3uRSmuJmX",
+      "title": "Directly Optimizing for Synthesizability in Generative Molecular Design using Retrosynthesis Models",
+      "url": "https://openreview.net/forum?id=p3uRSmuJmX",
+      "date": "2024-09-25",
+      "public_date": "2024-12-01",
+      "venue": "AIDrugX Spotlight",
+      "venue_id": "NeurIPS.cc/2024/Workshop/AIDrugX",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "ewjN1MAnJi",
+      "title": "PDDFormer: Pairwise Distance Distribution Graph Transformer for Crystal Material Property Prediction",
+      "url": "https://openreview.net/forum?id=ewjN1MAnJi",
+      "date": "2024-09-22",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2025/Conference/Withdrawn_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "cph9TPjYtu",
+      "title": "Improving generalisability of 3D binding affinity models in low data regimes",
+      "url": "https://openreview.net/forum?id=cph9TPjYtu",
+      "date": "2024-09-10",
+      "public_date": "2024-11-02",
+      "venue": "Neurips 2024 Workshop FM4Science Poster",
+      "venue_id": "NeurIPS.cc/2024/Workshop/FM4Science",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "TSAeQSv9RI",
+      "title": "LLM4Mat-Bench: Benchmarking Large Language Models for Materials Property Prediction",
+      "url": "https://openreview.net/forum?id=TSAeQSv9RI",
+      "date": "2024-09-06",
+      "public_date": "2024-11-03",
+      "venue": "AI4Mat-NeurIPS-2024",
+      "venue_id": "NeurIPS.cc/2024/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "J63EUbjhSw",
+      "title": "Directly Optimizing for Synthesizability in Generative Molecular Design using Retrosynthesis Models",
+      "url": "https://openreview.net/forum?id=J63EUbjhSw",
+      "date": "2024-09-04",
+      "public_date": "2024-11-03",
+      "venue": "AI4Mat-NeurIPS-2024",
+      "venue_id": "NeurIPS.cc/2024/Workshop/AI4Mat",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "lrqHtZvSZW",
+      "title": "DiffER: Categorical Diffusion Models for Chemical Retrosynthesis",
+      "url": "https://openreview.net/forum?id=lrqHtZvSZW",
+      "date": "2024-08-22",
+      "public_date": "2024-12-01",
+      "venue": "AIDrugX Poster",
+      "venue_id": "NeurIPS.cc/2024/Workshop/AIDrugX",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "fcF0Kal3Tc",
+      "title": "Aligned Diffusion Models for Retrosynthesis",
+      "url": "https://openreview.net/forum?id=fcF0Kal3Tc",
+      "date": "2024-05-27",
+      "public_date": "2024-06-26",
+      "venue": "ICML 2024 Workshop GRaM",
+      "venue_id": "ICML.cc/2024/Workshop/GRaM",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "XBfzSixv6c",
+      "title": "Aligned Diffusion Models for Retrosynthesis",
+      "url": "https://openreview.net/forum?id=XBfzSixv6c",
+      "date": "2024-05-27",
+      "public_date": "2024-07-02",
+      "venue": "2nd SPIGM @ ICML Poster",
+      "venue_id": "ICML.cc/2024/Workshop/SPIGM",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "ZL6F7aOC5B",
+      "title": "Out-of-Distribution Validation for Bioactivity Prediction  in Drug Discovery: Lessons from Materials Science",
+      "url": "https://openreview.net/forum?id=ZL6F7aOC5B",
+      "date": "2024-05-22",
+      "public_date": "2024-05-24",
+      "venue": "ML4LMS Poster",
+      "venue_id": "ICML.cc/2024/Workshop/ML4LMS",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "cZ3DNjkS3d",
+      "title": "DualBind: A Dual-Loss Framework for Protein-Ligand Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=cZ3DNjkS3d",
+      "date": "2024-05-20",
+      "public_date": "2024-05-24",
+      "venue": "ML4LMS Poster",
+      "venue_id": "ICML.cc/2024/Workshop/ML4LMS",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "7gf6oGdKPU",
+      "title": "Retrieval-Retro: Retrieval-based Inorganic Retrosynthesis with Expert Knowledge",
+      "url": "https://openreview.net/forum?id=7gf6oGdKPU",
+      "date": "2024-05-15",
+      "public_date": "2024-11-06",
+      "venue": "NeurIPS 2024 poster",
+      "venue_id": "NeurIPS.cc/2024/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "7dFNLpIjOt",
+      "title": "Improving Route Development Using Convergent Retrosynthesis Planning",
+      "url": "https://openreview.net/forum?id=7dFNLpIjOt",
+      "date": "2024-05-14",
+      "public_date": "2024-05-24",
+      "venue": "ML4LMS Poster",
+      "venue_id": "ICML.cc/2024/Workshop/ML4LMS",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "I9huj1zxRj",
+      "title": "Re-evaluating Retrosynthesis Algorithms with Syntheseus",
+      "url": "https://openreview.net/forum?id=I9huj1zxRj",
+      "date": "2024-02-08",
+      "public_date": "2024-05-02",
+      "venue": "DMLR @ ICLR 2024",
+      "venue_id": "ICLR.cc/2024/Workshop/DMLR",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "mbWFGYUnzI",
+      "title": "Re-evaluating Retrosynthesis Algorithms with Syntheseus",
+      "url": "https://openreview.net/forum?id=mbWFGYUnzI",
+      "date": "2024-02-06",
+      "public_date": "2024-04-29",
+      "venue": "GEM Poster",
+      "venue_id": "ICLR.cc/2024/Workshop/GEM",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Hy2pYcXfyl",
+      "title": "RetroGFN: Diverse and Feasible Retrosynthesis using GFlowNets",
+      "url": "https://openreview.net/forum?id=Hy2pYcXfyl",
+      "date": "2024-02-05",
+      "public_date": "2024-04-29",
+      "venue": "GEM Poster",
+      "venue_id": "ICLR.cc/2024/Workshop/GEM",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "VRv8KjJNuj",
+      "title": "Equivariant Diffusion for Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=VRv8KjJNuj",
+      "date": "2024-02-01",
+      "public_date": "2024-06-06",
+      "venue": "ICML 2024 Poster",
+      "venue_id": "ICML.cc/2024/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "Q2m6H1N2M0",
+      "title": "On AI-centered Retrosynthetic Planning: a Survey",
+      "url": "https://openreview.net/forum?id=Q2m6H1N2M0",
+      "date": "2023-12-14",
+      "public_date": "2024-01-04",
+      "venue": "Rejected by TMLR",
+      "venue_id": "TMLR/Rejected",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "XIxcglPy9c",
+      "title": "Latent Space Simulator for Unveiling Molecular Free Energy Landscapes and Predicting Transition Dynamics",
+      "url": "https://openreview.net/forum?id=XIxcglPy9c",
+      "date": "2023-10-01",
+      "public_date": "2023-10-28",
+      "venue": "NeurIPS2023-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Science",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "W5U18rgtpg",
+      "title": "Re-evaluating Retrosynthesis Algorithms with Syntheseus",
+      "url": "https://openreview.net/forum?id=W5U18rgtpg",
+      "date": "2023-10-01",
+      "public_date": "2023-10-28",
+      "venue": "NeurIPS2023-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "JaOXEQWqwK",
+      "title": "TrustAffinity: accurate, reliable and scalable out-of-distribution protein-ligand binding affinity prediction using trustworthy deep learning",
+      "url": "https://openreview.net/forum?id=JaOXEQWqwK",
+      "date": "2023-10-01",
+      "public_date": "2023-12-10",
+      "venue": "AI4D3 2023 Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4D3",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "BTeWafMOyt",
+      "title": "Latent Conservative Objective Models for Data-Driven Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=BTeWafMOyt",
+      "date": "2023-10-01",
+      "public_date": "2023-11-03",
+      "venue": "AI4Mat-2023 Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "waQPqifiuC",
+      "title": "Data Efficient Training for Materials Property Prediction Using Active Learning Querying",
+      "url": "https://openreview.net/forum?id=waQPqifiuC",
+      "date": "2023-09-29",
+      "public_date": "2023-11-03",
+      "venue": "AI4Mat-2023 Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "oRP132De46",
+      "title": "Retro-fallback: retrosynthetic planning in an uncertain world",
+      "url": "https://openreview.net/forum?id=oRP132De46",
+      "date": "2023-09-29",
+      "public_date": "2023-10-28",
+      "venue": "NeurIPS2023-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "NYbnVDuKuC",
+      "title": "Machine Learning Guided AQFEP: A Fast & Efficient Absolute Free Energy Perturbation Solution for Virtual Screening",
+      "url": "https://openreview.net/forum?id=NYbnVDuKuC",
+      "date": "2023-09-28",
+      "public_date": "2023-12-10",
+      "venue": "AI4D3 2023 Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4D3",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "ChU7MCLk1J",
+      "title": "Binding Oracle: Fine-Tuning From Stability to Binding Free Energy",
+      "url": "https://openreview.net/forum?id=ChU7MCLk1J",
+      "date": "2023-09-28",
+      "public_date": "2023-10-27",
+      "venue": "GenBio@NeurIPS2023 Spotlight",
+      "venue_id": "NeurIPS.cc/2023/Workshop/GenBio",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "Az6WpRVkuQ",
+      "title": "Embracing assay heterogeneity with neural processes for markedly improved bioactivity predictions",
+      "url": "https://openreview.net/forum?id=Az6WpRVkuQ",
+      "date": "2023-09-25",
+      "public_date": "2023-12-10",
+      "venue": "AI4D3 2023 Oral",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4D3",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "OnLAftJkhV",
+      "title": "Latent Conservative Objective Models for Offline Data-Driven Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=OnLAftJkhV",
+      "date": "2023-09-24",
+      "public_date": "2023-10-13",
+      "venue": "Submitted to ICLR 2024",
+      "venue_id": "ICLR.cc/2024/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "m5xRuGtQEi",
+      "title": "Latent Space Simulator for Unveiling Molecular Free Energy Landscapes and Predicting Transition Dynamics",
+      "url": "https://openreview.net/forum?id=m5xRuGtQEi",
+      "date": "2023-09-23",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2024/Conference/Withdrawn_Submission",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "h7DGnWGeos",
+      "title": "Active Retrosynthetic Planning Aware of Route Quality",
+      "url": "https://openreview.net/forum?id=h7DGnWGeos",
+      "date": "2023-09-23",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 poster",
+      "venue_id": "ICLR.cc/2024/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "MNwXif6AWA",
+      "title": "Periodic Set Transformer: Material Property Prediction from Continuous Isometry Invariants",
+      "url": "https://openreview.net/forum?id=MNwXif6AWA",
+      "date": "2023-09-23",
+      "public_date": "2023-10-13",
+      "venue": "Submitted to ICLR 2024",
+      "venue_id": "ICLR.cc/2024/Conference/Rejected_Submission",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "dUTwqiEked",
+      "title": "RetroDiff: Retrosynthesis as Multi-stage Distribution Interpolation",
+      "url": "https://openreview.net/forum?id=dUTwqiEked",
+      "date": "2023-09-22",
+      "public_date": "2023-10-13",
+      "venue": "Submitted to ICLR 2024",
+      "venue_id": "ICLR.cc/2024/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "PsVZK0hvWk",
+      "title": "RetroBridge: Modeling Retrosynthesis with Markov Bridges",
+      "url": "https://openreview.net/forum?id=PsVZK0hvWk",
+      "date": "2023-09-22",
+      "public_date": "2023-12-10",
+      "venue": "AI4D3 2023 Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4D3",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "IQURgB6PZx",
+      "title": "RetroBridge: Modeling Retrosynthesis with Markov Bridges",
+      "url": "https://openreview.net/forum?id=IQURgB6PZx",
+      "date": "2023-09-22",
+      "public_date": "2023-10-28",
+      "venue": "NeurIPS2023-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "8jKuUHsndT",
+      "title": "Re-evaluating Retrosynthesis Algorithms with Syntheseus",
+      "url": "https://openreview.net/forum?id=8jKuUHsndT",
+      "date": "2023-09-22",
+      "public_date": "2023-10-13",
+      "venue": "Submitted to ICLR 2024",
+      "venue_id": "ICLR.cc/2024/Conference/Rejected_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "2H1oU6VD4H",
+      "title": "Molecule-edit templates for efficient and accurate retrosynthesis prediction",
+      "url": "https://openreview.net/forum?id=2H1oU6VD4H",
+      "date": "2023-09-21",
+      "public_date": "2023-10-28",
+      "venue": "NeurIPS2023-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2023/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "igUP5kQRij",
+      "title": "Retrosynthesis Prediction via Search in (Hyper) Graph",
+      "url": "https://openreview.net/forum?id=igUP5kQRij",
+      "date": "2023-09-20",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 Conference Withdrawn Submission",
+      "venue_id": "ICLR.cc/2024/Conference/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "dl0u4ODCuW",
+      "title": "Retro-fallback: retrosynthetic planning in an uncertain world",
+      "url": "https://openreview.net/forum?id=dl0u4ODCuW",
+      "date": "2023-09-20",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 poster",
+      "venue_id": "ICLR.cc/2024/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "770DetV8He",
+      "title": "RetroBridge: Modeling Retrosynthesis with Markov Bridges",
+      "url": "https://openreview.net/forum?id=770DetV8He",
+      "date": "2023-09-19",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 spotlight",
+      "venue_id": "ICLR.cc/2024/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "BnQY9XiRAS",
+      "title": "Complete and Efficient Graph Transformers for Crystal Material Property Prediction",
+      "url": "https://openreview.net/forum?id=BnQY9XiRAS",
+      "date": "2023-09-18",
+      "public_date": "2023-10-13",
+      "venue": "ICLR 2024 poster",
+      "venue_id": "ICLR.cc/2024/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "HCGzA07AjJ",
+      "title": "MARS: A Motif-based Autoregressive Model for Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=HCGzA07AjJ",
+      "date": "2023-06-30",
+      "public_date": "2023-07-03",
+      "venue": "Withdrawn by Authors",
+      "venue_id": "TMLR/Withdrawn_Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "JjZV2tDuh4",
+      "title": "Benchmarking Deep Learning for Molecule Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=JjZV2tDuh4",
+      "date": "2023-06-15",
+      "public_date": null,
+      "venue": "Sunstella 2023 Summer Research Camp Submission",
+      "venue_id": "Sunstella/2023/Summer_Research_Camp/Submission",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "DNdN26m2Jk",
+      "title": "Crystal Structure Prediction by Joint Equivariant Diffusion",
+      "url": "https://openreview.net/forum?id=DNdN26m2Jk",
+      "date": "2023-05-07",
+      "public_date": "2023-11-02",
+      "venue": "NeurIPS 2023 poster",
+      "venue_id": "NeurIPS.cc/2023/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "rAGYFtTQ-Zz",
+      "title": "Latent Conservative Objective Models for Offline Data-Driven Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=rAGYFtTQ-Zz",
+      "date": "2023-02-12",
+      "public_date": "2023-04-21",
+      "venue": "ml4materials-iclr2023 Poster",
+      "venue_id": "ICLR.cc/2023/Workshop/ML4Materials",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "VPByphdu24j",
+      "title": "Crystal Structure Prediction by Joint Equivariant Diffusion on Lattices and Fractional Coordinates",
+      "url": "https://openreview.net/forum?id=VPByphdu24j",
+      "date": "2023-02-12",
+      "public_date": "2023-04-21",
+      "venue": "ml4materials-iclr2023 Oral",
+      "venue_id": "ICLR.cc/2023/Workshop/ML4Materials",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "EbCzZLQrE7R",
+      "title": "Learning single-step retrosynthesis with simulated reactions",
+      "url": "https://openreview.net/forum?id=EbCzZLQrE7R",
+      "date": "2023-02-12",
+      "public_date": "2023-04-21",
+      "venue": "ml4materials-iclr2023 Poster",
+      "venue_id": "ICLR.cc/2023/Workshop/ML4Materials",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "BU0qGUMemSY",
+      "title": "Accurate Free Energy Estimations of Molecular Systems Via Flow-based Targeted Free Energy Perturbation",
+      "url": "https://openreview.net/forum?id=BU0qGUMemSY",
+      "date": "2023-02-10",
+      "public_date": "2023-05-05",
+      "venue": "ICLR 2023 - MLDD Poster",
+      "venue_id": "ICLR.cc/2023/Workshop/MLDD",
+      "topics": [
+        "free-energy"
+      ]
+    },
+    {
+      "forum": "BWm4IrBRdHp",
+      "title": "RetroG: Retrosynthetic Planning with Tree Search and Graph Learning",
+      "url": "https://openreview.net/forum?id=BWm4IrBRdHp",
+      "date": "2023-02-09",
+      "public_date": "2023-05-05",
+      "venue": "ICLR 2023 - MLDD Poster",
+      "venue_id": "ICLR.cc/2023/Workshop/MLDD",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "qszhULcjUh",
+      "title": "Retrosynthetic Planning with Dual Value Networks",
+      "url": "https://openreview.net/forum?id=qszhULcjUh",
+      "date": "2023-01-26",
+      "public_date": "2023-06-15",
+      "venue": "ICML 2023 Poster",
+      "venue_id": "ICML.cc/2023/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "cnILy0dQUr",
+      "title": "FusionRetro: Molecule Representation Fusion via In-Context Learning for Retrosynthetic Planning",
+      "url": "https://openreview.net/forum?id=cnILy0dQUr",
+      "date": "2023-01-23",
+      "public_date": "2023-06-15",
+      "venue": "ICML 2023 Poster",
+      "venue_id": "ICML.cc/2023/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "kLzFuf4GoC-",
+      "title": "Retrosynthesis Prediction Revisited",
+      "url": "https://openreview.net/forum?id=kLzFuf4GoC-",
+      "date": "2022-09-27",
+      "public_date": "2022-10-21",
+      "venue": "AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2022/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "dkJwZxvtUtC",
+      "title": "Element-Wise Formulation of Inorganic Retrosynthesis",
+      "url": "https://openreview.net/forum?id=dkJwZxvtUtC",
+      "date": "2022-09-27",
+      "public_date": "2022-11-22",
+      "venue": "AI4Mat 2022 Spotlight",
+      "venue_id": "NeurIPS.cc/2022/Workshop/AI4Mat",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LjdtY0hM7tf",
+      "title": "Mind the Retrosynthesis Gap: Bridging the divide between Single-step and Multi-step Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=LjdtY0hM7tf",
+      "date": "2022-09-27",
+      "public_date": "2022-10-21",
+      "venue": "AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2022/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "8YEB51L_vwV",
+      "title": "Differential top-k learning for template-based single-step retrosynthesis",
+      "url": "https://openreview.net/forum?id=8YEB51L_vwV",
+      "date": "2022-09-27",
+      "public_date": "2022-11-22",
+      "venue": "AI4Mat 2022 Spotlight",
+      "venue_id": "NeurIPS.cc/2022/Workshop/AI4Mat",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "9JjGZsDvHb",
+      "title": "Metro: Memory-Enhanced Transformer for Retrosynthetic Planning via Reaction Tree",
+      "url": "https://openreview.net/forum?id=9JjGZsDvHb",
+      "date": "2022-09-22",
+      "public_date": "2022-09-29",
+      "venue": "Submitted to ICLR 2023",
+      "venue_id": "ICLR.cc/2023/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Bmk_Gyhxx1A",
+      "title": "Enhancing diversity in language based models for single-step retrosynthesis",
+      "url": "https://openreview.net/forum?id=Bmk_Gyhxx1A",
+      "date": "2022-07-25",
+      "public_date": null,
+      "venue": "OpenReview.net/Anonymous_Preprint",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Gc5oq8sr6A3",
+      "title": "Bias in the Benchmark: Systematic experimental errors in bioactivity databases confound multi-task and meta-learning algorithms",
+      "url": "https://openreview.net/forum?id=Gc5oq8sr6A3",
+      "date": "2022-05-21",
+      "public_date": "2022-06-15",
+      "venue": "ICML-AI4Science Poster",
+      "venue_id": "ICML.cc/2022/Workshop/AI4Science",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "pqCT3L-BU9T",
+      "title": "Periodic Graph Transformers for Crystal Material Property Prediction",
+      "url": "https://openreview.net/forum?id=pqCT3L-BU9T",
+      "date": "2022-05-16",
+      "public_date": null,
+      "venue": "NeurIPS 2022 Accept",
+      "venue_id": "NeurIPS.cc/2022/Conference",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "ofwkaIWFqqv",
+      "title": "GRASP: Navigating Retrosynthetic Planning with Goal-driven Policy",
+      "url": "https://openreview.net/forum?id=ofwkaIWFqqv",
+      "date": "2022-05-16",
+      "public_date": null,
+      "venue": "NeurIPS 2022 Accept",
+      "venue_id": "NeurIPS.cc/2022/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "yzlif16IASM",
+      "title": "MetaDTA: Meta-learning-based drug-target binding affinity prediction",
+      "url": "https://openreview.net/forum?id=yzlif16IASM",
+      "date": "2022-03-31",
+      "public_date": "2022-04-05",
+      "venue": "MLDD Poster",
+      "venue_id": "ICLR.cc/2022/Workshop/MLDD",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "rMbLORc8oS",
+      "title": "SemiRetro: Semi-template framework boosts deep retrosynthesis prediction",
+      "url": "https://openreview.net/forum?id=rMbLORc8oS",
+      "date": "2021-09-29",
+      "public_date": "2021-10-06",
+      "venue": "ICLR 2022 Submitted",
+      "venue_id": "ICLR.cc/2022/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LLHwQh9zEb",
+      "title": "Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction",
+      "url": "https://openreview.net/forum?id=LLHwQh9zEb",
+      "date": "2021-09-29",
+      "public_date": "2021-10-06",
+      "venue": "ICLR 2022 Submitted",
+      "venue_id": "ICLR.cc/2022/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "UVdSYXMNdOe",
+      "title": "Scalable Bayesian Optimization Accelerates Process Optimization of Penicillin Production",
+      "url": "https://openreview.net/forum?id=UVdSYXMNdOe",
+      "date": "2021-09-24",
+      "public_date": "2021-10-22",
+      "venue": "NeurIPS-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2021/Workshop/AI4Science",
+      "topics": [
+        "penicillin"
+      ]
+    },
+    {
+      "forum": "-xfwlkmsfN1",
+      "title": "Human-in-the-loop for a Disconnection Aware Retrosynthesis",
+      "url": "https://openreview.net/forum?id=-xfwlkmsfN1",
+      "date": "2021-09-24",
+      "public_date": "2021-10-22",
+      "venue": "NeurIPS-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2021/Workshop/AI4Science",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "yGKi6deX8bX",
+      "title": "Towards understanding retrosynthesis by energy-based models",
+      "url": "https://openreview.net/forum?id=yGKi6deX8bX",
+      "date": "2021-05-21",
+      "public_date": "2021-11-09",
+      "venue": "NeurIPS 2021 Poster",
+      "venue_id": "NeurIPS.cc/2021/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "SnONpXZ_uQ_",
+      "title": "Learning Graph Models for Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=SnONpXZ_uQ_",
+      "date": "2021-05-21",
+      "public_date": "2021-11-09",
+      "venue": "NeurIPS 2021 Poster",
+      "venue_id": "NeurIPS.cc/2021/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "LyjH88yV7F",
+      "title": "Learning Graph Models for Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=LyjH88yV7F",
+      "date": "2021-05-21",
+      "public_date": "2021-11-09",
+      "venue": "NeurIPS 2021 Poster",
+      "venue_id": "NeurIPS.cc/2021/Conference",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "V6WHleb2nV",
+      "title": "Data Transfer Approaches to Improve Seq-to-Seq Retrosynthesis",
+      "url": "https://openreview.net/forum?id=V6WHleb2nV",
+      "date": "2020-09-28",
+      "public_date": "2020-10-02",
+      "venue": "ICLR.cc/2021/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "JHx9ZDCQEA",
+      "title": "PolyRetro: Few-shot Polymer Retrosynthesis via Domain Adaptation",
+      "url": "https://openreview.net/forum?id=JHx9ZDCQEA",
+      "date": "2020-09-28",
+      "public_date": "2020-10-02",
+      "venue": "ICLR.cc/2021/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "3u3ny6UYmjy",
+      "title": "RetCL: A Selection-based Approach for Retrosynthesis via Contrastive Learning",
+      "url": "https://openreview.net/forum?id=3u3ny6UYmjy",
+      "date": "2020-09-28",
+      "public_date": "2020-10-02",
+      "venue": "ICLR.cc/2021/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "0Hj3tFCSjUd",
+      "title": "Energy-based View of Retrosynthesis",
+      "url": "https://openreview.net/forum?id=0Hj3tFCSjUd",
+      "date": "2020-09-28",
+      "public_date": "2020-10-02",
+      "venue": "ICLR.cc/2021/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "S1e__ANKvB",
+      "title": "Molecular Graph Enhanced Transformer for Retrosynthesis Prediction",
+      "url": "https://openreview.net/forum?id=S1e__ANKvB",
+      "date": "2019-09-25",
+      "public_date": "2019-09-25",
+      "venue": "ICLR.cc/2020/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "BygfrANKvB",
+      "title": "Learning to Make Generalizable and Diverse Predictions for Retrosynthesis",
+      "url": "https://openreview.net/forum?id=BygfrANKvB",
+      "date": "2019-09-25",
+      "public_date": "2019-09-25",
+      "venue": "ICLR.cc/2020/Conference",
+      "venue_id": "",
+      "topics": [
+        "retrosynthesis"
+      ]
+    }
+  ]
+}
