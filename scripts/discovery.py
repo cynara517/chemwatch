@@ -58,6 +58,7 @@ def crossref_json(url):
             delay = int(hint) if hint.isdigit() else 5 * (attempt+1)
             if delay > 45:
                 raise
+            exc.close()
             time.sleep(max(1, delay))
 
 
