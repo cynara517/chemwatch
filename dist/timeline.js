@@ -1,7 +1,10 @@
 "use strict";
-const seriesNames = {dataset:"数据集家族", benchmark:"Benchmark 套件", materials:"Materials Cloud 数据集 DOI", csd:"CSD 晶体结构", chembl:"ChEMBL 活性记录"};
+const seriesNames = {
+  csd:"CSD 晶体结构", chembl:"ChEMBL 活性记录", materials:"Materials Cloud 数据集 DOI",
+  dataset:"已收录数据集家族", benchmark:"已收录 Benchmark 套件"
+};
 const seriesUnits = {dataset:"个家族",benchmark:"个套件",materials:"个 DOI",csd:"条结构",chembl:"条活性记录"};
-let seriesData, selectedSeries="dataset", timeMode="total", discoveryData;
+let seriesData, selectedSeries="csd", timeMode="total", discoveryData;
 const fmt = n => n == null ? "缺测" : n.toLocaleString("zh-CN");
 
 async function readPublicData(name) {
