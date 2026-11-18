@@ -2,10 +2,30 @@
 from pathlib import Path
 import hashlib
 import json
+import re
 import shutil
 import zipfile
 
 root = Path(__file__).resolve().parents[1]
+
+
+def stamp_frontend_assets(site):
+    index = site / "index.html"
+    html = index.read_text(encoding="utf-8")
+    # Only local style and script URLs are versioned. Data feeds keep stable URLs.
+    asset_url = r'(?P<attr>href|src)="(?P<path>[\w./-]+\.(?:css|js))(?:\?v=[0-9a-f]+)?"'
+
+    def versioned(match):
+        path = match["path"]
+        digest = hashlib.sha256((site / path).read_bytes()).hexdigest()[:16]
+        return f'{match["attr"]}="{path}?v={digest}"'
+
+    stamped = re.sub(asset_url, versioned, html)
+    if html != stamped:
+        index.write_text(stamped, encoding="utf-8")
+
+
+stamp_frontend_assets(root / "dist")
 target = root / "dist/downloads/chemwatch-toolkit.zip"
 target.parent.mkdir(parents=True, exist_ok=True)
 skill = root / "skills/chemwatch-monitor"
