@@ -1,0 +1,441 @@
+{
+  "uspto-raw": {
+    "name": "USPTO · Lowe patent reactions",
+    "description": "Reaction corpus extracted from US patents, used in reaction prediction and derived retrosynthesis datasets.",
+    "notes": "The patents span 1976 to September 2016. USPTO-50k and USPTO-Full share this source and all count as one family. Record counts and data licenses require verification for each edition.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Patent extraction",
+    "data_license": "Unverified",
+    "targets": [
+      "Reactant prediction",
+      "Reaction prediction"
+    ]
+  },
+  "uspto-50k": {
+    "name": "USPTO-50k",
+    "description": "A widely used single-step retrosynthesis dataset covering about 50,000 reactions in ten classes.",
+    "notes": "The name “50k” identifies the edition. The exact current count and the separate licenses for software and data require verification.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Processed patent data",
+    "data_license": "Unverified",
+    "targets": [
+      "Single-step retrosynthesis"
+    ]
+  },
+  "uspto-full": {
+    "name": "USPTO-Full · GLN edition",
+    "description": "GLN provides a cleaning, deduplication and splitting pipeline for large-scale single-step retrosynthesis.",
+    "notes": "Counts depend on the processed edition and split. Reactions may overlap across USPTO editions.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Processed patent data",
+    "data_license": "Unverified",
+    "targets": [
+      "Single-step retrosynthesis"
+    ]
+  },
+  "paroutes": {
+    "name": "PaRoutes",
+    "description": "A framework for evaluating multistep retrosynthesis, with reference routes and evaluation tools.",
+    "notes": "The n1 and n5 sets each contain 10,000 routes and may overlap. Their combined unique count is unknown. PaRoutes counts as one benchmark suite.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated patent routes",
+    "data_license": "Unverified",
+    "targets": [
+      "Multistep retrosynthesis",
+      "Route recovery",
+      "Route diversity"
+    ]
+  },
+  "ord": {
+    "name": "Open Reaction Database",
+    "description": "An open collection of reaction data with a standard schema that supports reaction-specific subsets.",
+    "notes": "Counted as one ongoing database. Individual Dataset files share this database, and dedicated coupling and heterocycle subsets still need curation.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Experiments, patents and other sources",
+    "data_license": "CC-BY-SA-4.0 (data)",
+    "targets": [
+      "Reaction conditions",
+      "Yield",
+      "Reaction data management"
+    ]
+  },
+  "buchwald-hartwig": {
+    "name": "Buchwald–Hartwig HTE",
+    "description": "High-throughput C–N coupling experiments from Ahneman and the Doyle group, widely used in yield prediction.",
+    "notes": "Processed tables and the full experiment and control records use different counting conventions. The exact count remains unverified. The heterocycle tag refers to additives.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "High-throughput experiments",
+    "data_license": "Unverified",
+    "targets": [
+      "Yield",
+      "C–N coupling",
+      "Heterocyclic additive effects"
+    ]
+  },
+  "suzuki-hte": {
+    "name": "Suzuki–Miyaura HTE · Perera",
+    "description": "High-throughput Suzuki–Miyaura C–C coupling experiments on a flow chemistry platform.",
+    "notes": "Processed files may share a repository with Buchwald–Hartwig HTE. The two collections come from distinct experimental campaigns.",
+    "count_note": "Experiment count reported in the original paper.",
+    "record_unit": "experiments",
+    "data_origin": "High-throughput flow chemistry",
+    "data_license": "Unverified",
+    "targets": [
+      "Yield",
+      "C–C coupling",
+      "Reaction condition optimization"
+    ]
+  },
+  "direct-arylation": {
+    "name": "Direct Arylation · EDBO",
+    "description": "Imidazole C–H arylation data from Shields and colleagues for Bayesian reaction optimization.",
+    "notes": "The data accompany the EDBO optimization software. Only the dataset contributes to the family count.",
+    "count_note": "A 12 × 4 × 4 × 3 × 3 experimental grid gives 1,728 conditions within this reaction study.",
+    "record_unit": "conditions",
+    "data_origin": "Experimental condition grid",
+    "data_license": "Unverified",
+    "targets": [
+      "Yield",
+      "C–H functionalization",
+      "C–C bond formation",
+      "Heterocycles",
+      "Condition optimization"
+    ]
+  },
+  "denmark-selectivity": {
+    "name": "Denmark · CPA selectivity",
+    "description": "Selectivity data for modeling N,S-acetal reactions catalyzed by chiral phosphoric acids.",
+    "notes": "ΔΔG‡ measures the difference between activation free energies associated with selectivity. Thermodynamic reaction ΔG is a separate quantity. Conversions involving ee require temperature and sign conventions.",
+    "count_note": "43 × 25 combinations yield 1,075 means from 2,150 individual replicate experiments.",
+    "record_unit": "averaged records",
+    "data_origin": "Experiments",
+    "data_license": "Unverified",
+    "targets": [
+      "Selectivity",
+      "Enantiomeric excess",
+      "ΔΔG‡"
+    ]
+  },
+  "sad": {
+    "name": "Sharpless Asymmetric Dihydroxylation",
+    "description": "Open asymmetric dihydroxylation data and associated tools from the Denmark group.",
+    "notes": "Record count and data license await verification. The repository license covers software separately.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated literature and experiments",
+    "data_license": "Unverified",
+    "targets": [
+      "ee",
+      "Asymmetric catalysis"
+    ]
+  },
+  "rgd1": {
+    "name": "RGD1",
+    "description": "Computed reaction data with reactants, products, transition states and Gibbs free energies.",
+    "notes": "Use the definitions of R_F, P_F and TS_F together with the corresponding temperature and level of theory.",
+    "count_note": "The group reports the reaction count and, separately, 176,992 transition states.",
+    "record_unit": "distinct reactions",
+    "data_origin": "Quantum chemistry calculations",
+    "data_license": "Unverified",
+    "targets": [
+      "Reaction ΔG",
+      "Activation ΔG‡",
+      "Transition states"
+    ]
+  },
+  "freesolv": {
+    "name": "FreeSolv",
+    "description": "Measured and computed small-molecule hydration free energies, with simulation input files.",
+    "notes": "Hydration free energy and reaction free energy represent distinct prediction tasks.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Experiments and molecular simulations",
+    "data_license": "CC-BY-4.0 (data), MIT (code)",
+    "targets": [
+      "Hydration ΔG",
+      "Uncertainty"
+    ]
+  },
+  "sampl6": {
+    "name": "SAMPL6 · Host–Guest / SAMPLing",
+    "description": "Blind challenges and public results for host–guest binding free energies and sampling methods.",
+    "notes": "SAMPL6 counts as one challenge suite. Each round and subtask has its own scope.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Experiments and simulation evaluation",
+    "data_license": "Unverified",
+    "targets": [
+      "Binding ΔG",
+      "Sampling convergence",
+      "Method evaluation"
+    ]
+  },
+  "matbench": {
+    "name": "Matbench",
+    "description": "Standardized datasets and cross-validation protocols for machine learning on materials properties.",
+    "notes": "Version 0.1 contains 13 tasks, each with its own samples and units. Matbench counts as one benchmark suite.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated experimental and computational data",
+    "data_license": "Unverified",
+    "targets": [
+      "Materials properties",
+      "Classification and regression"
+    ]
+  },
+  "matbench-discovery": {
+    "name": "Matbench Discovery",
+    "description": "A benchmark for testing whether machine-learned energy models can identify stable inorganic crystals.",
+    "notes": "This suite is distinct from Matbench. Its underlying records may overlap with Materials Project data.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "First-principles calculations and evaluation",
+    "data_license": "Unverified",
+    "targets": [
+      "Crystal stability",
+      "Materials discovery"
+    ]
+  },
+  "tdc": {
+    "name": "Therapeutics Data Commons",
+    "description": "Data loading, splitting and evaluation for drug discovery tasks.",
+    "notes": "Counted as one suite. Sources, splits, metrics and licenses still require review for each subtask.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Multiple curated sources",
+    "data_license": "Unverified",
+    "targets": [
+      "Drug activity",
+      "ADMET",
+      "Multitask evaluation"
+    ]
+  },
+  "chembl": {
+    "name": "ChEMBL",
+    "description": "A curated database of compounds, biological activities, targets and assays.",
+    "notes": "The historical series uses activity counts from individual EMBL-EBI release notes.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated literature and experiments",
+    "data_license": "Unverified",
+    "targets": [
+      "Activity",
+      "Potency",
+      "Targets"
+    ]
+  },
+  "bindingdb": {
+    "name": "BindingDB",
+    "description": "Molecular binding measurements for affinity and drug activity prediction.",
+    "notes": "Endpoints, assay conditions and measurement units need harmonization before pooling. The license and exact snapshot still require verification.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated experimental literature",
+    "data_license": "Unverified",
+    "targets": [
+      "Ki",
+      "Kd",
+      "IC50 and related endpoints"
+    ]
+  },
+  "indpensim": {
+    "name": "IndPenSim · Industrial penicillin fermentation",
+    "description": "Simulated process and Raman data for industrial-scale penicillin fed-batch fermentation in a 100,000 L vessel.",
+    "notes": "Counted as one dataset family. The monitor tracks commits to the author’s notebook. Mendeley dataset releases require separate verification.",
+    "count_note": "Mendeley v2, October 8, 2019. These batches were generated by simulation.",
+    "record_unit": "simulated batches",
+    "data_origin": "Industrial-scale mechanistic simulation",
+    "data_license": "CC-BY-4.0",
+    "targets": [
+      "Concentration estimation",
+      "Process control",
+      "Fault detection",
+      "Production process optimization"
+    ]
+  },
+  "erythromycin-efp": {
+    "name": "EFP · Industrial erythromycin fermentation",
+    "description": "Production measurements from Yichang HEC Changjiang Pharmaceutical in 2022, with 23 process variables sampled hourly.",
+    "notes": "The prediction target is chemical potency. Yield, productivity and downstream purification labels remain unverified. The data license was checked against the Zenodo API.",
+    "count_note": "Zenodo v1. The 406 batches average 154 hours each, with several observations per batch.",
+    "record_unit": "fermentation batches",
+    "data_origin": "Industrial production measurements",
+    "data_license": "CC-BY-4.0 (Zenodo metadata)",
+    "targets": [
+      "Fermentation potency",
+      "Process soft sensing"
+    ]
+  },
+  "steroid-binding-1981": {
+    "name": "Dunn · Steroid binding affinities",
+    "description": "The original paper reports binding affinities for 21 endogenous steroids and two human plasma carrier proteins.",
+    "notes": "The timeline follows the verified paper year. Each steroid has multiple binding endpoints.",
+    "count_note": null,
+    "record_unit": "steroids",
+    "data_origin": "Experimental tables in the original paper",
+    "data_license": "Unverified",
+    "targets": [
+      "Binding affinity"
+    ]
+  },
+  "comfa-steroids": {
+    "name": "CoMFA · Steroid QSAR benchmark",
+    "description": "Cramer and colleagues tested three-dimensional QSAR predictions against steroid binding activities. The paper identifies the modeling and prediction sets.",
+    "notes": "This early evaluation set may share compounds with steroid affinity experiments and counts as one benchmark suite.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Experimental evaluation set in the original paper",
+    "data_license": "Unverified",
+    "targets": [
+      "Binding affinity prediction"
+    ]
+  },
+  "tecr-oxidoreductases": {
+    "name": "NIST · Oxidoreductase reaction equilibria",
+    "description": "Goldberg and colleagues compiled equilibrium constants and enthalpies for enzyme-catalyzed reactions, with measurement conditions.",
+    "notes": "Part one of the 1993 series. Conversion from K′ to standard transformed Gibbs free energy requires temperature, pH and other measurement conditions.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated literature and experiments",
+    "data_license": "Unverified",
+    "targets": [
+      "Apparent equilibrium constants",
+      "Reaction thermodynamics"
+    ]
+  },
+  "dud": {
+    "name": "DUD · Virtual screening benchmark",
+    "description": "Known ligands and matched decoys for evaluating enrichment by docking methods.",
+    "notes": "",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Measured activity and constructed decoys",
+    "data_license": "Unverified",
+    "targets": [
+      "Virtual screening",
+      "Ligand enrichment"
+    ]
+  },
+  "dude": {
+    "name": "DUD-E · Virtual screening benchmark",
+    "description": "A rebuilt DUD evaluation suite covering 102 targets.",
+    "notes": "DUD-E reconstructs the tasks and decoys and counts as a separately named benchmark suite.",
+    "count_note": null,
+    "record_unit": "targets",
+    "data_origin": "Measured activity and constructed decoys",
+    "data_license": "Unverified",
+    "targets": [
+      "Virtual screening",
+      "Ligand enrichment"
+    ]
+  },
+  "uspto-2014": {
+    "name": "USPTO · Lowe 2014 release",
+    "description": "The author released reactions extracted from US patents and applications, then published an expanded version in 2017.",
+    "notes": "The author announced this release on February 27, 2014. This date and the earliest patent year refer to different events.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Patent extraction",
+    "data_license": "Unverified",
+    "targets": [
+      "Reactant prediction",
+      "Reaction prediction"
+    ]
+  },
+  "retro-star-190": {
+    "name": "Retro* · 190 multistep planning targets",
+    "description": "Multistep retrosynthesis test problems released by Chen and colleagues with Retro*.",
+    "notes": "The underlying reactions come from USPTO. This collection counts once as a test suite.",
+    "count_note": null,
+    "record_unit": "test targets",
+    "data_origin": "Curated patent routes",
+    "data_license": "Unverified",
+    "targets": [
+      "Multistep retrosynthesis",
+      "Planning success rate"
+    ]
+  },
+  "omat24": {
+    "name": "OMat24 · Inorganic materials calculations",
+    "description": "Inorganic crystal structures and DFT data from FAIR Chemistry for energy, force and stress prediction.",
+    "notes": "The 2024 preprint and the authors’ Hugging Face dataset card refer to the same resource.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "First-principles calculations",
+    "data_license": "CC-BY-4.0",
+    "targets": [
+      "Energy",
+      "Forces",
+      "Stress"
+    ]
+  },
+  "csd": {
+    "name": "Cambridge Structural Database",
+    "description": "Organic and metal-organic small-molecule crystal structures compiled by CCDC. Its publication-year series includes records predating the database.",
+    "notes": "The database was founded in 1965 and incorporates literature dating to 1923. CCDC sets separate access terms for public statistics and the full structure database.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Curated experimental literature",
+    "data_license": "Unverified",
+    "targets": [
+      "Crystal structures"
+    ]
+  },
+  "heifets-planning": {
+    "name": "Heifets–Jurisica · Synthesis planning problems",
+    "description": "Organic synthesis planning problems and evaluation code released by the authors with their AAAI 2012 paper.",
+    "notes": "",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Expert-curated teaching problems",
+    "data_license": "Unverified",
+    "targets": [
+      "Multistep retrosynthesis",
+      "Planning success rate"
+    ]
+  },
+  "retrotransformdb": {
+    "name": "RetroTransformDB",
+    "description": "General retrosynthetic transformation rules validated by organic chemistry experts.",
+    "notes": "Counted as a rule set. A general transformation rule can cover multiple experimental instances.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Expert curation",
+    "data_license": "Unverified",
+    "targets": [
+      "Retrosynthetic rules"
+    ]
+  },
+  "het-retro-cjhif": {
+    "name": "Het-retro · CJHIF heterocycle formation subset",
+    "description": "Journal-derived heterocycle formation records curated by the authors for single-step retrosynthesis.",
+    "notes": "This entry covers the CJHIF ring formation subset. The general USPTO training set in the same repository belongs to the USPTO family. Ring formation includes reactions outside the coupling category.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Processed literature data",
+    "data_license": "Unverified",
+    "targets": [
+      "Single-step retrosynthesis",
+      "Heterocycles"
+    ]
+  },
+  "absynth": {
+    "name": "AbSynth · Total synthesis routes",
+    "description": "Machine-readable routes curated retrospectively from classic total syntheses for analysis of synthetic strategy.",
+    "notes": "The authors distribute the data via Allchemy to verified research institutions. The resource publication date and the dates of the historical routes are tracked separately.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Expert-curated literature",
+    "data_license": "Unverified",
+    "targets": [
+      "Multistep retrosynthesis",
+      "Total synthesis routes"
+    ]
+  }
+}
