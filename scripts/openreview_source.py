@@ -4,6 +4,7 @@ import re
 import sys
 import time
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import quote, urlencode
@@ -79,17 +80,25 @@ def normalize(note, topic, term):
 
 
 def page_at(url):
-    try:
-        return api_json(url)
-    except HTTPError as exc:
-        if exc.code != 429:
-            raise
-        delay = exc.headers.get("Retry-After","5")
-        if not delay.isdigit() or int(delay)>45:
-            raise
-        exc.close()
-        time.sleep(max(1,int(delay)))
-        return api_json(url)
+    time.sleep(3)
+    for attempt in range(3):
+        try:
+            return api_json(url)
+        except HTTPError as exc:
+            if exc.code != 429:
+                raise
+            hint = exc.headers.get("Retry-After", "").strip()
+            delay = 60 * (attempt + 1)
+            if hint:
+                try:
+                    delay = float(hint)
+                except ValueError:
+                    retry_at = parsedate_to_datetime(hint)
+                    delay = retry_at.timestamp() - time.time()
+            exc.close()
+            if attempt == 2 or delay > 240:
+                raise ValueError(f"Rate limited on {url}; Retry-After={hint or 'unspecified'}") from exc
+            time.sleep(max(3, delay))
 
 
 def query_notes(term, endpoint):

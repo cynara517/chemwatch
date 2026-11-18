@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from urllib.error import HTTPError
 
 from scripts import openreview_source as source
 
@@ -39,6 +40,13 @@ class OpenReviewTest(unittest.TestCase):
             self.assertIn("offset=1",get.call_args.args[0])
         with patch.object(source,"page_at",side_effect=[page1,page1]), self.assertRaises(ValueError):
             list(source.query_notes("term",source.ENDPOINTS[0]))
+
+    def test_respects_rate_limit_before_repeating_query(self):
+        url="https://api2.openreview.net/notes/search"
+        limited=HTTPError(url,429,"limited",{"Retry-After":"61"},None)
+        with patch.object(source.time,"sleep") as sleep, patch.object(source,"api_json",side_effect=[limited,{"notes":[]}] ):
+            self.assertEqual(source.page_at(url),{"notes":[]})
+            self.assertEqual([call.args[0] for call in sleep.call_args_list],[3,61])
 
     def test_failed_refresh_preserves_snapshot(self):
         with tempfile.TemporaryDirectory() as tmp:
