@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-18T07:25:28.560102Z",
+  "checked_at": "2026-11-18T07:57:47.854510Z",
   "limit_per_query": 5,
   "feeds": {
     "papers/retrosynthesis": {
       "query": "TITLE_ABS:\"retrosynthesis\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22retrosynthesis%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:51.134789Z",
+      "last_success": "2026-11-18T07:50:04.282829Z",
       "items": [
         {
           "title": "Deep learning directed synthesis of fluid ferroelectric materials.",
@@ -37,7 +37,7 @@
     "papers/coupling": {
       "query": "TITLE_ABS:\"cross-coupling\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22cross-coupling%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:51.945818Z",
+      "last_success": "2026-11-18T07:50:05.837724Z",
       "items": [
         {
           "title": "Novel Fused-Ring Electron Acceptors Based on Double Electron-Deficient Central Core for High-Performance Organic Solar Cells.",
@@ -69,7 +69,7 @@
     "papers/materials": {
       "query": "TITLE_ABS:\"materials property\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22materials+property%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:52.505670Z",
+      "last_success": "2026-11-18T07:50:06.256340Z",
       "items": [
         {
           "title": "Describing materials via interpretable machine learning: the example of superconductivity.",
@@ -96,7 +96,7 @@
     "papers/yield": {
       "query": "TITLE_ABS:\"reaction yield\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22reaction+yield%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:53.053366Z",
+      "last_success": "2026-11-18T07:50:06.965156Z",
       "items": [
         {
           "title": "Yield Smarter, Not Harder: Good Practices for Machine Learning of Reaction Outcomes.",
@@ -128,7 +128,7 @@
     "papers/free-energy": {
       "query": "TITLE_ABS:\"free energy\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22free+energy%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:53.631804Z",
+      "last_success": "2026-11-18T07:50:08.983643Z",
       "items": [
         {
           "title": "In silico drug discovery framework leveraging biomedical foundation models and evaluating generative models-a use case on 3CLpro.",
@@ -160,7 +160,7 @@
     "papers/selectivity": {
       "query": "TITLE_ABS:\"enantioselectivity\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22enantioselectivity%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:54.129583Z",
+      "last_success": "2026-11-18T07:50:09.367768Z",
       "items": [
         {
           "title": "Bridging Chemical Literature and Molecular Graphs: LLM-Augmented Enantioselectivity Prediction for Iridium-Catalyzed Asymmetric C-H Borylation.",
@@ -192,7 +192,7 @@
     "papers/penicillin": {
       "query": "TITLE_ABS:\"penicillin fermentation\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22penicillin+fermentation%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:18:55.041821Z",
+      "last_success": "2026-11-18T07:50:10.874602Z",
       "items": [
         {
           "title": "Prediction of penicillin concentration using time series forecasting and machine learning techniques.",
@@ -204,13 +204,13 @@
     "papers/erythromycin": {
       "query": "TITLE_ABS:\"erythromycin fermentation\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22erythromycin+fermentation%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:19:00.932045Z",
+      "last_success": "2026-11-18T07:50:12.416446Z",
       "items": []
     },
     "papers/bioactivity": {
       "query": "TITLE_ABS:\"bioactivity\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-18 TO 2026-11-18]",
       "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22bioactivity%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-18+TO+2026-11-18%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
-      "last_success": "2026-11-18T07:19:01.432164Z",
+      "last_success": "2026-11-18T07:50:15.306939Z",
       "items": [
         {
           "title": "Chemical-space-aware routing for improved PFAS toxicity prediction: large-scale pretraining, conditional fine-tuning, and leakage control",
@@ -242,7 +242,7 @@
     "crossref/retrosynthesis": {
       "query": "retrosynthesis dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=retrosynthesis+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:18:53.117762Z",
+      "last_success": "2026-11-18T07:49:55.725245Z",
       "items": [
         {
           "title": "Digitalizing Manufacturing Chemistry Targets: A Benchmark for Retrosynthesis Tools",
@@ -274,13 +274,13 @@
     "crossref/coupling": {
       "query": "cross-coupling dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=cross-coupling+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:18:55.798240Z",
+      "last_success": "2026-11-18T07:49:58.630102Z",
       "items": []
     },
     "crossref/materials": {
       "query": "materials property dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=materials+property+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:18:59.319608Z",
+      "last_success": "2026-11-18T07:50:01.838752Z",
       "items": [
         {
           "title": "Machine learning benchmark for compositional materials screening: Feature redundancy, cross-property generalization, and standalone executable deployment",
@@ -297,13 +297,13 @@
     "crossref/yield": {
       "query": "reaction yield dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=reaction+yield+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:02.420394Z",
+      "last_success": "2026-11-18T07:50:06.896707Z",
       "items": []
     },
     "crossref/free-energy": {
       "query": "free energy dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=free+energy+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:05.095961Z",
+      "last_success": "2026-11-18T07:50:12.309796Z",
       "items": [
         {
           "title": "Backpropagation-Free Continual Learning: A Unified Energy-Based Framework, Reproducible Benchmark, and Open Challenges",
@@ -320,25 +320,25 @@
     "crossref/selectivity": {
       "query": "enantioselectivity dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=enantioselectivity+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:07.734492Z",
+      "last_success": "2026-11-18T07:50:18.638280Z",
       "items": []
     },
     "crossref/penicillin": {
       "query": "penicillin fermentation dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=penicillin+fermentation+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:10.024145Z",
+      "last_success": "2026-11-18T07:50:24.131269Z",
       "items": []
     },
     "crossref/erythromycin": {
       "query": "erythromycin fermentation dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=erythromycin+fermentation+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:12.412100Z",
+      "last_success": "2026-11-18T07:50:29.463540Z",
       "items": []
     },
     "crossref/bioactivity": {
       "query": "bioactivity dataset benchmark",
       "query_url": "https://api.crossref.org/works?query.bibliographic=bioactivity+dataset+benchmark&filter=from-pub-date%3A2025-11-18%2Cuntil-pub-date%3A2026-11-18&rows=30&select=DOI%2Ctitle%2Cpublished",
-      "last_success": "2026-11-18T07:19:14.742752Z",
+      "last_success": "2026-11-18T07:50:34.646026Z",
       "items": [
         {
           "title": "Do Frozen SMILES Foundation Embeddings Beat Fingerprints? A Split- and Low-Data Benchmark on ADMET and CNS Bioactivity Tasks",
@@ -350,7 +350,7 @@
     "github/retrosynthesis": {
       "query": "\"retrosynthesis\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22retrosynthesis%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:51.634550Z",
+      "last_success": "2026-11-18T07:49:54.326641Z",
       "items": [
         {
           "title": "DianYe2333/Single-Step-Retrosynthesis-Benchmark",
@@ -367,7 +367,7 @@
     "github/coupling": {
       "query": "\"cross-coupling\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22cross-coupling%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:52.954902Z",
+      "last_success": "2026-11-18T07:49:55.352507Z",
       "items": [
         {
           "title": "chem-data-extraction/Suzuki-Miyaura",
@@ -384,7 +384,7 @@
     "github/materials": {
       "query": "\"materials property\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22materials+property%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:54.173749Z",
+      "last_success": "2026-11-18T07:49:56.276150Z",
       "items": [
         {
           "title": "PritamGayen/MaterialLab",
@@ -401,7 +401,7 @@
     "github/yield": {
       "query": "\"reaction yield\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22reaction+yield%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:55.217612Z",
+      "last_success": "2026-11-18T07:49:57.330502Z",
       "items": [
         {
           "title": "Shiomi-chemist/SBR2-small-data-yield-prediction",
@@ -433,13 +433,13 @@
     "github/free-energy": {
       "query": "\"free energy\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22free+energy%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:56.310610Z",
+      "last_success": "2026-11-18T07:49:58.330815Z",
       "items": []
     },
     "github/selectivity": {
       "query": "\"enantioselectivity\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22enantioselectivity%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:57.174933Z",
+      "last_success": "2026-11-18T07:49:59.285307Z",
       "items": [
         {
           "title": "CesiumAuride526/cmrt-enantioselectivity-reappraisal",
@@ -471,7 +471,7 @@
     "github/penicillin": {
       "query": "\"penicillin fermentation\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22penicillin+fermentation%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:57.784259Z",
+      "last_success": "2026-11-18T07:49:59.823263Z",
       "items": [
         {
           "title": "vishnumr05/lstm-mhe-indpensim",
@@ -498,18 +498,18 @@
     "github/erythromycin": {
       "query": "\"erythromycin fermentation\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22erythromycin+fermentation%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:58.100199Z",
+      "last_success": "2026-11-18T07:50:00.088064Z",
       "items": []
     },
     "github/bioactivity": {
       "query": "\"bioactivity\" in:name,description fork:false",
       "query_url": "https://api.github.com/search/repositories?q=%22bioactivity%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
-      "last_success": "2026-11-18T07:18:59.291330Z",
+      "last_success": "2026-11-18T07:50:01.151111Z",
       "items": [
         {
           "title": "SatoryKono/BioactivityDataAcquisition",
           "url": "https://github.com/SatoryKono/BioactivityDataAcquisition",
-          "date": "2026-11-18T07:18:12Z"
+          "date": "2026-11-18T07:37:21Z"
         },
         {
           "title": "biplob819/assay-pipeline",
@@ -536,7 +536,7 @@
     "huggingface/retrosynthesis": {
       "query": "retrosynthesis",
       "query_url": "https://huggingface.co/api/datasets?search=retrosynthesis&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.554872Z",
+      "last_success": "2026-11-18T07:49:53.174763Z",
       "items": [
         {
           "title": "OsBaran/Retrosynthesis_Dataset",
@@ -553,30 +553,25 @@
     "huggingface/coupling": {
       "query": "cross-coupling",
       "query_url": "https://huggingface.co/api/datasets?search=cross-coupling&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.610555Z",
+      "last_success": "2026-11-18T07:49:53.202877Z",
       "items": []
     },
     "huggingface/materials": {
       "query": "materials",
       "query_url": "https://huggingface.co/api/datasets?search=materials&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.668886Z",
+      "last_success": "2026-11-18T07:49:53.228417Z",
       "items": [
         {
           "title": "simpleG2023/chinese-materials-science-open-intelligence",
           "url": "https://huggingface.co/datasets/simpleG2023/chinese-materials-science-open-intelligence",
           "date": "2026-11-16T13:08:48.000Z"
-        },
-        {
-          "title": "materials-toolkits/alex-mp-20",
-          "url": "https://huggingface.co/datasets/materials-toolkits/alex-mp-20",
-          "date": "2026-11-06T18:03:09.000Z"
         }
       ]
     },
     "huggingface/yield": {
       "query": "reaction-yield",
       "query_url": "https://huggingface.co/api/datasets?search=reaction-yield&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.716595Z",
+      "last_success": "2026-11-18T07:49:53.254766Z",
       "items": [
         {
           "title": "Amvnd1ne/chem-reaction-yield-prediction",
@@ -588,31 +583,31 @@
     "huggingface/free-energy": {
       "query": "free-energy",
       "query_url": "https://huggingface.co/api/datasets?search=free-energy&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.772029Z",
+      "last_success": "2026-11-18T07:49:53.287535Z",
       "items": []
     },
     "huggingface/selectivity": {
       "query": "enantioselectivity",
       "query_url": "https://huggingface.co/api/datasets?search=enantioselectivity&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.819105Z",
+      "last_success": "2026-11-18T07:49:53.306832Z",
       "items": []
     },
     "huggingface/penicillin": {
       "query": "penicillin",
       "query_url": "https://huggingface.co/api/datasets?search=penicillin&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.874172Z",
+      "last_success": "2026-11-18T07:49:53.332310Z",
       "items": []
     },
     "huggingface/erythromycin": {
       "query": "erythromycin",
       "query_url": "https://huggingface.co/api/datasets?search=erythromycin&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.922031Z",
+      "last_success": "2026-11-18T07:49:53.353285Z",
       "items": []
     },
     "huggingface/bioactivity": {
       "query": "bioactivity",
       "query_url": "https://huggingface.co/api/datasets?search=bioactivity&sort=lastModified&direction=-1&limit=30&full=true",
-      "last_success": "2026-11-18T07:18:50.974564Z",
+      "last_success": "2026-11-18T07:49:53.382382Z",
       "items": [
         {
           "title": "Sepideh2027/Bioactivity-Bench",
@@ -642,7 +637,7 @@
       ]
     },
     "openreview/retrosynthesis": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -709,7 +704,7 @@
       ]
     },
     "openreview/coupling": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -728,7 +723,7 @@
       ]
     },
     "openreview/materials": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -795,7 +790,7 @@
       ]
     },
     "openreview/yield": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -826,7 +821,7 @@
       ]
     },
     "openreview/free-energy": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -893,13 +888,13 @@
       ]
     },
     "openreview/selectivity": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": []
     },
     "openreview/bioactivity": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -966,7 +961,7 @@
       ]
     },
     "openreview/penicillin": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": [
@@ -985,7 +980,7 @@
       ]
     },
     "openreview/erythromycin": {
-      "last_success": "2026-11-18T07:19:14.752376Z",
+      "last_success": "2026-11-18T07:50:34.647718Z",
       "error": null,
       "query_url": "data/openreview.json",
       "items": []
