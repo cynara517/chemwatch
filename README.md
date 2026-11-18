@@ -101,10 +101,11 @@ python3 -m http.server 8888 --directory dist
 | 指标 | 日期及计量方式 |
 | --- | --- |
 | 数据集家族、benchmark 套件 | 据本目录最早已核实的论文或公开版本年份回溯，家族或套件计一次。尚未收录的资源不会出现在曲线上。 |
+| Materials Cloud 数据集 DOI | 按 DataCite 仓库标识 ethz.marvel 和 Dataset 类型统计每年发表的 DOI，逐年相加与整库总数核对。一个研究的不同版本可能分别有 DOI。[仓库说明](https://archive.materialscloud.org/about) |
 | CSD 晶体结构 | 按 CCDC 统计表中的文献发表年。1965 年前的 4,045 条为合并基数，年度图从 1965 年开始。末两年带部分数据标记。[官方统计表](https://www.ccdc.cam.ac.uk/media/CSD-Publication-Year-Statistics-2026.pdf) |
 | ChEMBL 活性记录 | 从 release notes 取准备日期、activities 总数，逐年选择最后版本。只计算相邻年份的净差，缺测保持空值，订正可带来负值。[EMBL-EBI 版本档案](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/) |
 
-每日发布任务扫描 ChEMBL 新版本并校验当年 CSD 统计文件。更换 CSD 版本时使用 pdftotext 或 pypdf 解析表格。采集异常会在历史 JSON 中标记，同时保留上次成功观测。论文版及镜像可提供年代或修订证据，一个来源对应的候选数不作为新增资源数。
+每日发布任务重新统计 Materials Cloud 的各年份，扫描 ChEMBL 新版本并校验当年 CSD 统计文件。更换 CSD 版本时使用 pdftotext 或 pypdf 解析表格。采集异常会在历史 JSON 中标记，同时保留上次成功观测。论文版及镜像可提供年代或修订证据，一个来源对应的候选数不作为新增资源数。
 
 ### 新资源线索
 

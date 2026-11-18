@@ -7,6 +7,8 @@ import shutil
 import subprocess
 import sys
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlencode
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError
@@ -14,7 +16,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from chemwatch import TOPICS, atomic_json, now, tls_context
+from chemwatch import api_json, TOPICS, atomic_json, now, tls_context
 
 DATA = ROOT / "dist/data"
 ARCHIVE = "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/"
@@ -123,6 +125,34 @@ def chembl_years(releases):
     return points
 
 
+def material_archive_url(query=None, size=0):
+    params = {"client-id":"ethz.marvel", "resource-type-id":"dataset", "page[size]":size}
+    if query:
+        params["query"] = query
+    return "https://api.datacite.org/dois?" + urlencode(params)
+
+
+def materials_series(end_year):
+    # The repository launched in 2017. Check that all DOI records fall within
+    # the reported buckets so omissions, schema changes, or mid-run edits surface.
+    url = material_archive_url()
+    expected = api_json(url)["meta"]["total"]
+    def bucket(year):
+        query = f"publicationYear:{year}"
+        annual = api_json(material_archive_url(query))["meta"]["total"]
+        return {"year":year, "annual":annual, "partial":year==end_year,
+                "sources":[{"label":f"DataCite · {year} 年 DOI", "url":material_archive_url(query,25)}]}
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        points = list(pool.map(bucket, range(2017,end_year+1)))
+    total = 0
+    for point in points:
+        total += point["annual"]
+        point["total"] = total
+    if total != expected or not total:
+        raise ValueError(f"Annual DOI counts {total} do not reconcile with repository total {expected}")
+    return {"url":url, "client":"ethz.marvel", "points":points, "as_of":now()}
+
+
 def refresh():
     path = DATA / "timeseries.json"
     old = json.loads(path.read_text()) if path.exists() else {}
@@ -142,6 +172,11 @@ def refresh():
     except (ValueError,OSError) as exc:
         data["errors"].append(f"ChEMBL: {exc}")
     data["chembl"] = {"url":ARCHIVE, "releases":releases, "points":chembl_years(releases)}
+    try:
+        data["materials"] = materials_series(year)
+    except (ValueError,OSError,KeyError) as exc:
+        data["errors"].append(f"DataCite: {exc}")
+        data["materials"] = old.get("materials",{})
     atomic_json(path, data)
     return data["errors"]
 

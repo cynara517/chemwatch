@@ -1,6 +1,6 @@
 "use strict";
-const seriesNames = {dataset:"数据集家族", benchmark:"Benchmark 套件", csd:"CSD 晶体结构", chembl:"ChEMBL 活性记录"};
-const seriesUnits = {dataset:"个家族",benchmark:"个套件",csd:"条结构",chembl:"条活性记录"};
+const seriesNames = {dataset:"数据集家族", benchmark:"Benchmark 套件", materials:"Materials Cloud 数据集 DOI", csd:"CSD 晶体结构", chembl:"ChEMBL 活性记录"};
+const seriesUnits = {dataset:"个家族",benchmark:"个套件",materials:"个 DOI",csd:"条结构",chembl:"条活性记录"};
 let seriesData, selectedSeries="dataset", timeMode="total", discoveryData;
 const fmt = n => n == null ? "缺测" : n.toLocaleString("zh-CN");
 
@@ -52,8 +52,8 @@ function renderTimeline() {
   $$("[data-time-mode]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.timeMode===timeMode));
   const notes=isCatalog?"按本目录中可核实的最早论文、挑战或版本年份统计。家族内的版本和镜像合并。0 表示该年在当前收录范围内无新增，补录可改写历史。":id==="csd"?
     `CCDC ${seriesData.csd?.edition||""} 年版按结构发表年份回溯。累计含 1923–1964 年合计 ${fmt(seriesData.csd?.baseline)} 条；末两年为截至该版的部分数据。`:
-    "每年取 EMBL-EBI 最后一个已解析版本的 activities 总数；年度值为相邻两年快照净差，可含订正。缺版年份保留空档。";
-  const errors=(seriesData.errors||[]).filter(e=>id==="csd"?e.startsWith("CSD"):id==="chembl"?/chembl/i.test(e):false);
+    id==="materials"?"按 DataCite 仓库 ethz.marvel 的发表年统计所有 Dataset DOI，年度和与仓库总数核对。新版本可有独立 DOI。末年尚在更新。":"每年取 EMBL-EBI 最后一个已解析版本的 activities 总数；年度值为相邻两年快照净差，可含订正。缺版年份保留空档。";
+  const errors=(seriesData.errors||[]).filter(e=>id==="csd"?e.startsWith("CSD"):id==="chembl"?/chembl/i.test(e):id==="materials"?e.startsWith("DataCite"):false);
   $("#time-note").textContent=notes+(errors.length?" 最近采集有缺口："+errors.join(" / "):"");
   $("#time-point").textContent="";
   if(!points.length){

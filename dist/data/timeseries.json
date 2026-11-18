@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-18T06:40:38.806634Z",
+  "checked_at": "2026-11-18T06:43:29.757795Z",
   "errors": [],
   "publications": {
     "dataset": {
@@ -2868,5 +2868,132 @@
         ]
       }
     ]
+  },
+  "materials": {
+    "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=0",
+    "client": "ethz.marvel",
+    "points": [
+      {
+        "year": 2017,
+        "annual": 13,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2017 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2017"
+          }
+        ],
+        "total": 13
+      },
+      {
+        "year": 2018,
+        "annual": 52,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2018 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2018"
+          }
+        ],
+        "total": 65
+      },
+      {
+        "year": 2019,
+        "annual": 204,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2019 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2019"
+          }
+        ],
+        "total": 269
+      },
+      {
+        "year": 2020,
+        "annual": 331,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2020 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2020"
+          }
+        ],
+        "total": 600
+      },
+      {
+        "year": 2021,
+        "annual": 426,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2021 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2021"
+          }
+        ],
+        "total": 1026
+      },
+      {
+        "year": 2022,
+        "annual": 316,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2022 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2022"
+          }
+        ],
+        "total": 1342
+      },
+      {
+        "year": 2023,
+        "annual": 353,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2023 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2023"
+          }
+        ],
+        "total": 1695
+      },
+      {
+        "year": 2024,
+        "annual": 374,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2024 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2024"
+          }
+        ],
+        "total": 2069
+      },
+      {
+        "year": 2025,
+        "annual": 371,
+        "partial": false,
+        "sources": [
+          {
+            "label": "DataCite · 2025 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2025"
+          }
+        ],
+        "total": 2440
+      },
+      {
+        "year": 2026,
+        "annual": 370,
+        "partial": true,
+        "sources": [
+          {
+            "label": "DataCite · 2026 年 DOI",
+            "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2026"
+          }
+        ],
+        "total": 2810
+      }
+    ],
+    "as_of": "2026-11-18T06:43:46.737162Z"
   }
 }

@@ -1,7 +1,5 @@
 import json
-import sys
 import unittest
-from pathlib import Path
 from unittest.mock import patch
 
 import chemwatch
@@ -27,6 +25,16 @@ class HistoryTest(unittest.TestCase):
     def test_parse_release_preserves_uk_dates_and_activities(self):
         row=timeseries.parse_release("prepared on 01/05/2026 contains:\n10 compounds\n22,100 activities\n","chembl_x","source")
         self.assertEqual((row["date"],row["total"]),("2026-05-01",22100))
+
+    def test_materials_archive_reconciles_and_rejects_partial_totals(self):
+        def response(url):
+            return {"meta":{"total":2 if "2017" in url else 3 if "2018" in url else 5}}
+        with patch.object(timeseries, "api_json", side_effect=response):
+            points = timeseries.materials_series(2018)["points"]
+            self.assertEqual([(p["annual"],p["total"]) for p in points],[(2,2),(3,5)])
+        with patch.object(timeseries, "api_json", return_value={"meta":{"total":5}}):
+            with self.assertRaisesRegex(ValueError,"reconcile"):
+                timeseries.materials_series(2018)
 
     def test_csd_backfill_is_a_baseline(self):
         text="1923–1964 4,045\n1965 656 28\n1966 690 30\n"
