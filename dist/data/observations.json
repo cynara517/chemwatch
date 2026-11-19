@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-18T09:30:37.114068Z",
+  "checked_at": "2026-11-19T09:41:03.291257Z",
   "items": [
     {
       "id": "uspto-full",
@@ -84,9 +84,9 @@
     },
     {
       "id": "matbench",
-      "revision": "33b589cadcec53ca12464bc4b142c0fb141e23da",
-      "url": "https://github.com/materialsproject/matbench/commit/33b589cadcec53ca12464bc4b142c0fb141e23da",
-      "upstream_date": "2026-11-18T07:22:28Z",
+      "revision": "2b17f3b87c81537709cd416de90cb36a65a55706",
+      "url": "https://github.com/materialsproject/matbench/commit/2b17f3b87c81537709cd416de90cb36a65a55706",
+      "upstream_date": "2026-11-18T22:57:06Z",
       "signal": "repository_change",
       "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
     },
@@ -157,6 +157,18 @@
   ],
   "errors": [],
   "events": [
+    {
+      "id": "matbench",
+      "name": "Matbench",
+      "observation": {
+        "revision": "2b17f3b87c81537709cd416de90cb36a65a55706",
+        "url": "https://github.com/materialsproject/matbench/commit/2b17f3b87c81537709cd416de90cb36a65a55706",
+        "upstream_date": "2026-11-18T22:57:06Z",
+        "signal": "repository_change",
+        "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
+      },
+      "observed_at": "2026-11-19T09:41:03.291257Z"
+    },
     {
       "id": "matbench",
       "name": "Matbench",
