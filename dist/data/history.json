@@ -277,6 +277,75 @@
           "databases": 1
         }
       }
+    },
+    {
+      "date": "2026-11-21",
+      "entries": 33,
+      "dataset_families": 16,
+      "benchmark_suites": 10,
+      "databases": 4,
+      "topics": {
+        "bioactivity": {
+          "entries": 7,
+          "dataset_families": 1,
+          "benchmark_suites": 4,
+          "databases": 2
+        },
+        "bioprocess": {
+          "entries": 2,
+          "dataset_families": 2,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "coupling": {
+          "entries": 4,
+          "dataset_families": 3,
+          "benchmark_suites": 0,
+          "databases": 1
+        },
+        "erythromycin": {
+          "entries": 1,
+          "dataset_families": 1,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "free-energy": {
+          "entries": 4,
+          "dataset_families": 3,
+          "benchmark_suites": 1,
+          "databases": 0
+        },
+        "materials": {
+          "entries": 4,
+          "dataset_families": 1,
+          "benchmark_suites": 2,
+          "databases": 1
+        },
+        "penicillin": {
+          "entries": 1,
+          "dataset_families": 1,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "retrosynthesis": {
+          "entries": 10,
+          "dataset_families": 4,
+          "benchmark_suites": 3,
+          "databases": 0
+        },
+        "selectivity": {
+          "entries": 2,
+          "dataset_families": 2,
+          "benchmark_suites": 0,
+          "databases": 0
+        },
+        "yield": {
+          "entries": 4,
+          "dataset_families": 3,
+          "benchmark_suites": 0,
+          "databases": 1
+        }
+      }
     }
   ]
 }
