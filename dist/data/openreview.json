@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-22T09:08:23.323569Z",
-  "last_success": "2026-11-22T09:08:23.323569Z",
+  "checked_at": "2026-11-23T10:01:30.190546Z",
+  "last_success": "2026-11-23T10:01:30.190546Z",
   "error": null,
   "terms": {
     "retrosynthesis": [
@@ -464,6 +464,90 @@
       ]
     },
     {
+      "forum": "QylqJp2R6Q",
+      "title": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
+      "url": "https://openreview.net/forum?id=QylqJp2R6Q",
+      "date": "2026-08-30",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026 Spotlight",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "MmXZDZrg06",
+      "title": "ED-CSP: Crystal Structure Prediction from Electron Diffraction",
+      "url": "https://openreview.net/forum?id=MmXZDZrg06",
+      "date": "2026-08-30",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "IiMnxxTyY2",
+      "title": "GeoFlowMAT: Interface-Repair Flow Matching with Triangle-Consensus Reasoning for Transferable Bio Molecular Binding Affinity Prediction",
+      "url": "https://openreview.net/forum?id=IiMnxxTyY2",
+      "date": "2026-08-30",
+      "public_date": "2026-11-22",
+      "venue": "NeurIPS2026-AI4Science Poster",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Science",
+      "topics": [
+        "bioactivity"
+      ]
+    },
+    {
+      "forum": "IUljCqRQWR",
+      "title": "Developing a Crystal Structure Prediction Algorithm with Agent-Guided Search",
+      "url": "https://openreview.net/forum?id=IUljCqRQWR",
+      "date": "2026-08-30",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026 Spotlight",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "90Gcap3MYA",
+      "title": "Riemannian Flow Models with Reinforcement Learning for Molecular Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=90Gcap3MYA",
+      "date": "2026-08-30",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "50Etw0SEKD",
+      "title": "Bridging First-Principles Material Property Predictions and Experimental Solar Cell Performance using a Multiscale Bayesian Optimization Framework",
+      "url": "https://openreview.net/forum?id=50Etw0SEKD",
+      "date": "2026-08-29",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
+      ]
+    },
+    {
+      "forum": "XvwiTOBjSH",
+      "title": "RetroMol: Knowledge Distillation of Energy-Based Retrosynthesis Models",
+      "url": "https://openreview.net/forum?id=XvwiTOBjSH",
+      "date": "2026-08-26",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "retrosynthesis"
+      ]
+    },
+    {
       "forum": "8Am5AW5eZZ",
       "title": "Enhanced Drift Sampling: Rare-Event Free-Energy Estimation with Tilted Drift Targets",
       "url": "https://openreview.net/forum?id=8Am5AW5eZZ",
@@ -473,6 +557,18 @@
       "venue_id": "NeurIPS.cc/2026/Workshop/RPS",
       "topics": [
         "free-energy"
+      ]
+    },
+    {
+      "forum": "au2ov7PrzY",
+      "title": "Fully Symmetry-Conditioned Rigid-Body Flow Matching for Molecular-Crystal Structure Prediction",
+      "url": "https://openreview.net/forum?id=au2ov7PrzY",
+      "date": "2026-08-24",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
       ]
     },
     {
@@ -509,6 +605,18 @@
       "venue_id": "ICLR.cc/2027/Conference/Submission",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "k7TBj2kCgL",
+      "title": "XRDiff: Crystal Structure Prediction from Powder X-Ray Diffraction Data Using Diffusion Models",
+      "url": "https://openreview.net/forum?id=k7TBj2kCgL",
+      "date": "2026-08-19",
+      "public_date": "2026-11-22",
+      "venue": "AI4Mat-NeurIPS-2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/AI4Mat",
+      "topics": [
+        "materials"
       ]
     },
     {
