@@ -1,6 +1,8 @@
 {
-  "checked_at": "2026-11-23T10:00:50.918742Z",
-  "errors": [],
+  "checked_at": "2026-11-24T11:52:21.000069Z",
+  "errors": [
+    "ChEMBL: <urlopen error _ssl.c:1001: The handshake operation timed out>"
+  ],
   "publications": {
     "dataset": {
       "": [
@@ -2994,6 +2996,6 @@
         "total": 2810
       }
     ],
-    "as_of": "2026-11-23T10:00:58.959196Z"
+    "as_of": "2026-11-24T11:52:43.544789Z"
   }
 }
