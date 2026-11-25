@@ -1,8 +1,6 @@
 {
-  "checked_at": "2026-11-24T11:52:21.000069Z",
-  "errors": [
-    "ChEMBL: <urlopen error _ssl.c:1001: The handshake operation timed out>"
-  ],
+  "checked_at": "2026-11-25T10:43:35.744388Z",
+  "errors": [],
   "publications": {
     "dataset": {
       "": [
@@ -2985,7 +2983,7 @@
       },
       {
         "year": 2026,
-        "annual": 370,
+        "annual": 372,
         "partial": true,
         "sources": [
           {
@@ -2993,9 +2991,9 @@
             "url": "https://api.datacite.org/dois?client-id=ethz.marvel&resource-type-id=dataset&page%5Bsize%5D=25&query=publicationYear%3A2026"
           }
         ],
-        "total": 2810
+        "total": 2812
       }
     ],
-    "as_of": "2026-11-24T11:52:43.544789Z"
+    "as_of": "2026-11-25T10:43:47.573397Z"
   }
 }

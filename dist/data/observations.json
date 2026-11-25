@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-24T11:52:20.968787Z",
+  "checked_at": "2026-11-25T10:43:35.714002Z",
   "items": [
     {
       "id": "uspto-full",
@@ -155,7 +155,12 @@
       "note": "仓库或指定路径提交变化；不代表数据记录数量增长"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "id": "erythromycin-efp",
+      "error": "The read operation timed out"
+    }
+  ],
   "events": [
     {
       "id": "matbench",
