@@ -129,10 +129,10 @@ python3 -m http.server 8888 --directory dist
 
 代码MIT许可。设计受[Scaling Biology](https://wconnell.github.io/scaling-bio/)启发，独立实现。
 
-## 我的 Benchmark 设计笔记（审核稿）
+## 我的 Benchmark 设计笔记
 
-`dist/benchmarks/index.html` 是 cynara517 的四道 DeltaScience 化学题设计专题，首页和导航均有入口。内容包括论文／Hyra 灵感、科研意义、工具、验收维度和历史模型表现反思。页面为静态 HTML，可独立离线阅读；外部论文链接需要联网。
+`dist/benchmarks/index.html` 展示 Shifan Chen 为 DeltaScience 贡献的四道化学题。专题与主站共享中英文语言偏好，涵盖论文与 Hyra 灵感、科研意义、工具、验收维度和设计反思。四题页面版本均为 v1.0。
 
-当前为待作者审核草稿，带有审核提示与 noindex 标记。与 Terminal-Bench-Science 的关系是参照其公开任务标准进行设计和审查，不代表官方收录或全部审查通过。这里只存放整理后的展示文字与公开条目摘录，不分发题包、隐藏答案、原始轨迹和内部报告。
+原站成绩以 2026-11-25 的公开快照为准，包含模型、Harness、0–100 分与已出分轮次数；2026-11-27 保存至 `dist/benchmarks/archive/2026-11-27-model-scores.json`。未出分轮次不计入均分。
 
-审核材料位于仓库外，发布目录仍为 `dist/`。本地预览：`python3 -m http.server 8888 --directory dist`，访问 `/benchmarks/index.html`。
+编辑 `content/benchmarks.json` 后运行 `python3 scripts/build_benchmarks.py` 生成静态页面。页面引用本地 `dist/i18n.js`，支持离线浏览；论文外链需要联网。对 TBS 的描述是方法和标准上的参照，不代表官方收录或认证。不会分发题包、隐藏答案、原始轨迹或内部审查材料。

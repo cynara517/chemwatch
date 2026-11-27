@@ -1,0 +1,1125 @@
+{
+  "source": "https://deltascience.bohrium.com/",
+  "snapshot_date": "2026-11-25",
+  "retrieved_at": "2026-11-27T11:47:55.239454+08:00",
+  "asset_sha256": "40043dcacaa9a6163ca5681d8f028517abe9f35b95d0a83f904733e332630ba7",
+  "score_scale": [
+    0,
+    100
+  ],
+  "planned_rounds": 5,
+  "method": "Mean of scored rounds per task, as published by DeltaScience. Pending rounds excluded; confirmed failures and timeouts count as zero.",
+  "models": [
+    {
+      "id": "gpt-6.2-astra-codex",
+      "model": "GPT-6.2 Astra",
+      "harness": "Codex",
+      "scores": {
+        "C-01": 100,
+        "CSF-1": 79.83657,
+        "CSF-2": 0,
+        "CSF-3": 100
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            16.55231,
+            "positive"
+          ],
+          [
+            82.630562,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            null,
+            "pending"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            null,
+            "pending"
+          ],
+          [
+            null,
+            "pending"
+          ],
+          [
+            null,
+            "pending"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gpt-6.2-sol-codex",
+      "model": "GPT-6.2 Sol",
+      "harness": "Codex",
+      "scores": {
+        "C-01": 100,
+        "CSF-1": 16.55684,
+        "CSF-2": 0,
+        "CSF-3": 93.75
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            16.552034,
+            "positive"
+          ],
+          [
+            16.561056,
+            "positive"
+          ],
+          [
+            16.559705,
+            "positive"
+          ],
+          [
+            16.550673,
+            "positive"
+          ],
+          [
+            16.560722,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            75,
+            "positive"
+          ],
+          [
+            null,
+            "pending"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "qwen4-max-qoder",
+      "model": "Qwen4-Max",
+      "harness": "Qoder",
+      "scores": {
+        "C-01": 100,
+        "CSF-1": 8.87966,
+        "CSF-2": 0,
+        "CSF-3": 55
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            17.01371,
+            "positive"
+          ],
+          [
+            16.54653,
+            "positive"
+          ],
+          [
+            10.838073,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            75,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "kimi-k3.1-pro-kimi-code",
+      "model": "Kimi K3.1 Pro",
+      "harness": "Kimi Code",
+      "scores": {
+        "C-01": 100,
+        "CSF-1": 11.21242,
+        "CSF-2": 0,
+        "CSF-3": 51
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            1.896802,
+            "positive"
+          ],
+          [
+            16.407923,
+            "positive"
+          ],
+          [
+            3.943396,
+            "positive"
+          ],
+          [
+            16.532263,
+            "positive"
+          ],
+          [
+            17.281714,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            35,
+            "positive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hy4-dsh",
+      "model": "HY4",
+      "harness": "DSH",
+      "scores": {
+        "C-01": 83.04857,
+        "CSF-1": 27.54442,
+        "CSF-2": 0,
+        "CSF-3": 36
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            93.20487,
+            "positive"
+          ],
+          [
+            91.171557,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            30.86642,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            17.21249,
+            "positive"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            4.321789,
+            "positive"
+          ],
+          [
+            16.18783,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            60,
+            "positive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017-dsh",
+      "model": "DeepSeek V4.1 Flash",
+      "harness": "DSH",
+      "scores": {
+        "C-01": 81.40147,
+        "CSF-1": 2.98927,
+        "CSF-2": 0,
+        "CSF-3": 41
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            92.452851,
+            "positive"
+          ],
+          [
+            28.018913,
+            "positive"
+          ],
+          [
+            86.535598,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            7.65034,
+            "positive"
+          ],
+          [
+            5.475644,
+            "positive"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            1.820381,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            20,
+            "positive"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            70,
+            "positive"
+          ],
+          [
+            60,
+            "positive"
+          ],
+          [
+            35,
+            "positive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hy4-codebuddy",
+      "model": "HY4",
+      "harness": "CodeBuddy",
+      "scores": {
+        "C-01": 35.13589,
+        "CSF-1": 16.84925,
+        "CSF-2": 20,
+        "CSF-3": 13.75
+      },
+      "rounds": {
+        "C-01": [
+          [
+            19.143931,
+            "positive"
+          ],
+          [
+            78.267765,
+            "positive"
+          ],
+          [
+            78.267765,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-1": [
+          [
+            7.805047,
+            "positive"
+          ],
+          [
+            16.278906,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            60.162312,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-3": [
+          [
+            0,
+            "timeout"
+          ],
+          [
+            35,
+            "positive"
+          ],
+          [
+            null,
+            "pending"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            20,
+            "positive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "glm-5.3-zcode",
+      "model": "GLM 5.3",
+      "harness": "ZCode",
+      "scores": {
+        "C-01": 49.44407,
+        "CSF-1": 0.19238,
+        "CSF-2": 0,
+        "CSF-3": 0
+      },
+      "rounds": {
+        "C-01": [
+          [
+            47.220335,
+            "positive"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            66.666667,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            33.333333,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0.015011,
+            "positive"
+          ],
+          [
+            0.946911,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hy4-flash-codebuddy",
+      "model": "HY4 Flash",
+      "harness": "CodeBuddy",
+      "scores": {
+        "C-01": 74.60875,
+        "CSF-1": 2.10742,
+        "CSF-2": 0,
+        "CSF-3": 24.66667
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            27.466033,
+            "positive"
+          ],
+          [
+            96.92226,
+            "positive"
+          ],
+          [
+            84.488804,
+            "positive"
+          ],
+          [
+            64.166667,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            3.291687,
+            "positive"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            7.245433,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ]
+        ],
+        "CSF-3": [
+          [
+            20,
+            "positive"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            28.333333,
+            "positive"
+          ],
+          [
+            35,
+            "positive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mimo-v2.6-pro-mimo-code",
+      "model": "MiMo V2.6 Pro",
+      "harness": "MiMo Code",
+      "scores": {
+        "C-01": 17.42729,
+        "CSF-1": 6.06308,
+        "CSF-2": 0,
+        "CSF-3": 11
+      },
+      "rounds": {
+        "C-01": [
+          [
+            23.202196,
+            "positive"
+          ],
+          [
+            15.601417,
+            "positive"
+          ],
+          [
+            15.601417,
+            "positive"
+          ],
+          [
+            21.973243,
+            "positive"
+          ],
+          [
+            10.75819,
+            "positive"
+          ]
+        ],
+        "CSF-1": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            9.188005,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            21.127395,
+            "positive"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-3": [
+          [
+            20,
+            "positive"
+          ],
+          [
+            35,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "doubao-seed-2.1-pro-trae",
+      "model": "Doubao Seed 2.1 Pro",
+      "harness": "TRAE",
+      "scores": {
+        "C-01": 60,
+        "CSF-1": 0,
+        "CSF-2": 0,
+        "CSF-3": 12
+      },
+      "rounds": {
+        "C-01": [
+          [
+            100,
+            "positive"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            100,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-1": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-2": [
+          [
+            0,
+            "zero"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            0,
+            "timeout"
+          ]
+        ],
+        "CSF-3": [
+          [
+            20,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            20,
+            "positive"
+          ],
+          [
+            0,
+            "timeout"
+          ],
+          [
+            20,
+            "positive"
+          ]
+        ]
+      }
+    }
+  ]
+}

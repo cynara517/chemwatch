@@ -1,0 +1,572 @@
+{
+  "author": "Shifan Chen",
+  "version": "v1.0",
+  "tasks": [
+    {
+      "id": "C-01",
+      "field": {
+        "zh": "药物化学 · 化学信息学",
+        "en": "Medicinal chemistry · Cheminformatics"
+      },
+      "title": {
+        "zh": "PARP1 多目标先导优化",
+        "en": "Multi-objective PARP1 lead optimization"
+      },
+      "question": {
+        "zh": "怎样让分子设计同时面对亲和力、可开发性与结构多样性的取舍？",
+        "en": "Can a molecular design agent balance affinity, developability and structural diversity?"
+      },
+      "origin": {
+        "zh": "C-01 的起点是我阅读 Hyra 自进化研究展示时产生的一个问题：当 Agent 能反复提出候选、调用工具并根据反馈改进时，能否把这种探索组织成一个可重复验收的药物设计任务？Hyra 官方仓库中的 PARP1 docking 项目是这一灵感的具体参照。",
+        "en": "C-01 began with a question inspired by Hyra’s demonstration of self-improving research: when an agent can propose candidates, use tools and iterate on feedback, can that exploration become a reproducible drug-design task? The PARP1 docking project in Hyra’s official repository provided a concrete point of reference."
+      },
+      "design": {
+        "zh": "我把这个想法落实为以 olaparib 为参照的多目标先导优化：除了固定协议下的对接表现，还同时关注类药性、预测溶解度和骨架多样性。",
+        "en": "I developed this idea into a multi-objective lead-optimization task using olaparib as a reference. Alongside docking performance under a fixed protocol, the task considers drug-likeness, predicted solubility and scaffold diversity."
+      },
+      "meaning": {
+        "zh": "先导优化往往需要处理相互牵制的目标：增加疏水片段可能改善对接，却损害溶解度；只围绕一个母核搜索，也可能得到结构过于相似的候选。将这些目标一起验收，可以观察 Agent 是否会主动比较收益与代价。",
+        "en": "Lead optimization involves competing objectives. Adding a hydrophobic fragment may improve docking while reducing solubility; searching around a single core may produce candidates that are too similar. Evaluating these objectives together reveals whether an agent actively weighs benefits against trade-offs."
+      },
+      "tools": [
+        [
+          {
+            "zh": "RDKit",
+            "en": "RDKit"
+          },
+          {
+            "zh": "解析结构、生成构象，计算分子性质、QED 与结构多样性。",
+            "en": "Parse structures, generate conformers and calculate molecular properties, QED and structural diversity."
+          }
+        ],
+        [
+          {
+            "zh": "AutoDock Vina / Meeko",
+            "en": "AutoDock Vina / Meeko"
+          },
+          {
+            "zh": "在固定受体与制备流程下比较参考分子和候选分子的对接表现。",
+            "en": "Compare reference and candidate docking performance using a fixed receptor and preparation protocol."
+          }
+        ],
+        [
+          {
+            "zh": "ESOL",
+            "en": "ESOL"
+          },
+          {
+            "zh": "以结构描述符估计水溶解度，作为多目标筛选中的一个计算指标。",
+            "en": "Estimate aqueous solubility from structural descriptors as one computational criterion in multi-objective screening."
+          }
+        ]
+      ],
+      "criteria": [
+        [
+          {
+            "zh": "结构与输入",
+            "en": "Structures and inputs"
+          },
+          {
+            "zh": "候选结构有效、去重，并满足规定的分子性质边界。",
+            "en": "Require valid, deduplicated candidates within the specified molecular-property bounds."
+          }
+        ],
+        [
+          {
+            "zh": "联合目标",
+            "en": "Joint objectives"
+          },
+          {
+            "zh": "在同一计算协议下，相对参考分子比较对接与 QED，并检查预测溶解度。",
+            "en": "Compare docking and QED against the reference under the same protocol, and check predicted solubility."
+          }
+        ],
+        [
+          {
+            "zh": "组合质量",
+            "en": "Candidate diversity"
+          },
+          {
+            "zh": "检查合格候选之间的结构与骨架多样性，避免单一候选的微小改写充当整个解。",
+            "en": "Evaluate structural and scaffold diversity across qualifying candidates, rather than accepting minor variants of a single molecule as a complete solution."
+          }
+        ],
+        [
+          {
+            "zh": "独立验收",
+            "en": "Independent verification"
+          },
+          {
+            "zh": "评分端重新计算关键指标，不以模型自报分数作为通过依据。",
+            "en": "Recalculate key quantities independently rather than trusting scores reported by the agent."
+          }
+        ]
+      ],
+      "reflection": {
+        "zh": "这道题让我更关注 Agent 是否完成了“设计—计算—筛选—交付”的整个闭环。对接分数的改善需要放回多目标背景里解释；没有有效交付物的零分，也不足以说明模型不会做分子设计。",
+        "en": "This task made me pay closer attention to the complete cycle of design, computation, selection and delivery. Better docking scores need to be interpreted in a multi-objective context. A zero caused by a missing valid submission is also insufficient evidence that a model cannot design molecules."
+      },
+      "limit": {
+        "zh": "Vina、QED 和 ESOL 分别是固定协议下的评分或预测。满足本题验收标准，不等于实验亲和力、真实溶解度或体内性质已经得到验证。",
+        "en": "Vina, QED and ESOL provide scores or predictions under a fixed protocol. Passing this task does not establish experimental affinity, measured solubility or in vivo performance."
+      },
+      "refs": [
+        "hyra",
+        "hyra-parp",
+        "parp",
+        "esol"
+      ]
+    },
+    {
+      "id": "CSF-1",
+      "field": {
+        "zh": "计算化学 · 量子化学",
+        "en": "Computational chemistry · Quantum chemistry"
+      },
+      "title": {
+        "zh": "水接力异构化与振动分析",
+        "en": "Water-relay isomerization and vibrational analysis"
+      },
+      "question": {
+        "zh": "一个看似简单的势垒数值，能否由完整、可重算的量子化学证据支撑？",
+        "en": "Can a seemingly simple barrier value be supported by complete, independently reproducible quantum-chemical evidence?"
+      },
+      "origin": {
+        "zh": "Baiano 等关于冰表面 HCN/HNC 异构化的研究，让我注意到水分子参与质子接力如何改变反应势垒。论文也讨论计算方法的精度与成本，这为设计一个可执行的量子化学任务提供了切入点。",
+        "en": "Baiano and colleagues’ work on HCN/HNC isomerization on ice drew my attention to how water-assisted proton relays change reaction barriers. Its discussion of computational accuracy and cost offered a starting point for an executable quantum-chemistry task."
+      },
+      "design": {
+        "zh": "我从这一研究背景中选取一个边界明确的小体系：固定几何，要求计算绝对电子能、完整 Cartesian Hessian、投影振动频率和谐零点能，再形成校正后的势垒。设计重点是保留各层结果之间可检查的关系。",
+        "en": "I selected a small, clearly bounded system from this research context. With fixed geometries, the task asks for absolute electronic energies, full Cartesian Hessians, projected vibrational frequencies and harmonic zero-point energies, followed by a corrected barrier. The design preserves checkable relationships between each layer of the result."
+      },
+      "meaning": {
+        "zh": "反应速率的讨论依赖对势垒及振动修正的可靠估计。只给出一个最终数值，很难判断模型是否真正完成了计算。本题把中间科学量也纳入验收，使单位、原子映射、坐标变换和振动分析中的错误有机会被定位。",
+        "en": "Reaction-rate analysis depends on reliable barriers and vibrational corrections. A final number alone reveals little about whether the calculation was actually completed. Including intermediate scientific quantities helps locate errors in units, atom mappings, coordinate transformations and vibrational analysis."
+      },
+      "tools": [
+        [
+          {
+            "zh": "Psi4",
+            "en": "Psi4"
+          },
+          {
+            "zh": "执行指定双杂化泛函与基组下的电子结构计算，并构造有限位移 Hessian。",
+            "en": "Run electronic-structure calculations using the specified double-hybrid functional and basis set, and construct finite-displacement Hessians."
+          }
+        ],
+        [
+          {
+            "zh": "NumPy / 线性代数工具",
+            "en": "NumPy / linear algebra tools"
+          },
+          {
+            "zh": "进行质量加权、外部模式投影、振动分析和数值一致性检查。",
+            "en": "Perform mass weighting, projection of external modes, vibrational analysis and numerical consistency checks."
+          }
+        ],
+        [
+          {
+            "zh": "独立计算环境",
+            "en": "Independent computation environment"
+          },
+          {
+            "zh": "从可信几何重新计算关键量，核对提交中的能量与完整张量。",
+            "en": "Recalculate key quantities from trusted geometries and compare submitted energies and full tensors."
+          }
+        ]
+      ],
+      "criteria": [
+        [
+          {
+            "zh": "计算协议",
+            "en": "Calculation protocol"
+          },
+          {
+            "zh": "统一几何、电子结构方法、基组、冻结芯约定与单位。",
+            "en": "Use consistent geometries, electronic-structure methods, basis sets, frozen-core conventions and units."
+          }
+        ],
+        [
+          {
+            "zh": "完整数值证据",
+            "en": "Complete numerical evidence"
+          },
+          {
+            "zh": "同时验收绝对能量、完整力常数矩阵及其映射和旋转一致性。",
+            "en": "Evaluate absolute energies and full force-constant matrices, including mapping and rotational consistency."
+          }
+        ],
+        [
+          {
+            "zh": "物理关系",
+            "en": "Physical relationships"
+          },
+          {
+            "zh": "检查频率、谐零点能、电子势垒与校正势垒的相互关系。",
+            "en": "Check consistency among frequencies, harmonic zero-point energies, electronic barriers and corrected barriers."
+          }
+        ],
+        [
+          {
+            "zh": "可重算性",
+            "en": "Reproducibility"
+          },
+          {
+            "zh": "由独立评分端进行真实重算；不能只凭文献标量接近或内部算术自洽通过。",
+            "en": "Require genuine independent recalculation; agreement with a published scalar or internal arithmetic alone is insufficient."
+          }
+        ]
+      ],
+      "reflection": {
+        "zh": "更有说服力的量子化学评测，应让答案背后的计算过程可以被独立核对。把验收推进到完整张量，也让出题者承担更多责任：跨实现容差需要校准，计算预算需要真实测量。",
+        "en": "A convincing quantum-chemistry evaluation should make the computations behind an answer independently checkable. Extending verification to full tensors also places greater responsibility on task designers: tolerances across implementations need calibration, and computational budgets need measurement."
+      },
+      "limit": {
+        "zh": "本题是固定模型与固定几何下的计算任务，不覆盖完整冰表面环境，也不自动复现原论文全部体系、反应速率或隧穿结论。",
+        "en": "This is a calculation with a fixed model and fixed geometries. It does not cover a complete ice-surface environment or automatically reproduce every system, rate or tunneling result in the source paper."
+      },
+      "refs": [
+        "ice",
+        "ice-open"
+      ]
+    },
+    {
+      "id": "CSF-2",
+      "field": {
+        "zh": "有机化学 · 机器学习",
+        "en": "Organic chemistry · Machine learning"
+      },
+      "title": {
+        "zh": "钯电催化的普适方案设计",
+        "en": "Generalizable pallada-electrocatalytic design"
+      },
+      "question": {
+        "zh": "Agent 能否将物理有机知识、几何分析与预测流程整合为一套可验证的催化设计？",
+        "en": "Can an agent integrate physical-organic knowledge, geometry analysis and prediction into a verifiable catalytic design?"
+      },
+      "origin": {
+        "zh": "Xu 等在 Nature Synthesis 发表的工作将过渡态知识引入机器学习，研究钯电催化 C–H 活化的对映选择性。我感兴趣的是，这类研究能否从“预测一条反应”转化为“为一组底物设计共享条件”的 Agent 任务。",
+        "en": "Xu and colleagues’ Nature Synthesis study incorporates transition-state knowledge into machine learning to investigate enantioselectivity in pallada-electrocatalysed C–H activation. I was interested in turning reaction prediction into an agent task that designs shared conditions for a set of substrates."
+      },
+      "design": {
+        "zh": "题目要求把催化组分、底物覆盖、几何量、物性与选择性预测放在一起考虑。模型需要重建特征选择、降维、代表点采样和区域 Δ 学习流程，并让提交的预测与指定协议一致。多轮机制提供重新训练的机会，但各轮共享同一套设计。",
+        "en": "The task brings catalytic components, substrate coverage, geometry, physical properties and selectivity predictions into one problem. An agent reconstructs feature selection, dimensionality reduction, representative-point sampling and regional delta learning, then submits predictions consistent with the specified protocol. Multiple rounds allow retraining while retaining a shared design."
+      },
+      "meaning": {
+        "zh": "普适方案设计考察的是跨底物的稳健性，以及物理有机约束与统计预测是否相容。它把实验文献中的科学问题转化为一个需要处理数据、工具和约束的完整计算工作流。",
+        "en": "Generalizable design tests robustness across substrates and compatibility between physical-organic constraints and statistical predictions. It turns a scientific question from experimental literature into a computational workflow involving data, tools and coupled requirements."
+      },
+      "tools": [
+        [
+          {
+            "zh": "Python / scikit-learn",
+            "en": "Python / scikit-learn"
+          },
+          {
+            "zh": "特征筛选、PCA、基模型与区域 Δ 学习。",
+            "en": "Feature selection, PCA, baseline models and regional delta learning."
+          }
+        ],
+        [
+          {
+            "zh": "分子坐标与几何分析",
+            "en": "Molecular coordinates and geometry analysis"
+          },
+          {
+            "zh": "从坐标复算配位与构象指标，结合物性表筛选条件。",
+            "en": "Recalculate coordination and conformational quantities from coordinates, and screen conditions using property tables."
+          }
+        ],
+        [
+          {
+            "zh": "独立预测重建",
+            "en": "Independent prediction reconstruction"
+          },
+          {
+            "zh": "在干净环境中重建可信预测，核对组合覆盖与结果一致性。",
+            "en": "Rebuild trusted predictions in a clean environment and check combinatorial coverage and result consistency."
+          }
+        ]
+      ],
+      "criteria": [
+        [
+          {
+            "zh": "共享设计",
+            "en": "Shared design"
+          },
+          {
+            "zh": "结构几何、物性与底物覆盖同时成立，报告量与复算定义一致。",
+            "en": "Satisfy geometry, property and substrate-coverage requirements together, using consistent definitions for reported and recalculated quantities."
+          }
+        ],
+        [
+          {
+            "zh": "预测流程",
+            "en": "Prediction workflow"
+          },
+          {
+            "zh": "遵循指定数据划分、特征处理和训练协议，保证结果可比较。",
+            "en": "Follow the specified data splits, feature processing and training protocol so results remain comparable."
+          }
+        ],
+        [
+          {
+            "zh": "完整空间",
+            "en": "Complete space"
+          },
+          {
+            "zh": "检查组合空间的覆盖、重复、遗漏及逐点预测一致性。",
+            "en": "Check coverage, duplicates, omissions and pointwise agreement across the combination space."
+          }
+        ],
+        [
+          {
+            "zh": "多轮语义",
+            "en": "Multiple-round rule"
+          },
+          {
+            "zh": "最多五轮，任一完整轮次通过即可；不跨轮拼接各自最好的指标。",
+            "en": "Allow up to five rounds, with any single complete passing round sufficient; do not combine the best metrics from different rounds."
+          }
+        ]
+      ],
+      "reflection": {
+        "zh": "增加尝试次数不能修复共同的前置错误。更值得分析的是：模型如何解释几何量、怎样组织数据流程，以及自查为何与独立验收不同。这也反过来要求我把坐标来源、原子选择和聚合规则写清楚，让失败真正指向科研执行能力。",
+        "en": "More attempts cannot repair a shared prerequisite error. More revealing questions concern how a model interprets geometry, organizes its data pipeline and reconciles self-checks with independent verification. This also requires me to specify coordinate sources, atom selections and aggregation rules clearly, so failures meaningfully reflect scientific execution."
+      },
+      "limit": {
+        "zh": "模型给出的新条件和选择性属于计算预测，不是新完成的湿实验。",
+        "en": "New conditions and selectivity values produced by a model are computational predictions, not newly performed wet-lab experiments."
+      },
+      "refs": [
+        "pd"
+      ]
+    },
+    {
+      "id": "CSF-3",
+      "field": {
+        "zh": "有机化学 · 计算化学",
+        "en": "Organic chemistry · Computational chemistry"
+      },
+      "title": {
+        "zh": "区域选择性逆合成审计",
+        "en": "Regioselectivity audits of retrosynthetic proposals"
+      },
+      "question": {
+        "zh": "一条逆合成断键在图上成立，是否也能获得区域选择性的计算支持？",
+        "en": "A retrosynthetic disconnection may look plausible on paper. Does competing-site chemistry support it?"
+      },
+      "origin": {
+        "zh": "材料列出的研究背景包括反应预测与合成规划、杂环自由基 C–H 官能团化的区域选择性预测，以及 Rega 的过渡态搜索工作。它们共同引出了我的设计问题：一条看起来合理的合成建议，能否经受竞争反应位点的定量检查？",
+        "en": "The research background includes reaction prediction and synthesis planning, regioselectivity prediction for radical C–H functionalization of heterocycles, and Rega’s transition-state searching approach. Together they motivated my question: can a plausible synthetic proposal withstand quantitative scrutiny of competing reaction sites?"
+      },
+      "design": {
+        "zh": "我把任务收束到一个明确的反应步骤：寻找反应物极小值和竞争加成通道的一阶鞍点，计算势垒差与条件选择性，再判断给定目标位点是否受到该模型支持。题目评价的是审计证据，而不只是生成一条路线。",
+        "en": "I narrowed the task to a defined reaction step: locate reactant minima and first-order saddle points for competing addition pathways, calculate barrier differences and conditional selectivity, and assess whether the specified model supports each target site. The task evaluates the evidence behind an audit, beyond the generation of a route."
+      },
+      "meaning": {
+        "zh": "逆合成规划需要判断反应是否会发生在目标位置。用相互竞争的通道检验断键建议，可以连接分子层面的机理计算与路线层面的决策，同时保留“证据不足”的结论空间。",
+        "en": "Retrosynthetic planning must consider whether a reaction will occur at the intended position. Comparing competing pathways connects molecular mechanistic calculations with route-level decisions, while leaving room for an inconclusive result when the evidence is insufficient."
+      },
+      "tools": [
+        [
+          {
+            "zh": "PySCF",
+            "en": "PySCF"
+          },
+          {
+            "zh": "计算能量、梯度、Hessian 与自旋诊断。",
+            "en": "Calculate energies, gradients, Hessians and spin diagnostics."
+          }
+        ],
+        [
+          {
+            "zh": "geomeTRIC / 数值优化工具",
+            "en": "geomeTRIC / numerical optimization tools"
+          },
+          {
+            "zh": "支持几何优化与驻点搜索。",
+            "en": "Support geometry optimization and stationary-point searches."
+          }
+        ],
+        [
+          {
+            "zh": "RDKit / NumPy / SciPy",
+            "en": "RDKit / NumPy / SciPy"
+          },
+          {
+            "zh": "处理结构与原子映射，分析振动模式、势垒及条件选择性。",
+            "en": "Handle structures and atom mappings, and analyze vibrational modes, barriers and conditional selectivity."
+          }
+        ]
+      ],
+      "criteria": [
+        [
+          {
+            "zh": "结构与驻点",
+            "en": "Structures and stationary points"
+          },
+          {
+            "zh": "检查结构连接、几何合理性、梯度收敛及极小值／鞍点类型。",
+            "en": "Check connectivity, plausible geometry, gradient convergence and minimum or saddle-point character."
+          }
+        ],
+        [
+          {
+            "zh": "反应相关性",
+            "en": "Reaction relevance"
+          },
+          {
+            "zh": "核验虚频模式与目标成键过程的对应关系，而非仅统计虚频数量。",
+            "en": "Verify that the imaginary mode corresponds to the intended bond-forming process, beyond merely counting imaginary frequencies."
+          }
+        ],
+        [
+          {
+            "zh": "电子结构",
+            "en": "Electronic structure"
+          },
+          {
+            "zh": "核对能量、梯度与自旋诊断的复算一致性。",
+            "en": "Check independently recalculated energies, gradients and spin diagnostics against the submission."
+          }
+        ],
+        [
+          {
+            "zh": "结论链条",
+            "en": "Chain of conclusions"
+          },
+          {
+            "zh": "从竞争通道的能量关系形成选择性判断，保持数值、概率和目标结论一致。",
+            "en": "Derive selectivity judgments from competing-pathway energies, keeping numerical results, probabilities and target conclusions consistent."
+          }
+        ]
+      ],
+      "reflection": {
+        "zh": "路线看起来合理只是起点。对 Agent 的要求应该落实到可检查的驻点、反应模式和数值关系；对出题者的要求则是让题面与评分契约一致，避免实现差异成为额外障碍。",
+        "en": "A plausible-looking route is only a starting point. Agent evaluation should rest on checkable stationary points, reaction modes and numerical relationships. Task designers must also align instructions with the verification contract, so implementation differences do not become unintended obstacles."
+      },
+      "limit": {
+        "zh": "这里只审计指定中性自由基加成步骤的条件区域选择性，不覆盖自由基生成、后续反应、完整路线可行性或实验产率。",
+        "en": "The task audits conditional regioselectivity for a specified neutral-radical addition step. It does not cover radical generation, subsequent reactions, full-route feasibility or experimental yield."
+      },
+      "refs": [
+        "plan",
+        "regio",
+        "rega"
+      ]
+    }
+  ],
+  "references": {
+    "hyra": {
+      "title": {
+        "zh": "Hyra · Hunyuan Research Agent",
+        "en": "Hyra · Hunyuan Research Agent"
+      },
+      "meta": {
+        "zh": "Tencent Hunyuan · 项目主页",
+        "en": "Tencent Hunyuan · Project homepage"
+      },
+      "url": "https://hy.tencent.com/research/hyra"
+    },
+    "hyra-parp": {
+      "title": {
+        "zh": "Hyra 的 PARP1 docking 项目",
+        "en": "Hyra’s PARP1 docking project"
+      },
+      "meta": {
+        "zh": "Tencent-Hunyuan/Hyra-results · 官方研究产物",
+        "en": "Tencent-Hunyuan/Hyra-results · Official research artifacts"
+      },
+      "url": "https://github.com/Tencent-Hunyuan/Hyra-results/tree/main/AI4Science/parp1_docking"
+    },
+    "parp": {
+      "title": {
+        "zh": "PARP1 抑制剂选择性的结构研究",
+        "en": "Structural determinants of PARP1 inhibitor selectivity"
+      },
+      "meta": {
+        "zh": "Ryan et al. · JBC · 2021",
+        "en": "Ryan et al. · JBC · 2021"
+      },
+      "url": "https://doi.org/10.1074/jbc.RA120.016573"
+    },
+    "esol": {
+      "title": {
+        "zh": "ESOL：由分子结构估计水溶解度",
+        "en": "ESOL: estimating aqueous solubility from molecular structure"
+      },
+      "meta": {
+        "zh": "Delaney · JCIM · 2004",
+        "en": "Delaney · JCIM · 2004"
+      },
+      "url": "https://doi.org/10.1021/ci034243x"
+    },
+    "ice": {
+      "title": {
+        "zh": "Gliding on ice: the puzzling case of the HCN isomerization",
+        "en": "Gliding on ice: the puzzling case of the HCN isomerization"
+      },
+      "meta": {
+        "zh": "Baiano et al. · JCTC 18, 3111–3121 · 2022",
+        "en": "Baiano et al. · JCTC 18, 3111–3121 · 2022"
+      },
+      "url": "https://doi.org/10.1021/acs.jctc.1c01252"
+    },
+    "ice-open": {
+      "title": {
+        "zh": "HCN 异构化研究的开放预印本",
+        "en": "Open preprint of the HCN isomerization study"
+      },
+      "meta": {
+        "zh": "作者版本 · arXiv:2204.04642",
+        "en": "Author version · arXiv:2204.04642"
+      },
+      "url": "https://arxiv.org/abs/2204.04642"
+    },
+    "pd": {
+      "title": {
+        "zh": "Enantioselectivity prediction of pallada-electrocatalysed C–H activation using transition state knowledge in machine learning",
+        "en": "Enantioselectivity prediction of pallada-electrocatalysed C–H activation using transition state knowledge in machine learning"
+      },
+      "meta": {
+        "zh": "Xu et al. · Nature Synthesis 2, 321–330 · 2023",
+        "en": "Xu et al. · Nature Synthesis 2, 321–330 · 2023"
+      },
+      "url": "https://doi.org/10.1038/s44160-022-00233-y"
+    },
+    "plan": {
+      "title": {
+        "zh": "A unified pre-trained deep learning framework for cross-task reaction performance prediction and synthesis planning",
+        "en": "A unified pre-trained deep learning framework for cross-task reaction performance prediction and synthesis planning"
+      },
+      "meta": {
+        "zh": "Xu et al. · Nature Machine Intelligence 7, 1561–1571 · 2025",
+        "en": "Xu et al. · Nature Machine Intelligence 7, 1561–1571 · 2025"
+      },
+      "url": "https://doi.org/10.1038/s42256-025-01098-4"
+    },
+    "regio": {
+      "title": {
+        "zh": "Predicting Regioselectivity in Radical C–H Functionalization of Heterocycles through Machine Learning",
+        "en": "Predicting Regioselectivity in Radical C–H Functionalization of Heterocycles through Machine Learning"
+      },
+      "meta": {
+        "zh": "Li et al. · Angewandte Chemie International Edition · 2020",
+        "en": "Li et al. · Angewandte Chemie International Edition · 2020"
+      },
+      "url": "https://doi.org/10.1002/anie.202000959"
+    },
+    "rega": {
+      "title": {
+        "zh": "Rega: A Platform for the Prediction of the Regioselectivity of C–H Functionalization Reactions",
+        "en": "Rega: A Platform for the Prediction of the Regioselectivity of C–H Functionalization Reactions"
+      },
+      "meta": {
+        "zh": "Walton et al. · JCIM · 2026",
+        "en": "Walton et al. · JCIM · 2026"
+      },
+      "url": "https://doi.org/10.1021/acs.jcim.6c00651"
+    }
+  }
+}

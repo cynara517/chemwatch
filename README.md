@@ -132,3 +132,11 @@ Each group includes its actual query, last successful timestamp and error status
 This catalog distributes resource metadata and links, not raw chemical experimental data. Verify each source's data license separately: a software license does not automatically cover its datasets.
 
 Code is MIT-licensed. Design inspired by [Scaling Biology](https://wconnell.github.io/scaling-bio/), independently implemented.
+
+## My benchmark design notes
+
+[Explore the bilingual portfolio](https://cynara517.github.io/chemwatch/benchmarks/) by **Shifan Chen**, presenting four chemistry tasks contributed to DeltaScience: C-01, CSF-1, CSF-2 and CSF-3. Each v1.0 note covers research inspiration, scientific motivation, tools, verification criteria and reflections on model performance.
+
+The preserved public score snapshot is dated November 25, 2026 and was saved on November 27. Tables list the model, harness and score out of 100, identifying incomplete sets of scored rounds. Pending rounds are excluded from the mean.
+
+Edit `content/benchmarks.json` and run `python3 scripts/build_benchmarks.py` to regenerate the static pages. The portfolio shares the main site's language preference and can be read offline; external papers still require an internet connection. Only curated design notes and public metadata are included.

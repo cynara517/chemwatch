@@ -1,0 +1,49 @@
+{
+  "source_url": "https://deltascience.bohrium.com/",
+  "retrieved_at": "2026-11-27T11:27:12.527958+08:00",
+  "asset_url": "https://deltascience.bohrium.com/assets/index-BtHoVCDC.js",
+  "asset_sha256": "40043dcacaa9a6163ca5681d8f028517abe9f35b95d0a83f904733e332630ba7",
+  "scope": "Four public task metadata entries only; not a full-site mirror. Contribution attribution is the author’s statement, not established by the empty source author fields.",
+  "tasks": [
+    {
+      "code": "C-01",
+      "group": "化学",
+      "discipline": "药物化学",
+      "author": "",
+      "organization": "",
+      "focus": "药物设计",
+      "title": "PARP1 先导优化：亲和力、类药性、溶解度与骨架多样性的协同优化",
+      "position": "1"
+    },
+    {
+      "code": "CSF-1",
+      "group": "化学",
+      "discipline": "计算化学",
+      "author": "",
+      "organization": "",
+      "focus": "计算化学",
+      "title": "水分子接力辅助 HNC→HCN 异构化的谐振零点校正活化势垒——双杂化泛函完整力常数矩阵计算",
+      "position": "49"
+    },
+    {
+      "code": "CSF-2",
+      "group": "化学",
+      "discipline": "有机化学",
+      "author": "",
+      "organization": "",
+      "focus": "计算化学",
+      "title": "阻转选择性钯电催化 C–H 烯基化——普适催化方案设计",
+      "position": "50"
+    },
+    {
+      "code": "CSF-3",
+      "group": "化学",
+      "discipline": "有机化学",
+      "author": "",
+      "organization": "",
+      "focus": "计算化学",
+      "title": "区域选择性逆合成审计",
+      "position": "51"
+    }
+  ]
+}
