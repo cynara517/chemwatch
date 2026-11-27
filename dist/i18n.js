@@ -15,7 +15,7 @@ let language=initialLanguage();
 const tr=(zh,en)=>language==="en"?en:zh;
 const locale=()=>tr("zh-CN","en-US");
 const staticCopy=[];
-for (const [key,attribute] of [["en",null],["enAria","aria-label"],["enPlaceholder","placeholder"],["enContent","content"]]) {
+for (const [key,attribute] of [["en",null],["enAria","aria-label"],["enPlaceholder","placeholder"],["enContent","content"],["enAlt","alt"]]) {
   const selector="[data-"+key.replace(/[A-Z]/g,c=>"-"+c.toLowerCase())+"]";
   for (const element of document.querySelectorAll(selector)) {
     staticCopy.push({element,attribute,zh:attribute?element.getAttribute(attribute):element.textContent,en:element.dataset[key]});

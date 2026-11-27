@@ -1,4 +1,13 @@
-# ChemWatch · Chemical Data Observatory
+# CynaraWatch · Shifan Chen
+
+A bilingual home for **My Benchmarks**, **My Papers** and **ChemWatch**. The existing repository URL, data feeds, CLI and monitoring skill remain available.
+
+[Visit CynaraWatch](https://cynara517.github.io/chemwatch/) · [My Benchmarks](https://cynara517.github.io/chemwatch/benchmarks/index.html) · [My Papers](https://cynara517.github.io/chemwatch/papers/index.html) · [ChemWatch](https://cynara517.github.io/chemwatch/chemwatch.html)
+
+Build the shared navigation and bilingual pages with `python3 scripts/build_site.py`. Paper translations are maintained in `content/papers-translations.json`; Chinese stories live in `dist/papers/app.js`. Third-party paper figures retain their source licenses; see `dist/papers/assets/ATTRIBUTION.md`.
+
+## ChemWatch tools and data
+
 
 **English** | [简体中文](README.zh-CN.md)
 

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="按年份追踪化学数据、评估套件和研究投稿，查阅原始来源并订阅更新。" data-en-content="Track chemical data, benchmarks and research submissions over time. Explore the sources and subscribe to updates.">
+  <title data-en="ChemWatch · Scaling Chemistry">ChemWatch · 化学数据的增长</title>
+  <link rel="stylesheet" href="styles.css?v=ce47e2689991d5ac">
+<link rel="stylesheet" href="site-nav.css?v=11547dfa2d155429"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="site-mark" aria-hidden="true">C·</span> CynaraWatch</a><nav aria-label="主导航" data-en-aria="Main navigation"><a href="benchmarks/index.html">My Benchmarks</a><a href="papers/index.html">My Papers</a><a href="chemwatch.html" aria-current="page">ChemWatch</a></nav><div class="language-switch" role="group" aria-label="语言" data-en-aria="Language"><button type="button" data-lang="zh" lang="zh-CN" aria-pressed="true">中文</button><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button></div></header><nav class="section-nav" aria-label="ChemWatch"><a href="#overview" data-nav="overview" data-en="Overview">概览</a><a href="#catalog" data-nav="catalog" data-en="Catalog">数据目录</a><a href="#connect" data-nav="connect" data-en="Connect an agent">连接 Agent</a><a href="#method" data-nav="method" data-en="Methods">统计方法</a></nav>
+<main>
+<section id="overview" class="view">
+  <div class="timeline-intro">
+    <h1 data-en="Scaling Chemistry">化学数据的增长</h1>
+    <p data-en="Explore the growth of chemical data, benchmarks and public research submissions.">探索化学数据、评估套件与公开投稿的历年增长。</p>
+  </div>
+  <section id="timeline" aria-label="化学数据历史时间线" data-en-aria="Historical chemical data">
+    <div id="series-picker" role="group" aria-label="选择统计指标" data-en-aria="Choose a metric"></div>
+    <div class="chart-controls timeline-controls">
+      <label id="time-topic-label"><span data-en="Research topic">研究方向</span> <select id="time-topic"></select></label>
+      <div class="mode-switch" role="group" aria-label="统计视图" data-en-aria="Chart scale">
+        <button data-time-mode="total" aria-pressed="true" data-en="Cumulative">累计</button>
+        <button data-time-mode="annual" aria-pressed="false" data-en="Annual">年度</button>
+        <button data-time-mode="log" aria-pressed="false" data-en="Log scale">对数</button>
+      </div>
+    </div>
+    <div class="panel time-panel">
+      <div class="time-head"><div><h2 id="time-title">…</h2><span id="time-unit"></span></div></div>
+      <div id="time-plot" aria-live="polite"></div>
+      <div id="time-point" aria-live="polite"></div>
+      <p id="time-note"></p>
+      <details id="time-details"><summary data-en="Annual figures and sources">逐年数值与来源</summary><div id="time-table"></div></details>
+    </div>
+  </section>
+  <section class="portfolio-entry" aria-label="我的 Benchmark 设计" data-en-aria="My benchmark designs"><div><span class="portfolio-kicker" data-en="RESEARCH NOTES · SHIFAN CHEN">设计笔记 · SHIFAN CHEN</span><h2 data-en="From research inspiration to verifiable agent tasks">从科研灵感到可验收的 Agent 任务</h2><p data-en="Four chemistry tasks contributed to DeltaScience: papers, scientific tools, evaluation criteria and reflections from model runs. Bilingual design notes.">我为 DeltaScience 贡献的四道化学题：论文灵感、科学工具、验收标准与模型运行反思。</p></div><a class="button secondary" href="benchmarks/index.html" data-en="Explore the design notes">阅读设计专题</a></section>
+  <div class="section-head"><h2 data-en="Research topics">研究方向</h2></div>
+  <div id="topic-grid" class="topic-grid"></div>
+  <div class="overview-bottom">
+    <section class="panel">
+      <div class="section-head compact"><div><h3 data-en="Catalog coverage">目录覆盖情况</h3><p data-en="Each dataset family or benchmark suite counts once per topic.">各专题分别统计数据集家族与评估套件。</p></div>
+        <select id="coverage-mode" aria-label="覆盖统计类型" data-en-aria="Coverage metric"><option value="dataset" data-en="Dataset families">数据集家族</option><option value="benchmark" data-en="Benchmark suites">评估套件</option></select>
+      </div>
+      <div id="coverage" class="coverage"></div><div id="history-chart"></div>
+      <div id="history-note" class="panel-foot"><span data-en="Coverage snapshots begin with the launch of ChemWatch.">收录快照从 ChemWatch 建站时开始记录。</span></div>
+    </section>
+    <section class="panel signal-panel">
+      <div class="section-head compact"><h3 data-en="Source activity">来源动态</h3><span class="status-badge"><span data-en="Baseline">基线</span></span></div>
+      <div id="signals"></div>
+      <a class="text-link" href="#method" data-en="Explore the methodology ↗">查看统计方法 ↗</a>
+    </section>
+  </div>
+</section>
+<section id="catalog" class="view" hidden>
+  <div class="page-title"><div><h1 data-en="Data catalog">数据目录</h1><p data-en="Find dataset families, individual releases and benchmark suites by research topic.">按研究方向查找数据集家族、发布版本和评估套件。</p></div>
+    <button class="button secondary" id="export" data-en="Export results ↓">导出当前结果 ↓</button>
+  </div>
+  <div id="topic-tabs" class="topic-tabs" role="group" aria-label="研究主题" data-en-aria="Research topics"></div>
+  <div class="catalog-layout">
+    <aside class="filters">
+      <label><span data-en="Search">关键词</span><input type="search" id="search" placeholder="名称、任务、分子、来源…" data-en-placeholder="Name, task, molecule, source…"></label>
+      <label><span data-en="Resource type">资源类型</span><select id="kind"><option value="" data-en="All types">全部类型</option><option value="dataset" data-en="Dataset">数据集</option><option value="benchmark" data-en="Benchmark suite">评估套件</option><option value="database" data-en="Active database">持续更新的数据库</option></select></label>
+      <label><span data-en="Data origin">数据来源</span><select id="origin"><option value="" data-en="All origins">全部来源</option><option value="实验" data-en="Experimental">实验</option><option value="计算" data-en="Computational">计算</option><option value="专利" data-en="Patents">专利</option><option value="工业" data-en="Industrial processes">工业过程</option></select></label>
+      <label><span data-en="Task">细分任务</span><select id="target"><option value="" data-en="All tasks">全部任务</option><option value="C–C">C–C</option><option value="C–N">C–N</option><option value="C–H">C–H</option><option value="杂环" data-en="Heterocycles">杂环</option><option value="ΔG">ΔG</option><option value="ΔG‡">ΔG‡</option><option value="ΔΔG‡">ΔΔG‡</option><option value="ee">ee</option><option value="发酵" data-en="Fermentation">发酵</option></select></label>
+      <button class="reset" id="reset" data-en="Reset filters">重置筛选</button>
+      <div class="filter-note"><p data-en="The original USPTO corpus, USPTO-50k and USPTO-Full are releases in one dataset family.">USPTO 原始数据、50k 和 Full 属于同一数据集家族。</p></div>
+    </aside>
+    <div><div id="results-summary" class="results-summary" aria-live="polite"></div><div id="topic-context"></div><div id="cards" class="cards"></div></div>
+  </div>
+</section>
+<section id="connect" class="view" hidden>
+  <div class="page-title"><div><h1 data-en="Connect a research agent">连接研究 Agent</h1><p data-en="Install the CLI and monitoring skill with one command, then choose the topics you follow.">一行命令安装 CLI 和监测技能，然后选择关注方向。</p></div>
+    <a class="button secondary" href="downloads/chemwatch-toolkit.zip" download data-en="Download toolkit ↓">下载完整工具包 ↓</a>
+  </div>
+  <div class="connect-layout">
+    <div class="panel setup">
+      <label class="field-label"><span data-en="Install for">安装目标</span><select id="agent-type"><option value="codex" data-en="Codex · user skill">Codex · 用户级技能</option><option value="custom" data-en="DeepSeek or another harness · custom path">DeepSeek 或其他 harness · 自定义目录</option></select></label>
+      <input id="skill-directory" type="text" value="./.agents/skills" aria-label="技能根目录" data-en-aria="Skills directory" hidden>
+      <p class="small muted" id="agent-note"></p>
+      <h2 class="step-label" data-en="Topics to follow">关注方向</h2><div id="subscribe-topics" class="subscribe-topics"></div>
+      <label class="field-label"><span data-en="Catalog source">目录来源</span><select id="source-mode"><option value="remote" data-en="Public GitHub catalog">GitHub 公开目录</option><option value="local" data-en="Local catalog file">本地目录文件</option></select></label>
+      <input id="remote-source" type="url" placeholder="https://example.org/data/catalog.json" aria-label="公开目录地址" data-en-aria="Public catalog URL" hidden>
+      <p class="small muted" id="source-note"></p>
+      <label class="field-label"><span data-en="Report delivery">报告接收方式</span><select id="delivery"><option value="report" data-en="Local report or agent inbox">本地报告或 Agent 收件箱</option><option value="email" data-en="Local report and email (SMTP)">本地报告和邮件（SMTP）</option></select></label>
+      <input type="email" id="email" placeholder="you@example.com" aria-label="报告收件邮箱" data-en-aria="Report recipient email" hidden>
+      <p class="small muted" data-en="Preferences are saved in this browser. Your own monitoring environment handles mail and SMTP credentials.">偏好保存在当前浏览器；邮件及 SMTP 凭据由你的监测环境管理。</p>
+      <button class="button primary full" id="save-subscription" data-en="Save preferences in this browser">保存到此浏览器</button>
+    </div>
+    <div>
+      <div class="terminal">
+        <div class="terminal-bar"><span>chemwatch / sync</span><span class="mono">Python 3.10+</span></div>
+        <div class="terminal-tabs"><button class="active" data-code="install" data-en="Install">一行安装</button><button data-code="agent" data-en="Agent prompt">Agent 指令</button><button data-code="cli" data-en="CLI commands">CLI 命令</button><button data-code="schedule" data-en="Schedule">定时运行</button></div>
+        <pre id="command"></pre><div class="terminal-foot"><span id="command-hint"></span><button id="copy-command" data-en="Copy command">复制指令</button></div>
+      </div>
+      <div class="connect-explainer">
+        <div><h3 data-en="Baseline">建立基线</h3><p data-en="The first sync records the current state. Change reporting begins with the next check.">首次同步记录现状，后续检查开始报告变化。</p></div>
+        <div><h3 data-en="Change reports">检查变化</h3><p data-en="Reports distinguish catalog additions, metadata changes and upstream revisions.">目录新增、元数据变化和上游修订分别报告。</p></div>
+        <div><h3 data-en="Notifications">接收通知</h3><p data-en="Your monitor reports changes and check failures. Quiet checks produce no alert.">有变化或检查失败时通知，平时保持安静。</p></div>
+      </div>
+      <details class="panel email-guide"><summary data-en="Scheduling and email setup">定时任务与邮件设置</summary>
+        <p data-en="Schedule checks in your harness, or run chemwatch watch --background on a computer that stays on. Installing the skill and starting a watcher are separate steps. The CLI stores reports in your user directory.">可由 harness 调度，或在持续开机的电脑上运行 chemwatch watch --background。安装技能后需另行启动监测；CLI 将报告保存在用户目录。</p>
+        <p data-en="For cloud monitoring, configure templates/subscribe.yml in your own GitHub repository. Provide CHEMWATCH_SMTP_HOST, CHEMWATCH_SMTP_FROM, CHEMWATCH_SMTP_USER and CHEMWATCH_SMTP_PASSWORD as secrets. The default is STARTTLS.">云端监测可在自己的 GitHub 仓库配置 templates/subscribe.yml。SMTP 密钥包括 CHEMWATCH_SMTP_HOST、CHEMWATCH_SMTP_FROM、CHEMWATCH_SMTP_USER 和 CHEMWATCH_SMTP_PASSWORD，默认使用 STARTTLS。</p>
+        <p data-en="Supply --email to enable email delivery. A failed delivery remains pending for retry.">使用 --email 启用邮件推送；发送失败的报告会保留以供重试。</p>
+      </details>
+    </div>
+  </div>
+</section>
+<section id="method" class="view" hidden>
+  <div class="page-title"><div><h1 data-en="Sources and methods">来源与统计方法</h1><p data-en="Each time series uses the unit and date documented by its source.">每条时间线采用对应来源的单位和日期。</p></div></div>
+  <div class="method-grid">
+    <article class="panel"><h2 data-en="Archive growth">档案规模</h2>
+      <p data-en="CSD groups crystal structures by publication year. ChEMBL reports activity records in each release. Materials Cloud counts Dataset DOIs by publication year, including separately registered versions.">CSD 按结构发表年统计，ChEMBL 按发布版本统计活性记录，Materials Cloud 按发表年统计 Dataset DOI，独立登记的版本各占一个 DOI。</p>
+      <p data-en="Annual, cumulative and log-scale views retain each source’s unit. The annual ChEMBL series uses the net change between consecutive years with releases.">年度、累计及对数视图均保留原始单位。ChEMBL 的年度值取相邻两年版本记录数之差。</p>
+    </article>
+    <article class="panel"><h2 data-en="Reviewed resources">已核验资源</h2>
+      <p data-en="A family identifier links releases and mirrors of a dataset. Each benchmark suite counts once. For example, Matbench contains 13 tasks within one suite.">同一家族的版本和镜像共用一个家族标识符。评估套件各计一次，例如 Matbench 在一个套件中包含 13 项任务。</p>
+      <p data-en="The catalog retains source units such as reactions, conditions, routes and fermentation batches. Catalog history uses the earliest documented year of the resources covered.">记录规模保留反应、条件、路线或发酵批次等原始单位。目录发布历史按已收录资源最早可核实的年份统计。</p>
+    </article>
+    <article class="panel"><h2 data-en="Research topics">专题范围</h2>
+      <p data-en="Topics overlap across retrosynthesis, coupling, materials chemistry, bioactivity and industrial bioprocesses. Tasks include yield, enantiomeric excess, reaction or binding free energy, and activation barriers.">逆合成、偶联、材料、药物活性及工业生物过程专题可交叉收录。任务包括产率、对映体过量、反应或结合自由能及活化势垒。</p>
+      <p data-en="Penicillin and erythromycin topics prioritize industrial process data and distinguish plant measurements from process simulations. Coverage of downstream processing and industrial benchmarks is still limited.">青霉素和红霉素专题优先收录工业过程数据，区分工厂实测与过程模拟。下游分离纯化数据及工业评估套件仍收录较少。</p>
+    </article>
+    <article class="panel"><h2 data-en="Daily updates">每日更新</h2>
+      <p data-en="GitHub Actions checks registered GitHub commits, Hugging Face dataset revisions and Zenodo archive versions and checksums. Failed checks retain the last successful result.">GitHub Actions 检查已登记的 GitHub 提交、Hugging Face 数据集修订和 Zenodo 存档版本及文件校验和。检查失败时保留上次成功结果。</p>
+      <p data-en="OpenReview counts publicly visible submission threads by creation year. Each forum ID counts once. Researchers may submit the same work to several venues.">OpenReview 按公开投稿主帖的创建年统计，每个 forum ID 计一次，同一工作投往不同场次时可有多个主帖。</p>
+    </article>
+  </div>
+  <section class="panel review-inbox"><h2 data-en="Research leads">待核验线索</h2>
+    <p data-en="The daily search covers OpenReview, Europe PMC, Crossref, GitHub and Hugging Face. OpenReview uses title keywords. Europe PMC and Crossref cover the past year, with an additional title filter for Crossref. Each source shows up to five results per topic from the last successful search. Resources enter the catalog after review.">每日检索 OpenReview、Europe PMC、Crossref、GitHub 和 Hugging Face。OpenReview 按题名关键词检索。Europe PMC 与 Crossref 覆盖近一年，Crossref 另筛选题名。每个来源、每个专题最多展示上次成功查询的五项，资源经核验后收录。</p>
+    <div class="chart-controls"><label><span data-en="Source">平台</span> <select id="inbox-platform"><option value="openreview" data-en="OpenReview submissions">OpenReview 公开投稿</option><option value="papers" data-en="Europe PMC papers">Europe PMC 论文</option><option value="crossref" data-en="Crossref works">Crossref 论文与 DOI</option><option value="github" data-en="GitHub repositories">GitHub 仓库</option><option value="huggingface" data-en="Hugging Face datasets">Hugging Face 数据集</option></select></label>
+      <label><span data-en="Topic">主题</span> <select id="inbox-topic"></select></label>
+    </div>
+    <div id="inbox-list"></div><a href="data/openreview.json" data-en="OpenReview records and search terms ↗">OpenReview 投稿明细与检索词 ↗</a> · <a href="data/discovery.json" data-en="Latest leads from all sources ↗">各来源最新线索 ↗</a>
+  </section>
+  <p class="attribution"><span data-en="Design inspired by">设计参考</span> <a href="https://wconnell.github.io/scaling-bio/" target="_blank" rel="noopener">Scaling Biology</a><span data-en=". Each source sets its own data license and redistribution terms.">。数据许可及再分发条件以各来源说明为准。</span></p>
+</section>
+<div id="error" class="error" role="alert" hidden></div>
+</main>
+<footer>
+  <a class="brand footer-brand" href="#overview">ChemWatch</a>
+  <p><span id="review-date"></span></p>
+  <a href="https://github.com/cynara517/chemwatch" target="_blank" rel="noopener" data-en="GitHub repository ↗">GitHub 仓库 ↗</a>
+  <a href="data/catalog.json" download data-en="Catalog JSON ↗">公开目录 JSON ↗</a>
+</footer>
+<div id="toast" role="status" class="toast"></div>
+<script src="i18n.js?v=79ab72f5a24ca53f" defer></script>
+<script src="benchmarks/portfolio.js?v=3b5af891752d2d71" defer></script>
+<script src="timeline.js?v=349bde02a00cc5e9" defer></script>
+<script src="agent-commands.js?v=dfc8d5a4e34cab06" defer></script>
+<script src="app.js?v=019e4e9398c65a98" defer></script>
+<script src="site-nav.js?v=0acbd7653e3abbaa"></script></body>
+</html>

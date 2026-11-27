@@ -1,4 +1,13 @@
-# ChemWatch · 化学数据观测站
+# CynaraWatch · Shifan Chen
+
+中英文研究主页，包含 **My Benchmarks、My Papers、ChemWatch** 三个栏目。现有仓库地址、数据接口、CLI 和监测技能继续可用。
+
+[访问总站](https://cynara517.github.io/chemwatch/) · [评测设计](https://cynara517.github.io/chemwatch/benchmarks/index.html) · [我的论文](https://cynara517.github.io/chemwatch/papers/index.html) · [化学观测站](https://cynara517.github.io/chemwatch/chemwatch.html)
+
+运行 `python3 scripts/build_site.py` 生成共享导航与中英文页面。论文译文位于 `content/papers-translations.json`，中文叙述位于 `dist/papers/app.js`。论文图片保留各自来源许可，见 `dist/papers/assets/ATTRIBUTION.md`。
+
+## ChemWatch 工具与数据
+
 
 [English](README.md) | **简体中文**
 
