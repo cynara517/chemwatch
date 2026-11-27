@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-27T03:47:13.378186Z",
+  "checked_at": "2026-11-27T04:11:38.923443Z",
   "items": [
     {
       "id": "uspto-full",
@@ -373,7 +373,7 @@
           "url": "https://deltascience.bohrium.com/questions/R-SOT-42"
         }
       ],
-      "observed_at": "2026-11-27T03:47:13.378161Z",
+      "observed_at": "2026-11-27T04:11:38.923414Z",
       "note": "DeltaScience官方主分类为化学的公开题单元数据变化；不是新增独立benchmark或实验记录数"
     }
   ],
