@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-27T07:34:07.049413Z",
+  "checked_at": "2026-11-27T07:54:15.323658Z",
   "revision": "3ff3498da354e882c7557c8d53500bec9743ca9c25709f80cfe42cea84737024",
   "url": "https://deltascience.bohrium.com/questions?subject=%E5%8C%96%E5%AD%A6",
   "upstream_date": null,
@@ -180,5 +180,10 @@
   ],
   "observed_at": "2026-11-27T07:34:07.049390Z",
   "note": "DeltaScience官方主分类为化学的公开题单元数据变化；不是新增独立benchmark或实验记录数",
-  "errors": []
+  "errors": [
+    {
+      "id": "deltascience",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
 }
