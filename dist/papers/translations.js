@@ -311,5 +311,10 @@ window.paperEnglish = {
   "返回全部成果": "Back to all publications",
   "研究档案": "Research story",
   "我的论文": "My Papers",
-  "语言": "Language"
+  "语言": "Language",
+  "GWNet 首图：发酵过程中的变量、控制与传感器测量。": "GWNet first figure: process variables, control and sensor measurements in fermentation.",
+  "Accessible AI 首图：数据预处理、隐私保护、机理关系与下游研究任务的完整管线。": "Accessible AI first figure: the pipeline connecting preprocessing, privacy protection, mechanistic relationships and downstream research tasks.",
+  "ODE-aware 首图：CATGCN 框架，融合动力学知识、实测数据与时空图学习。": "ODE-aware first figure: the CATGCN framework integrating kinetics, measured data and spatiotemporal graph learning.",
+  "Bio-Process Safeguard 首图：连接输入数据、动力学建模与安全审查的多智能体架构。": "Bio-Process Safeguard first figure: the multi-agent architecture connecting input data, kinetic modeling and safety review.",
+  "查看原图": "View full figure"
 };
