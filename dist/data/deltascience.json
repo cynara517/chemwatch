@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-27T03:36:12.323861Z",
+  "checked_at": "2026-11-27T03:37:27.945320Z",
   "revision": "3ff3498da354e882c7557c8d53500bec9743ca9c25709f80cfe42cea84737024",
   "url": "https://deltascience.bohrium.com/questions?subject=%E5%8C%96%E5%AD%A6",
   "upstream_date": null,
@@ -178,7 +178,7 @@
       "url": "https://deltascience.bohrium.com/questions/R-SOT-42"
     }
   ],
-  "observed_at": "2026-11-27T03:36:12.323861Z",
+  "observed_at": "2026-11-27T03:37:27.945287Z",
   "note": "DeltaScience官方主分类为化学的公开题单元数据变化；不是新增独立benchmark或实验记录数",
   "errors": []
 }

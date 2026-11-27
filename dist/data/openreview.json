@@ -1,8 +1,17 @@
 {
-  "checked_at": "2026-11-26T10:17:13.376570Z",
-  "last_success": "2026-11-26T10:17:13.376570Z",
+  "checked_at": "2026-11-27T03:39:37.833898Z",
+  "last_success": "2026-11-27T03:39:37.833898Z",
   "error": null,
   "terms": {
+    "chemistry-ai": [
+      "chemistry benchmark",
+      "chemical reasoning",
+      "ChemBench",
+      "ChemIQ",
+      "ChemToolBench",
+      "CompChemBench",
+      "ChemInsight"
+    ],
     "retrosynthesis": [
       "retrosynthesis",
       "retrosynthetic"
@@ -43,6 +52,22 @@
     ]
   },
   "queries": {
+    "chemistry-ai": [
+      "https://api2.openreview.net/notes/search?term=chemistry+benchmark&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=chemistry+benchmark&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=chemical+reasoning&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=chemical+reasoning&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=ChemBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=ChemBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=ChemIQ&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=ChemIQ&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=ChemToolBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=ChemToolBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=CompChemBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=CompChemBench&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api2.openreview.net/notes/search?term=ChemInsight&type=exact&content=title&source=forum&limit=100&offset=0",
+      "https://api.openreview.net/notes/search?term=ChemInsight&type=exact&content=title&source=forum&limit=100&offset=0"
+    ],
     "retrosynthesis": [
       "https://api2.openreview.net/notes/search?term=retrosynthesis&type=exact&content=title&source=forum&limit=100&offset=0",
       "https://api.openreview.net/notes/search?term=retrosynthesis&type=exact&content=title&source=forum&limit=100&offset=0",
@@ -176,6 +201,18 @@
       ]
     },
     {
+      "forum": "wmz2X03I9F",
+      "title": "Distillation, Self-Training, and the Fragility of Learned Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=wmz2X03I9F",
+      "date": "2026-09-18",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "jIC15rJ2Fq",
       "title": "RetroRoute: Route-Level Agentic Decision Making for Multi-Step Retrosynthesis",
       "url": "https://openreview.net/forum?id=jIC15rJ2Fq",
@@ -221,6 +258,18 @@
       "venue_id": "ICLR.cc/2027/Conference/Submission",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "liXKB7ae8F",
+      "title": "ChemArena: Evaluating Task-Specific Reasoning Requirements in Multimodal Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=liXKB7ae8F",
+      "date": "2026-09-17",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -332,6 +381,18 @@
       ]
     },
     {
+      "forum": "GiUaxa9kUb",
+      "title": "Reasoning or Just Prompting? Probing the Mechanism of Latent Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=GiUaxa9kUb",
+      "date": "2026-09-16",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Desk Rejected Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Desk_Rejected_Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "oHyVTHnPte",
       "title": "Developing a Crystal Structure Prediction Algorithm with Agent-Guided Search",
       "url": "https://openreview.net/forum?id=oHyVTHnPte",
@@ -368,6 +429,18 @@
       ]
     },
     {
+      "forum": "9Dl8rDNp33",
+      "title": "ChemHarness: A Self-Evolving System for Chemical Reasoning via Asymmetric Dual-Stream Verification",
+      "url": "https://openreview.net/forum?id=9Dl8rDNp33",
+      "date": "2026-09-15",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "3GDTfB50ms",
       "title": "Provenance-Trace Policy Optimization for Agentic Retrosynthesis Planning",
       "url": "https://openreview.net/forum?id=3GDTfB50ms",
@@ -389,6 +462,18 @@
       "venue_id": "ICLR.cc/2027/Conference/Desk_Rejected_Submission",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "CoYozRrd7p",
+      "title": "ChemoGrad: Improving Chemical Reasoning through Test-Time Latent Optimization",
+      "url": "https://openreview.net/forum?id=CoYozRrd7p",
+      "date": "2026-09-12",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -440,6 +525,18 @@
       ]
     },
     {
+      "forum": "VGzQWmL9Pb",
+      "title": "ChemOPD: Multi-Teacher On-Policy Distillation for Multi-Task Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=VGzQWmL9Pb",
+      "date": "2026-09-04",
+      "public_date": "2026-10-03",
+      "venue": "ICLR 2027 Conference Submission",
+      "venue_id": "ICLR.cc/2027/Conference/Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "SRFF84EaD0",
       "title": "Coverage Before Control: Route-Instruction Grounding and Steering for Controllable Retrosynthesis",
       "url": "https://openreview.net/forum?id=SRFF84EaD0",
@@ -473,6 +570,30 @@
       "venue_id": "NeurIPS.cc/2026/Workshop/ML4Molecules",
       "topics": [
         "bioactivity"
+      ]
+    },
+    {
+      "forum": "Y4wzURm2pt",
+      "title": "Chemical Reasoning Transfers Across Familiar and Unseen Reaction Notations",
+      "url": "https://openreview.net/forum?id=Y4wzURm2pt",
+      "date": "2026-08-30",
+      "public_date": "2026-10-06",
+      "venue": "ML4Molecules 2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/ML4Molecules",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
+      "forum": "SBxtTERWkl",
+      "title": "RxnHaystack: Separating Scale from Chemical Reasoning in Reaction Corpora",
+      "url": "https://openreview.net/forum?id=SBxtTERWkl",
+      "date": "2026-08-30",
+      "public_date": "2026-10-06",
+      "venue": "ML4Molecules 2026",
+      "venue_id": "NeurIPS.cc/2026/Workshop/ML4Molecules",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -812,6 +933,18 @@
       ]
     },
     {
+      "forum": "6BW0xHIq1l",
+      "title": "Masked Diffusion Language Agents for Tool-Integrated Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=6BW0xHIq1l",
+      "date": "2026-04-27",
+      "public_date": "2026-11-18",
+      "venue": "NeurIPS 2026 poster",
+      "venue_id": "NeurIPS.cc/2026/Conference",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "QnViF2joi3",
       "title": "Trustworthy Retrosynthesis: Eliminating Hallucinations with a Diverse Ensemble of Reaction Scorers",
       "url": "https://openreview.net/forum?id=QnViF2joi3",
@@ -884,6 +1017,18 @@
       ]
     },
     {
+      "forum": "oUPYpol0RK",
+      "title": "ChemMA: Multi-Agent Chemical Reasoning with Tools",
+      "url": "https://openreview.net/forum?id=oUPYpol0RK",
+      "date": "2026-03-17",
+      "public_date": "2026-06-07",
+      "venue": "ACL ARR 2026 March Submission",
+      "venue_id": "aclweb.org/ACL/ARR/2026/March/Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "7wDBiQbTVd",
       "title": "Towards Reliable Chemical Retrosynthesis: A Self-Reflection Approach for Robust Retrosynthesis Planning",
       "url": "https://openreview.net/forum?id=7wDBiQbTVd",
@@ -932,6 +1077,18 @@
       ]
     },
     {
+      "forum": "ToCIS6xUwF",
+      "title": "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=ToCIS6xUwF",
+      "date": "2026-02-06",
+      "public_date": "2026-03-02",
+      "venue": "LIT Workshop @ ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Workshop/LIT",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "aiQyNhZ3s5",
       "title": "On improving experimental binding affinity predictions with synthetic data",
       "url": "https://openreview.net/forum?id=aiQyNhZ3s5",
@@ -953,6 +1110,18 @@
       "venue_id": "ICLR.cc/2026/Workshop/AI4Mat",
       "topics": [
         "materials"
+      ]
+    },
+    {
+      "forum": "363e8WyvLm",
+      "title": "MiST: Understanding the Role of Mid-Stage Scientific Training in Developing Chemical Reasoning Models",
+      "url": "https://openreview.net/forum?id=363e8WyvLm",
+      "date": "2026-01-26",
+      "public_date": "2026-03-15",
+      "venue": "AI4X-AC 2026 Oral",
+      "venue_id": "AI4X.cc/2026/Conference",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1013,6 +1182,18 @@
       "venue_id": "ICML.cc/2026/Conference",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "Ul6hU6WkDL",
+      "title": "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=Ul6hU6WkDL",
+      "date": "2026-01-22",
+      "public_date": "2026-06-24",
+      "venue": "ICML 2026 regular",
+      "venue_id": "ICML.cc/2026/Conference",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1085,6 +1266,18 @@
       "venue_id": "EurIPS.cc/2025/Workshop/SIMBIOCHEM",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "RqwEzZqMFv",
+      "title": "MolecularIQ: Characterizing Chemical Reasoning Capabilities Through Symbolic Verification on Molecular Graphs",
+      "url": "https://openreview.net/forum?id=RqwEzZqMFv",
+      "date": "2025-09-20",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Poster",
+      "venue_id": "ICLR.cc/2026/Conference",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1184,6 +1377,18 @@
       ]
     },
     {
+      "forum": "22Nyp0nW6g",
+      "title": "ChemDFM-R: A Chemical Reasoning LLM Enhanced with Atomized Chemical Knowledge",
+      "url": "https://openreview.net/forum?id=22Nyp0nW6g",
+      "date": "2025-09-19",
+      "public_date": "2025-10-08",
+      "venue": "Submitted to ICLR 2026",
+      "venue_id": "ICLR.cc/2026/Conference/Rejected_Submission",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "1s1OqbPnBG",
       "title": "Learning Chemical Knowledge from Large-Scale Unlabeled Molecular Data for Retrosynthesis",
       "url": "https://openreview.net/forum?id=1s1OqbPnBG",
@@ -1217,6 +1422,18 @@
       "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
       "topics": [
         "materials"
+      ]
+    },
+    {
+      "forum": "Vr0VniKoen",
+      "title": "MiST: Understanding the Role of Mid-Stage Scientific Training in Developing Chemical Reasoning Models",
+      "url": "https://openreview.net/forum?id=Vr0VniKoen",
+      "date": "2025-09-18",
+      "public_date": "2025-10-08",
+      "venue": "ICLR 2026 Conference Desk Rejected Submission",
+      "venue_id": "ICLR.cc/2026/Conference/Desk_Rejected_Submission",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1289,6 +1506,18 @@
       "venue_id": "ICLR.cc/2026/Conference/Withdrawn_Submission",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "L4YOJpV3k3",
+      "title": "Verifiable Chemical Reasoning through Tool-Calling Agentic Workflow",
+      "url": "https://openreview.net/forum?id=L4YOJpV3k3",
+      "date": "2025-09-03",
+      "public_date": "2025-10-09",
+      "venue": "SEA @ NeurIPS 2025 Poster",
+      "venue_id": "NeurIPS.cc/2025/Workshop/SEA",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1373,6 +1602,30 @@
       "venue_id": "ICML.cc/2025/Workshop/FM4LS",
       "topics": [
         "free-energy"
+      ]
+    },
+    {
+      "forum": "a42RSnbI6l",
+      "title": "MiST: Understanding the Role of Mid-Stage Scientific Training in Developing Chemical Reasoning Models",
+      "url": "https://openreview.net/forum?id=a42RSnbI6l",
+      "date": "2025-05-25",
+      "public_date": "2025-07-12",
+      "venue": "FM4LS 2025",
+      "venue_id": "ICML.cc/2025/Workshop/FM4LS",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
+      "forum": "SW1HmRPI1D",
+      "title": "DePO: Elicit Chemical Reasoning Capability via Demonstration-Guided Policy Optimization",
+      "url": "https://openreview.net/forum?id=SW1HmRPI1D",
+      "date": "2025-05-24",
+      "public_date": "2025-07-18",
+      "venue": "GenBio 2025 Spotlight",
+      "venue_id": "ICML.cc/2025/Workshop/GenBio",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1472,6 +1725,18 @@
       ]
     },
     {
+      "forum": "mvahXacGWg",
+      "title": "Beyond Chemical QA: Evaluating LLM's Chemical Reasoning with Modular Chemical Operations",
+      "url": "https://openreview.net/forum?id=mvahXacGWg",
+      "date": "2025-05-06",
+      "public_date": "2025-10-30",
+      "venue": "NeurIPS 2025 Datasets and Benchmarks Track poster",
+      "venue_id": "NeurIPS.cc/2025/Datasets_and_Benchmarks_Track",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "cdgVrsu7T5",
       "title": "RETRO SYNFLOW: Discrete Flow-Matching for Accurate and Diverse Single-Step Retrosynthesis",
       "url": "https://openreview.net/forum?id=cdgVrsu7T5",
@@ -1520,6 +1785,18 @@
       ]
     },
     {
+      "forum": "HnCWeXgJtZ",
+      "title": "Revealing chemical reasoning in LLMs through search on complex planning tasks",
+      "url": "https://openreview.net/forum?id=HnCWeXgJtZ",
+      "date": "2025-02-07",
+      "public_date": "2025-03-05",
+      "venue": "Reasoning and Planning for LLMs @ ICLR2025",
+      "venue_id": "ICLR.cc/2025/Workshop/LLM_Reason_and_Plan",
+      "topics": [
+        "chemistry-ai"
+      ]
+    },
+    {
       "forum": "pN4Zg6HBlq",
       "title": "MATMMFUSE: MULTI-MODAL FUSION MODEL FOR MATERIAL PROPERTY PREDICTION",
       "url": "https://openreview.net/forum?id=pN4Zg6HBlq",
@@ -1541,6 +1818,18 @@
       "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
       "topics": [
         "materials"
+      ]
+    },
+    {
+      "forum": "l5V9JB3bQc",
+      "title": "Revealing chemical reasoning in LLMs through search on complex planning tasks",
+      "url": "https://openreview.net/forum?id=l5V9JB3bQc",
+      "date": "2025-02-04",
+      "public_date": "2025-04-09",
+      "venue": "AI4MAT-ICLR-2025 Poster",
+      "venue_id": "ICLR.cc/2025/Workshop/AI4MAT",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {
@@ -1745,6 +2034,18 @@
       "venue_id": "NeurIPS.cc/2024/Workshop/AIDrugX",
       "topics": [
         "retrosynthesis"
+      ]
+    },
+    {
+      "forum": "kuhIqeVg0e",
+      "title": "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning",
+      "url": "https://openreview.net/forum?id=kuhIqeVg0e",
+      "date": "2024-09-23",
+      "public_date": "2024-10-04",
+      "venue": "ICLR 2025 Poster",
+      "venue_id": "ICLR.cc/2025/Conference",
+      "topics": [
+        "chemistry-ai"
       ]
     },
     {

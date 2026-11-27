@@ -1,6 +1,8 @@
 {
-  "checked_at": "2026-11-26T10:14:46.616183Z",
-  "errors": [],
+  "checked_at": "2026-11-27T03:37:27.968624Z",
+  "errors": [
+    "DataCite: The read operation timed out"
+  ],
   "publications": {
     "dataset": {
       "": [
