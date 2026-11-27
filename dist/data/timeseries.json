@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T07:11:30.406383Z",
+  "checked_at": "2026-11-27T07:34:07.078357Z",
   "errors": [
     "ChEMBL: <urlopen error _ssl.c:1001: The handshake operation timed out>"
   ],
@@ -3106,6 +3106,6 @@
         "total": 2812
       }
     ],
-    "as_of": "2026-11-27T07:11:55.794753Z"
+    "as_of": "2026-11-27T07:34:30.368901Z"
   }
 }
