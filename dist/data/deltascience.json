@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-27T07:54:15.323658Z",
+  "checked_at": "2026-11-27T10:21:28.578633Z",
   "revision": "3ff3498da354e882c7557c8d53500bec9743ca9c25709f80cfe42cea84737024",
   "url": "https://deltascience.bohrium.com/questions?subject=%E5%8C%96%E5%AD%A6",
   "upstream_date": null,
@@ -183,7 +183,7 @@
   "errors": [
     {
       "id": "deltascience",
-      "error": "HTTP Error 404: Not Found"
+      "error": "DeltaScience task schema changed; refusing partial snapshot"
     }
   ]
 }

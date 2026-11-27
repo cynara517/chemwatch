@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "checked_at": "2026-11-27T07:54:15.323658Z",
+  "checked_at": "2026-11-27T10:21:28.578633Z",
   "items": [
     {
       "id": "uspto-full",
@@ -380,7 +380,7 @@
   "errors": [
     {
       "id": "deltascience",
-      "error": "HTTP Error 404: Not Found"
+      "error": "DeltaScience task schema changed; refusing partial snapshot"
     }
   ],
   "events": [
