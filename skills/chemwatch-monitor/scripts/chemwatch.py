@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 
 VERSION = "0.3.0"
 ROOT = Path(__file__).resolve().parent
-PUBLIC_CATALOG = "https://cynara517.github.io/chemwatch/data/catalog.json"
+PUBLIC_CATALOG = "https://cynara517.github.io/Cynarawatch/data/catalog.json"
 STATE_ROOT = Path(os.getenv("XDG_STATE_HOME", str(Path.home() / ".local/state"))) / "chemwatch"
 TOPICS = {"chemistry-ai", "retrosynthesis", "coupling", "materials", "yield", "free-energy", "selectivity", "bioactivity", "bioprocess", "penicillin", "erythromycin"}
 

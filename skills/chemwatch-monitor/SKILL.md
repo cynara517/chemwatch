@@ -67,11 +67,11 @@ The local watcher requires the computer to remain on; it writes reports and opti
 
 Use `follow --email recipient@example.com` only for the recipient and notification intent requested by the user. Read SMTP credentials from the runtime environment: `CHEMWATCH_SMTP_HOST`, `CHEMWATCH_SMTP_FROM`, optionally `CHEMWATCH_SMTP_USER` and `CHEMWATCH_SMTP_PASSWORD`. Default is STARTTLS on port 587; `CHEMWATCH_SMTP_MODE=ssl` selects TLS on 465. Never put credentials into chat, committed files, or the public catalog. Failed deliveries stay queued for retry; the initial baseline sends no email.
 
-Project: https://github.com/cynara517/chemwatch
+Project: https://github.com/cynara517/Cynarawatch
 
-Catalog: https://cynara517.github.io/chemwatch/data/catalog.json
+Catalog: https://cynara517.github.io/Cynarawatch/data/catalog.json
 
 ## 历史与论文线索
 
-回答历史增长问题时，使用公开的 [历史序列](https://cynara517.github.io/chemwatch/data/timeseries.json)，保留指标、单位、年度、来源及缺测标记。目录发布年、CSD 结构发表年、ChEMBL 版本准备年分别解释。GitHub 提交和 Hugging Face 数据仓库修订均可能仅改动说明。
-需要核查新论文和仓库时，读取 [公开检索线索](https://cynara517.github.io/chemwatch/data/discovery.json)，按主题取每组最后成功结果并标注候选身份。常规订阅报告使用审核后的目录及登记来源的实际修订。
+回答历史增长问题时，使用公开的 [历史序列](https://cynara517.github.io/Cynarawatch/data/timeseries.json)，保留指标、单位、年度、来源及缺测标记。目录发布年、CSD 结构发表年、ChEMBL 版本准备年分别解释。GitHub 提交和 Hugging Face 数据仓库修订均可能仅改动说明。
+需要核查新论文和仓库时，读取 [公开检索线索](https://cynara517.github.io/Cynarawatch/data/discovery.json)，按主题取每组最后成功结果并标注候选身份。常规订阅报告使用审核后的目录及登记来源的实际修订。

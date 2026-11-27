@@ -2,7 +2,7 @@
 
 A bilingual home for **My Benchmarks**, **My Papers** and **ChemWatch**. The existing repository URL, data feeds, CLI and monitoring skill remain available.
 
-[Visit CynaraWatch](https://cynara517.github.io/chemwatch/) · [My Benchmarks](https://cynara517.github.io/chemwatch/benchmarks/index.html) · [My Papers](https://cynara517.github.io/chemwatch/papers/index.html) · [ChemWatch](https://cynara517.github.io/chemwatch/chemwatch.html)
+[Visit CynaraWatch](https://cynara517.github.io/Cynarawatch/) · [My Benchmarks](https://cynara517.github.io/Cynarawatch/benchmarks/index.html) · [My Papers](https://cynara517.github.io/Cynarawatch/papers/index.html) · [ChemWatch](https://cynara517.github.io/Cynarawatch/chemwatch.html)
 
 Build the shared navigation and bilingual pages with `python3 scripts/build_site.py`. Paper translations are maintained in `content/papers-translations.json`; Chinese stories live in `dist/papers/app.js`. Third-party paper figures retain their source licenses; see `dist/papers/assets/ATTRIBUTION.md`.
 
@@ -13,7 +13,7 @@ Build the shared navigation and bilingual pages with `python3 scripts/build_site
 
 **A public catalog of chemical datasets and benchmarks, with a portable monitoring CLI and Agent Skill for your own AI.**
 
-[Website](https://cynara517.github.io/chemwatch/) · [Public catalog JSON](https://cynara517.github.io/chemwatch/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
+[Website](https://cynara517.github.io/Cynarawatch/) · [Public catalog JSON](https://cynara517.github.io/Cynarawatch/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
 
 Browsing the website, installing the tools and reading the catalog require no ChatGPT or GitHub account. The CLI uses only the Python 3.10+ standard library. Your AI interprets reports; your chosen harness or the local watcher handles execution and scheduling.
 
@@ -22,7 +22,7 @@ Browsing the website, installing the tools and reading the catalog require no Ch
 On macOS / Linux, install for the current user without sudo:
 
 ```sh
-curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --agent codex
+curl -fsSL https://cynara517.github.io/Cynarawatch/install.sh | sh -s -- --agent codex
 ```
 
 This installs the CLI at `~/.local/bin/chemwatch`, the runtime at `~/.local/share/chemwatch/chemwatch-monitor`, and a skill link at `~/.agents/skills/chemwatch-monitor`. If the skill does not appear in Codex, refresh skills or restart the client. See the [Codex skills documentation](https://learn.chatgpt.com/docs/build-skills).
@@ -30,7 +30,7 @@ This installs the CLI at `~/.local/bin/chemwatch`, the runtime at `~/.local/shar
 For DeepSeek Harness or another Agent Skills-compatible AI, pass the skills directory actually used by that harness. For example, a project-level directory:
 
 ```sh
-curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --skill-dir ./.agents/skills
+curl -fsSL https://cynara517.github.io/Cynarawatch/install.sh | sh -s -- --skill-dir ./.agents/skills
 ```
 
 Skill paths and scheduling capabilities vary by harness. The installer does not change your model provider, API keys or unrelated configuration. It verifies the skill archive's SHA-256 checksum and refuses to overwrite an unrelated skill or CLI with the same name.
@@ -61,7 +61,7 @@ Multiple topics match with OR: `chemistry-ai`, `retrosynthesis`, `coupling`, `ma
 The default public source comes from this repository and includes newly reviewed catalog entries. You can also use another catalog JSON source:
 
 ```sh
-~/.local/bin/chemwatch sync --source https://cynara517.github.io/chemwatch/data/catalog.json --topic yield --probe --json
+~/.local/bin/chemwatch sync --source https://cynara517.github.io/Cynarawatch/data/catalog.json --topic yield --probe --json
 ```
 
 State, subscriptions, pending emails and JSON/Markdown reports are stored under `${XDG_STATE_HOME:-~/.local/state}/chemwatch/`, independently of your working directory. Use `follow --config /absolute/path/subscription.json` for a separate subscription, and pass the same `--config` to `check` and `watch`.
@@ -144,7 +144,7 @@ Code is MIT-licensed. Design inspired by [Scaling Biology](https://wconnell.gith
 
 ## My benchmark design notes
 
-[Explore the bilingual portfolio](https://cynara517.github.io/chemwatch/benchmarks/) by **Shifan Chen**, presenting four chemistry tasks contributed to DeltaScience: C-01, CSF-1, CSF-2 and CSF-3. Each v1.0 note covers research inspiration, scientific motivation, tools, verification criteria and reflections on model performance.
+[Explore the bilingual portfolio](https://cynara517.github.io/Cynarawatch/benchmarks/) by **Shifan Chen**, presenting four chemistry tasks contributed to DeltaScience: C-01, CSF-1, CSF-2 and CSF-3. Each v1.0 note covers research inspiration, scientific motivation, tools, verification criteria and reflections on model performance.
 
 The preserved public score snapshot is dated November 25, 2026 and was saved on November 27. Tables list the model, harness and score out of 100, identifying incomplete sets of scored rounds. Pending rounds are excluded from the mean.
 

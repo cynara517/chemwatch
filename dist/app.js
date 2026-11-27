@@ -22,7 +22,7 @@ const countKind=(entries,kind)=>entries.filter(e=>e.kind===kind).length;
 const topicEntries=id=>catalog.entries.filter(e=>e.topics.includes(id));
 const number=n=>n.toLocaleString(locale());
 const quantity=(n,zh,one,many)=>number(n)+" "+tr(zh,n===1?one:many);
-const publicSource="https://cynara517.github.io/chemwatch/data/catalog.json";
+const publicSource="https://cynara517.github.io/Cynarawatch/data/catalog.json";
 let catalog, observations, snapshots, translations={}, activeTopic="", codeMode="install", toastTimer;
 function localizedEntry(e){return language==="en"&&translations[e.id]?{...e,...translations[e.id]}:e;}
 function sourceName(name){

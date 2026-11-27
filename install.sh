@@ -1,7 +1,7 @@
 #!/bin/sh
 # ChemWatch portable installer: CLI + standard Agent Skill. macOS / Linux; Python 3.10+.
 set -eu
-CHEMWATCH_ASSET_BASE=${CHEMWATCH_ASSET_BASE:-https://cynara517.github.io/chemwatch/downloads}
+CHEMWATCH_ASSET_BASE=${CHEMWATCH_ASSET_BASE:-https://cynara517.github.io/Cynarawatch/downloads}
 CHEMWATCH_INSTALL_PREFIX=${CHEMWATCH_INSTALL_PREFIX:-${XDG_DATA_HOME:-$HOME/.local/share}/chemwatch}
 CHEMWATCH_BIN_DIR=${CHEMWATCH_BIN_DIR:-$HOME/.local/bin}
 CHEMWATCH_SKILL_DIR=${CHEMWATCH_SKILL_DIR:-$HOME/.agents/skills}

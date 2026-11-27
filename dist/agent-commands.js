@@ -4,12 +4,12 @@ function agentCommand(config, codeMode, topicNames, lang) {
   const english = lang === "en";
   const say = (zh, en) => english ? en : zh;
   const cli = "~/.local/bin/chemwatch";
-  const remoteCatalog = "https://cynara517.github.io/chemwatch/data/catalog.json";
+  const remoteCatalog = "https://cynara517.github.io/Cynarawatch/data/catalog.json";
   const source = config.mode === "remote" ? config.source || remoteCatalog : "./dist/data/catalog.json";
   const installTarget = config.agent === "custom"
     ? "--skill-dir " + shellQuote(config.skillDirectory || "./.agents/skills")
     : "--agent codex";
-  const install = "curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- " + installTarget;
+  const install = "curl -fsSL https://cynara517.github.io/Cynarawatch/install.sh | sh -s -- " + installTarget;
   const args = [cli, "follow", "--source", shellQuote(source)];
   for (const topic of config.topics) args.push("--topic", shellQuote(topic));
   if (config.delivery === "email") args.push("--email", shellQuote(config.email || "you@example.com"));
@@ -48,8 +48,8 @@ function agentCommand(config, codeMode, topicNames, lang) {
       ].join("\n");
     case "agent":
       return [
-        say("请从 https://github.com/cynara517/chemwatch 安装 chemwatch-monitor Agent Skill。",
-            "Install the chemwatch-monitor Agent Skill from https://github.com/cynara517/chemwatch."), install, "",
+        say("请从 https://github.com/cynara517/Cynarawatch 安装 chemwatch-monitor Agent Skill。",
+            "Install the chemwatch-monitor Agent Skill from https://github.com/cynara517/Cynarawatch."), install, "",
         say("请阅读 SKILL.md，并使用当前 harness 实际支持的 skills 目录。", "Read SKILL.md and use the skills directory supported by this harness."),
         say("我关注的主题是", "My topics are ") + topics + say("。", "."),
         say("运行以下命令保存订阅并建立基线。", "Run the following command to save my subscription and establish a baseline."), follow, "",
