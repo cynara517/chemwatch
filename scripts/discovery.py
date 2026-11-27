@@ -16,6 +16,7 @@ from chemwatch import api_json, atomic_json, now
 
 # Search words are public so users can inspect what each source can miss.
 TERMS = {
+    "chemistry-ai":("chemistry","chemistry"),
     "retrosynthesis":("retrosynthesis","retrosynthesis"),
     "coupling":("cross-coupling","cross-coupling"),
     "materials":("materials property","materials"),

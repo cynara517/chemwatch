@@ -15,14 +15,14 @@ import tempfile
 import time
 from datetime import datetime, timezone
 from email.message import EmailMessage
-from urllib.parse import urlencode, urlparse
+from urllib.parse import quote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 VERSION = "0.3.0"
 ROOT = Path(__file__).resolve().parent
 PUBLIC_CATALOG = "https://cynara517.github.io/chemwatch/data/catalog.json"
 STATE_ROOT = Path(os.getenv("XDG_STATE_HOME", str(Path.home() / ".local/state"))) / "chemwatch"
-TOPICS = {"retrosynthesis", "coupling", "materials", "yield", "free-energy", "selectivity", "bioactivity", "bioprocess", "penicillin", "erythromycin"}
+TOPICS = {"chemistry-ai", "retrosynthesis", "coupling", "materials", "yield", "free-energy", "selectivity", "bioactivity", "bioprocess", "penicillin", "erythromycin"}
 
 
 def now():
@@ -106,10 +106,60 @@ def api_json(url, github=False):
         return json.load(response)
 
 
+def fetch_public_text(url):
+    with urlopen(Request(url, headers={"User-Agent": "ChemWatch/" + VERSION}),
+                 timeout=25, context=tls_context()) as response:
+        raw = response.read(5_000_001)
+    if len(raw) > 5_000_000:
+        raise ValueError("Public page exceeds 5 MB limit")
+    return raw.decode("utf-8")
+
+
+def parse_deltascience(bundle):
+    # Parse data literals only; never execute downloaded JavaScript.
+    string = r'"(?:[^"\\]|\\.)*"'
+    fields = ["code", "group", "discipline", "author", "organization", "focus", "title"]
+    row_pattern = r'\{' + ','.join(f'{key}:({string})' for key in fields) + r',position:(\d+)\}'
+    array = re.search(r'\[(\{code:.*?\})\]', bundle, re.S)
+    if not array:
+        raise ValueError("DeltaScience public task table missing")
+    body = array[1]
+    matches = list(re.finditer(row_pattern, body))
+    if not matches or ','.join(m[0] for m in matches) != body:
+        raise ValueError("DeltaScience task schema changed; refusing partial snapshot")
+    rows = [dict(zip(fields, [json.loads(v) for v in m.groups()[:-1]])) for m in matches]
+    if len({r['code'] for r in rows}) != len(rows):
+        raise ValueError("DeltaScience duplicate task IDs")
+    items = [{"id":r['code'], "title":r['title'] or r['focus'] or r['discipline'],
+              "discipline":r['discipline'], "focus":r['focus'],
+              "url":"https://deltascience.bohrium.com/questions/" + quote(r['code'], safe="")}
+             for r in rows if r['group'] == '化学']
+    if not items:
+        raise ValueError("DeltaScience chemistry category missing")
+    return sorted(items, key=lambda r:r['id']), len(rows)
+
+
+def probe_deltascience():
+    url = "https://deltascience.bohrium.com/"
+    html = fetch_public_text(url)
+    assets = re.findall(r'<script\b[^>]*\bsrc=[\"\'](/assets/[^\"\']+\.js)[\"\']', html)
+    if len(assets) != 1:
+        raise ValueError("DeltaScience entry asset changed")
+    asset_url = url.rstrip('/') + assets[0]
+    items, total = parse_deltascience(fetch_public_text(asset_url))
+    revision = hashlib.sha256(json.dumps(items, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    return {"revision":revision, "url":url+"questions?subject="+quote("化学"),
+            "upstream_date":None, "signal":"public_task_catalog", "asset_url":asset_url,
+            "chemistry_tasks":len(items), "total_tasks":total, "items":items, "observed_at":now(),
+            "note":"DeltaScience官方主分类为化学的公开题单元数据变化；不是新增独立benchmark或实验记录数"}
+
+
 def probe(entry):
     monitor = entry.get("monitor")
     if not monitor:
         return None
+    if monitor["type"] == "deltascience":
+        return probe_deltascience()
     if monitor["type"] == "github":
         repo = monitor["repo"]
         if len(repo.split("/")) != 2 or any(c not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._/" for c in repo):

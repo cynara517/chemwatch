@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-11-27T03:36:12.323861Z",
+  "revision": "3ff3498da354e882c7557c8d53500bec9743ca9c25709f80cfe42cea84737024",
+  "url": "https://deltascience.bohrium.com/questions?subject=%E5%8C%96%E5%AD%A6",
+  "upstream_date": null,
+  "signal": "public_task_catalog",
+  "asset_url": "https://deltascience.bohrium.com/assets/index-BtHoVCDC.js",
+  "chemistry_tasks": 24,
+  "total_tasks": 65,
+  "items": [
+    {
+      "id": "BioMaster-q09",
+      "title": "原始质谱与代谢组",
+      "discipline": "分析化学",
+      "focus": "原始质谱与代谢组",
+      "url": "https://deltascience.bohrium.com/questions/BioMaster-q09"
+    },
+    {
+      "id": "BioMaster-q10",
+      "title": "化学信息学与分子图学习",
+      "discipline": "化学信息学",
+      "focus": "化学信息学与分子图学习",
+      "url": "https://deltascience.bohrium.com/questions/BioMaster-q10"
+    },
+    {
+      "id": "C-01",
+      "title": "PARP1 先导优化：亲和力、类药性、溶解度与骨架多样性的协同优化",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-01"
+    },
+    {
+      "id": "C-02",
+      "title": "PARP1/PARP2 选择性设计：保留 PARP1 并削弱 PARP2 的多样分子组合",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-02"
+    },
+    {
+      "id": "C-03",
+      "title": "BCL2 / BCL-XL 选择性分子设计",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-03"
+    },
+    {
+      "id": "C-04",
+      "title": "BCL-XL/BCL2 选择性设计：优先保留 BCL-XL 的多样分子组合",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-04"
+    },
+    {
+      "id": "C-05",
+      "title": "CRBN介导的GSPT1优先招募分子胶设计",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-05"
+    },
+    {
+      "id": "C-06",
+      "title": "CRBN介导的IKZF1/IKZF3优先招募分子胶设计",
+      "discipline": "药物化学",
+      "focus": "药物设计",
+      "url": "https://deltascience.bohrium.com/questions/C-06"
+    },
+    {
+      "id": "CSF-1",
+      "title": "水分子接力辅助 HNC→HCN 异构化的谐振零点校正活化势垒——双杂化泛函完整力常数矩阵计算",
+      "discipline": "计算化学",
+      "focus": "计算化学",
+      "url": "https://deltascience.bohrium.com/questions/CSF-1"
+    },
+    {
+      "id": "CSF-2",
+      "title": "阻转选择性钯电催化 C–H 烯基化——普适催化方案设计",
+      "discipline": "有机化学",
+      "focus": "计算化学",
+      "url": "https://deltascience.bohrium.com/questions/CSF-2"
+    },
+    {
+      "id": "CSF-3",
+      "title": "区域选择性逆合成审计",
+      "discipline": "有机化学",
+      "focus": "计算化学",
+      "url": "https://deltascience.bohrium.com/questions/CSF-3"
+    },
+    {
+      "id": "LKM-0006",
+      "title": "甲胺–酸簇的 ¹⁵N NMR 化学位移与络合平衡建模",
+      "discipline": "计算化学",
+      "focus": "计算化学",
+      "url": "https://deltascience.bohrium.com/questions/LKM-0006"
+    },
+    {
+      "id": "LKM-0027",
+      "title": "N-甲基乙酰胺–水氢键团簇的振动频率与酰胺 I 模式指认",
+      "discipline": "计算化学",
+      "focus": "量子化学",
+      "url": "https://deltascience.bohrium.com/questions/LKM-0027"
+    },
+    {
+      "id": "R-DAN-12",
+      "title": "开放路线逆合成 · R-DAN-12",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-12"
+    },
+    {
+      "id": "R-DAN-13",
+      "title": "开放路线逆合成 · R-DAN-13",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-13"
+    },
+    {
+      "id": "R-DAN-14",
+      "title": "开放路线逆合成 · R-DAN-14",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-14"
+    },
+    {
+      "id": "R-DAN-15",
+      "title": "开放路线逆合成 · R-DAN-15",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-15"
+    },
+    {
+      "id": "R-DAN-16",
+      "title": "开放路线逆合成 · R-DAN-16",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-16"
+    },
+    {
+      "id": "R-DAN-17",
+      "title": "开放路线逆合成 · R-DAN-17",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-17"
+    },
+    {
+      "id": "R-DAN-18",
+      "title": "开放路线逆合成 · R-DAN-18",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-18"
+    },
+    {
+      "id": "R-DAN-26",
+      "title": "开放路线逆合成 · R-DAN-26",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-DAN-26"
+    },
+    {
+      "id": "R-SOT-40",
+      "title": "开放路线逆合成 · R-SOT-40",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-SOT-40"
+    },
+    {
+      "id": "R-SOT-41",
+      "title": "开放路线逆合成 · R-SOT-41",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-SOT-41"
+    },
+    {
+      "id": "R-SOT-42",
+      "title": "开放路线逆合成 · R-SOT-42",
+      "discipline": "有机化学",
+      "focus": "逆合成",
+      "url": "https://deltascience.bohrium.com/questions/R-SOT-42"
+    }
+  ],
+  "observed_at": "2026-11-27T03:36:12.323861Z",
+  "note": "DeltaScience官方主分类为化学的公开题单元数据变化；不是新增独立benchmark或实验记录数",
+  "errors": []
+}

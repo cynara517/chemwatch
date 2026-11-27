@@ -698,6 +698,7 @@
           "sources": []
         }
       ],
+      "chemistry-ai": [],
       "coupling": [
         {
           "year": 2018,
@@ -1587,21 +1588,52 @@
         },
         {
           "year": 2024,
-          "annual": 0,
-          "total": 10,
-          "sources": []
+          "annual": 1,
+          "total": 11,
+          "sources": [
+            {
+              "label": "ChemBench",
+              "url": "https://arxiv.org/abs/2404.01475"
+            }
+          ]
         },
         {
           "year": 2025,
-          "annual": 0,
-          "total": 10,
-          "sources": []
+          "annual": 2,
+          "total": 13,
+          "sources": [
+            {
+              "label": "ChemIQ",
+              "url": "https://arxiv.org/abs/2505.07735"
+            },
+            {
+              "label": "ChemToolBench",
+              "url": "https://arxiv.org/abs/2506.07551"
+            }
+          ]
         },
         {
           "year": 2026,
-          "annual": 0,
-          "total": 10,
-          "sources": []
+          "annual": 4,
+          "total": 17,
+          "sources": [
+            {
+              "label": "ChemInsight",
+              "url": "https://arxiv.org/abs/2611.11794"
+            },
+            {
+              "label": "CompChemBench",
+              "url": "https://api.github.com/repos/Chenghao-Wu/compchem-bench"
+            },
+            {
+              "label": "DeltaScience · 化学任务",
+              "url": "https://deltascience.bohrium.com/"
+            },
+            {
+              "label": "OPRD-target",
+              "url": "https://api.github.com/repos/KagakuLab/OPRD-target"
+            }
+          ]
         }
       ],
       "bioactivity": [
@@ -1855,12 +1887,64 @@
         },
         {
           "year": 2026,
-          "annual": 0,
-          "total": 4,
-          "sources": []
+          "annual": 1,
+          "total": 5,
+          "sources": [
+            {
+              "label": "DeltaScience · 化学任务",
+              "url": "https://deltascience.bohrium.com/"
+            }
+          ]
         }
       ],
       "bioprocess": [],
+      "chemistry-ai": [
+        {
+          "year": 2024,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "ChemBench",
+              "url": "https://arxiv.org/abs/2404.01475"
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "annual": 2,
+          "total": 3,
+          "sources": [
+            {
+              "label": "ChemIQ",
+              "url": "https://arxiv.org/abs/2505.07735"
+            },
+            {
+              "label": "ChemToolBench",
+              "url": "https://arxiv.org/abs/2506.07551"
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "annual": 3,
+          "total": 6,
+          "sources": [
+            {
+              "label": "ChemInsight",
+              "url": "https://arxiv.org/abs/2611.11794"
+            },
+            {
+              "label": "CompChemBench",
+              "url": "https://api.github.com/repos/Chenghao-Wu/compchem-bench"
+            },
+            {
+              "label": "DeltaScience · 化学任务",
+              "url": "https://deltascience.bohrium.com/"
+            }
+          ]
+        }
+      ],
       "coupling": [],
       "erythromycin": [],
       "free-energy": [
@@ -1973,14 +2057,19 @@
         },
         {
           "year": 2025,
-          "annual": 0,
-          "total": 2,
-          "sources": []
+          "annual": 1,
+          "total": 3,
+          "sources": [
+            {
+              "label": "ChemToolBench",
+              "url": "https://arxiv.org/abs/2506.07551"
+            }
+          ]
         },
         {
           "year": 2026,
           "annual": 0,
-          "total": 2,
+          "total": 3,
           "sources": []
         }
       ],
@@ -2087,12 +2176,33 @@
         },
         {
           "year": 2026,
-          "annual": 0,
-          "total": 3,
-          "sources": []
+          "annual": 2,
+          "total": 5,
+          "sources": [
+            {
+              "label": "DeltaScience · 化学任务",
+              "url": "https://deltascience.bohrium.com/"
+            },
+            {
+              "label": "OPRD-target",
+              "url": "https://api.github.com/repos/KagakuLab/OPRD-target"
+            }
+          ]
         }
       ],
-      "selectivity": [],
+      "selectivity": [
+        {
+          "year": 2026,
+          "annual": 1,
+          "total": 1,
+          "sources": [
+            {
+              "label": "DeltaScience · 化学任务",
+              "url": "https://deltascience.bohrium.com/"
+            }
+          ]
+        }
+      ],
       "yield": []
     }
   },

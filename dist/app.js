@@ -1,5 +1,6 @@
 "use strict";
 const TOPICS = [
+  {id:"chemistry-ai",name:"化学推理与智能体",en:"Chemistry reasoning & agents",desc:["化学问答、工具调用与计算工作流","Chemistry QA, tool use and computational workflows"]},
   {id:"retrosynthesis",name:"逆合成",en:"Retrosynthesis",desc:["单步反应与多步路线","Single-step reactions and multistep routes"]},
   {id:"coupling",name:"偶联与杂环",en:"Coupling & heterocycles",desc:["C–C、C–N、C–H 与其他成键","C–C, C–N, C–H and other bond formations"]},
   {id:"materials",name:"材料化学",en:"Materials chemistry",desc:["材料性质与晶体稳定性","Material properties and crystal stability"]},
@@ -37,7 +38,7 @@ function download(data,name){
   const a=document.createElement("a");a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
 }
 function signalNote(obs){
-  const en={repository_change:"The repository or data path has a new commit.",dataset_repository_revision:"The dataset repository revision changed.",archive_version_or_files:"The archive version or file checksum changed."};
+  const en={public_task_catalog:"The public DeltaScience chemistry task metadata changed; this is not a count of new benchmark suites.",repository_change:"The repository or data path has a new commit.",dataset_repository_revision:"The dataset repository revision changed.",archive_version_or_files:"The archive version or file checksum changed."};
   return tr(obs.note,en[obs.signal]||"The upstream source revision changed.");
 }
 function renderOverview(){
@@ -92,6 +93,7 @@ function entryCard(raw){
   const e=localizedEntry(raw),obs=observations?.items?.find(o=>o.id===e.id);
   const link=(url,label)=>`<a href="${escapeHTML(url)}" target="_blank" rel="noopener">${escapeHTML(label)} ↗</a>`;
   const monitor=e.monitor,probe=monitor?.type==="github"?monitor.repo+(monitor.path?" / "+monitor.path:""):
+    monitor?.type==="deltascience"?tr("DeltaScience 公开化学题单","DeltaScience public chemistry task catalog"):
     monitor?.type==="huggingface"?tr("Hugging Face 数据集修订","Hugging Face dataset revision"):tr("Zenodo 版本与文件校验和","Zenodo version and file checksum");
   return `<article class="data-card" data-entry="${escapeHTML(e.id)}"><div class="card-top"><span class="kind ${e.kind}">${kindName(e.kind)}</span><span class="year">${e.publication_year}</span></div>
     <h3>${escapeHTML(e.name)}</h3><p class="description">${escapeHTML(e.description)}</p>
@@ -102,6 +104,7 @@ function entryCard(raw){
     ${e.notes?"<p>"+escapeHTML(e.notes)+"</p>":""}<p>${link(e.date_source||e.url,tr("年代依据","Date evidence"))}</p>
     ${e.count_note?"<p>"+escapeHTML(e.count_note)+"</p>":""}<p>${tr("数据许可","Data license")} · ${escapeHTML(e.data_license)}<br>${tr("核验日期","Reviewed")} · ${escapeHTML(e.verified_at)}<br>${tr("家族","Family")} · ${escapeHTML(e.family_id)}</p>
     ${e.doi?"<p>DOI · "+escapeHTML(e.doi)+"</p>":""}<p>${monitor?tr("监测","Monitor")+" · "+escapeHTML(probe):tr("人工核验来源","Manually reviewed source")}</p>
+    ${e.id==="deltascience"&&obs?.items?`<p>${tr("最近成功观测的化学主分类题目","Chemistry tasks in the last successful observation")}: ${number(obs.chemistry_tasks)} / ${number(obs.total_tasks)} · ${link("data/deltascience.json",tr("逐题快照","Task snapshot"))}</p><ul>${obs.items.map(item=>`<li>${link(item.url,item.id+" · "+item.title)}</li>`).join("")}</ul>`:""}
     ${obs?"<p>"+link(obs.url,obs.revision.slice(0,12))+" · "+escapeHTML(signalNote(obs))+"</p>":""}</details>
     <div class="card-footer">${link(e.url,tr("原始来源","Original source"))}<small>${obs?tr("已建立基线","Baseline recorded"):monitor?tr("可监测","Monitored source"):tr("人工核验","Reviewed")}</small></div></article>`;
 }

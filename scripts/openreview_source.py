@@ -15,6 +15,7 @@ from chemwatch import api_json, atomic_json, now
 
 PATH = ROOT / "dist/data/openreview.json"
 TERMS = {
+    "chemistry-ai": ["chemistry benchmark", "chemical reasoning", "ChemBench", "ChemIQ", "ChemToolBench", "CompChemBench", "ChemInsight"],
     "retrosynthesis": ["retrosynthesis", "retrosynthetic"],
     "coupling": ["cross coupling", "Suzuki coupling", "Suzuki Miyaura", "Buchwald Hartwig", "direct arylation"],
     "materials": ["materials property", "material property", "materials benchmark", "crystal structure prediction"],

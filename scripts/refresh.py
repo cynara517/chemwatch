@@ -32,6 +32,11 @@ def main():
     old_events = json.loads(prior_file.read_text()).get("events",[]) if prior_file.exists() else []
     events = ([{**event, "observed_at":report["checked_at"]} for event in report["upstream_changes"]] + old_events)[:50]
     atomic_json(prior_file, {"schema_version":"1.0", "checked_at":report["checked_at"], "items":[{"id":k,**v} for k,v in report["observations"].items()], "errors":report["errors"], "events":events, "note":"Upstream revision signals, not dataset record counts. Failures retain the last successful observation."})
+    delta = report["observations"].get("deltascience")
+    if delta:
+        atomic_json(data_dir / "deltascience.json", {
+            "schema_version":"1.0", "checked_at":report["checked_at"], **delta,
+            "errors":[e for e in report["errors"] if e["id"] == "deltascience"]})
     history_file = data_dir / "history.json"
     history = json.loads(history_file.read_text()) if history_file.exists() else {"schema_version":"1.0", "metric":"catalog_coverage", "points":[]}
     date = now()[:10]

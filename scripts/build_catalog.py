@@ -53,8 +53,26 @@ add("heifets-planning", "Heifets–Jurisica · 合成规划题集", "benchmark",
 add("retrotransformdb", "RetroTransformDB", "dataset", "retrotransformdb", "retrosynthesis", "由有机化学专家核验的通用逆合成转化规则。", "https://doi.org/10.3390/data3020014", 2018, "逆合成规则", "专家整理", note="统计对象是规则集，不把一条通用规则当作一次实验。")
 add("het-retro-cjhif", "Het-retro · CJHIF 杂环成环子集", "dataset", "het-retro-cjhif", "retrosynthesis", "作者从期刊反应数据整理的杂环成环记录，用于单步逆合成。", "https://doi.org/10.1021/acs.jcim.4c02041", 2025, "单步逆合成|杂环", "文献 / 处理版本", repo="duartegroup/Het-retro", note="仅收录 CJHIF 成环子集；同一仓库中的 USPTO 通用训练集沿用原家族。杂环成环并非都属于偶联。")
 add("absynth", "AbSynth · 全合成路线集", "dataset", "absynth", "retrosynthesis", "从经典全合成文献回溯整理的机器可读路线，用于分析合成策略。", "https://doi.org/10.1021/jacs.6c08434", 2026, "多步逆合成|全合成路线", "文献 / 专家整理", note="作者通过 Allchemy 向经核验的研究机构提供数据。论文与路线所跨的历史时期采用不同日期。")
+# Reviewed additions: general chemistry reasoning, tools, and manufacturing planning.
+prior_ids = {row["id"] for row in entries}
+add("chembench", "ChemBench", "benchmark", "chembench", "chemistry-ai", "面向大语言模型的通用化学知识与推理评估。", "https://github.com/lamalab-org/chembench", 2024, "化学知识|化学推理", "专家整理 / 问答", count=2788, unit="问答题", count_note="2025年Nature Chemistry论文版本；不是实时题库总数", repo="lamalab-org/chembench", doi="10.1038/s41557-025-01815-x", note="首次预印本为2024年；软件框架更新不等于题库增长。多模态扩展不另计一个套件。")
+add("chemiq", "ChemIQ", "benchmark", "chemiq", "chemistry-ai", "用短答案评估分子结构理解、反应推理与NMR解析。", "https://github.com/oxpig/ChemIQ", 2025, "分子结构理解|化学推理|NMR解析", "算法生成 / 问答", count=816, unit="问题", count_note="作者仓库当前主题库；2025年7月更新了NMR题目", repo="oxpig/ChemIQ", path="questions", doi="10.1021/acs.jcim.5c02145", note="以2025年预印本为最早公开年份；期刊卷期为2026年。附加误差分析题不计入816题。")
+add("chemtoolbench", "ChemToolBench", "benchmark", "chemtoolbench", "chemistry-ai materials", "CheMatAgent发布的化学与材料工具选择、参数配置及多步调用评估资源。", "https://huggingface.co/datasets/RadiCat/ChemToolBench", 2025, "工具选择|参数配置|多步工具调用", "工具调用数据 / 构建任务", license="Apache-2.0（数据卡）", note="同时包含训练与评估划分；不把训练样本总量当作测试题数。")
+entries[-1]["monitor"] = {"type":"huggingface", "repo":"RadiCat/ChemToolBench"}
+add("compchembench", "CompChemBench", "benchmark", "compchembench", "chemistry-ai", "在真实计算化学软件环境中评估智能体的输入准备、模拟执行、结果分析与故障修复。", "https://github.com/Chenghao-Wu/compchem-bench", 2026, "计算化学工作流|科学计算|故障修复", "专家构建 / 可执行任务", count=46, unit="任务", count_note="作者数据卡v1.1声明的46项任务，非本目录实测通过数", repo="Chenghao-Wu/compchem-bench", path="tasks", note="采用Terminal-Bench / Harbor格式。年份依据作者仓库2026年公开记录；目录核验不代表已复跑任务。数据许可需逐项核实。")
+add("oprd-target", "OPRD-target", "benchmark", "oprd-target", "retrosynthesis", "制造化学逆合成评估目标及原始工艺论文DOI。", "https://github.com/KagakuLab/OPRD-target", 2026, "多步逆合成|制造路线规划", "文献 / 目标分子整理", count=2219, unit="独立目标分子", count_note="作者README报告；文献范围1997–2022不是公开年份", repo="KagakuLab/OPRD-target", path="OPRD-target_1997_2022.csv", note="只提供目标结构和论文引用，不含数字化路线；一个分子可关联多篇论文。年份依据2026年作者仓库公开记录。")
+add("cheminsight", "ChemInsight", "benchmark", "cheminsight", "chemistry-ai", "通过覆盖范围与推理深度两维指标评估结构化化学理解及多步推理。", "https://arxiv.org/abs/2611.11794", 2026, "化学理解|多步推理", "论文 / 专家构建问题", count=203, unit="问题", count_note="2026-11-09预印本：203题、50个题组；两者不相加", note="已核实论文，独立数据下载与数据许可待确认；尚未配置上游数据修订监测。")
+add("deltascience", "DeltaScience · 化学任务", "benchmark", "deltascience", "chemistry-ai retrosynthesis bioactivity selectivity", "Bohrium的可执行科学智能体评测平台，包含药物设计、逆合成、计算化学与化学信息学任务。", "https://deltascience.bohrium.com/", 2026, "科研智能体|药物设计|逆合成|计算化学", "专家构建 / 可执行任务", note="整个平台按一个评估套件计；化学子任务不拆成独立套件。公开题单按官方主分类为化学筛选，实时明细见deltascience.json；跨学科标签可能覆盖更多任务。以2026年首次核验为年份依据，未确认更早发布年份。题目和数据的下载条件与许可需逐项核实。")
+entries[-1]["monitor"] = {"type":"deltascience"}
+new_ids = {row["id"] for row in entries} - prior_ids
+
 # The date evidence identifies this edition or study; an earlier release may exist.
 dated_sources = {
+    "chembench": "https://arxiv.org/abs/2404.01475",
+    "chemiq": "https://arxiv.org/abs/2505.07735",
+    "chemtoolbench": "https://arxiv.org/abs/2506.07551",
+    "compchembench": "https://api.github.com/repos/Chenghao-Wu/compchem-bench",
+    "oprd-target": "https://api.github.com/repos/KagakuLab/OPRD-target",
     "uspto-50k": "https://pubs.acs.org/doi/10.1021/acscentsci.7b00355",
     "uspto-full": "https://proceedings.neurips.cc/paper/2019/hash/0d2b2061826a5df3221116a5085a6052-Abstract.html",
     "paroutes": "https://doi.org/10.1039/D2DD00015F",
@@ -74,9 +92,11 @@ for row in entries:
         row["evidence"].append({"label":"年代依据", "url":row["date_source"]})
     if row["id"] not in original_ids:
         row["first_seen"] = row["verified_at"] = "2026-11-18"
+    if row["id"] in new_ids:
+        row["first_seen"] = row["verified_at"] = "2026-11-27"
     if row["id"] == "chembl":
         row["notes"] = "历史曲线来自 EMBL-EBI 各版本说明中 activities 的计数。"
-catalog = {"schema_version":"1.0", "title":"ChemWatch", "catalog_version":"0.3.0", "reviewed_at":"2026-11-18", "scope":"人工核验的种子目录，非全领域普查。数据集按family_id去重；benchmark按套件计；数据库单列。", "entries":entries}
+catalog = {"schema_version":"1.0", "title":"ChemWatch", "catalog_version":"0.4.0", "reviewed_at":"2026-11-27", "scope":"人工核验的种子目录，非全领域普查。数据集按family_id去重；benchmark按套件计；数据库单列。", "entries":entries}
 target = ROOT / "dist/data/catalog.json"
 target.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Built {len(entries)} reviewed entries")

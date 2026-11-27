@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "title": "ChemWatch",
-  "catalog_version": "0.3.0",
-  "reviewed_at": "2026-11-18",
+  "catalog_version": "0.4.0",
+  "reviewed_at": "2026-11-27",
   "scope": "人工核验的种子目录，非全领域普查。数据集按family_id去重；benchmark按套件计；数据库单列。",
   "entries": [
     {
@@ -1208,6 +1208,285 @@
         }
       ],
       "date_source": "https://doi.org/10.1021/jacs.6c08434"
+    },
+    {
+      "id": "chembench",
+      "name": "ChemBench",
+      "kind": "benchmark",
+      "family_id": "chembench",
+      "topics": [
+        "chemistry-ai"
+      ],
+      "description": "面向大语言模型的通用化学知识与推理评估。",
+      "url": "https://github.com/lamalab-org/chembench",
+      "publication_year": 2024,
+      "targets": [
+        "化学知识",
+        "化学推理"
+      ],
+      "data_origin": "专家整理 / 问答",
+      "record_count": 2788,
+      "record_unit": "问答题",
+      "count_note": "2025年Nature Chemistry论文版本；不是实时题库总数",
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": "10.1038/s41557-025-01815-x",
+      "notes": "首次预印本为2024年；软件框架更新不等于题库增长。多模态扩展不另计一个套件。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/lamalab-org/chembench"
+        },
+        {
+          "label": "年代依据",
+          "url": "https://arxiv.org/abs/2404.01475"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "lamalab-org/chembench"
+      },
+      "date_source": "https://arxiv.org/abs/2404.01475"
+    },
+    {
+      "id": "chemiq",
+      "name": "ChemIQ",
+      "kind": "benchmark",
+      "family_id": "chemiq",
+      "topics": [
+        "chemistry-ai"
+      ],
+      "description": "用短答案评估分子结构理解、反应推理与NMR解析。",
+      "url": "https://github.com/oxpig/ChemIQ",
+      "publication_year": 2025,
+      "targets": [
+        "分子结构理解",
+        "化学推理",
+        "NMR解析"
+      ],
+      "data_origin": "算法生成 / 问答",
+      "record_count": 816,
+      "record_unit": "问题",
+      "count_note": "作者仓库当前主题库；2025年7月更新了NMR题目",
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": "10.1021/acs.jcim.5c02145",
+      "notes": "以2025年预印本为最早公开年份；期刊卷期为2026年。附加误差分析题不计入816题。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/oxpig/ChemIQ"
+        },
+        {
+          "label": "年代依据",
+          "url": "https://arxiv.org/abs/2505.07735"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "oxpig/ChemIQ",
+        "path": "questions"
+      },
+      "date_source": "https://arxiv.org/abs/2505.07735"
+    },
+    {
+      "id": "chemtoolbench",
+      "name": "ChemToolBench",
+      "kind": "benchmark",
+      "family_id": "chemtoolbench",
+      "topics": [
+        "chemistry-ai",
+        "materials"
+      ],
+      "description": "CheMatAgent发布的化学与材料工具选择、参数配置及多步调用评估资源。",
+      "url": "https://huggingface.co/datasets/RadiCat/ChemToolBench",
+      "publication_year": 2025,
+      "targets": [
+        "工具选择",
+        "参数配置",
+        "多步工具调用"
+      ],
+      "data_origin": "工具调用数据 / 构建任务",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "Apache-2.0（数据卡）",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": null,
+      "notes": "同时包含训练与评估划分；不把训练样本总量当作测试题数。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://huggingface.co/datasets/RadiCat/ChemToolBench"
+        },
+        {
+          "label": "年代依据",
+          "url": "https://arxiv.org/abs/2506.07551"
+        }
+      ],
+      "monitor": {
+        "type": "huggingface",
+        "repo": "RadiCat/ChemToolBench"
+      },
+      "date_source": "https://arxiv.org/abs/2506.07551"
+    },
+    {
+      "id": "compchembench",
+      "name": "CompChemBench",
+      "kind": "benchmark",
+      "family_id": "compchembench",
+      "topics": [
+        "chemistry-ai"
+      ],
+      "description": "在真实计算化学软件环境中评估智能体的输入准备、模拟执行、结果分析与故障修复。",
+      "url": "https://github.com/Chenghao-Wu/compchem-bench",
+      "publication_year": 2026,
+      "targets": [
+        "计算化学工作流",
+        "科学计算",
+        "故障修复"
+      ],
+      "data_origin": "专家构建 / 可执行任务",
+      "record_count": 46,
+      "record_unit": "任务",
+      "count_note": "作者数据卡v1.1声明的46项任务，非本目录实测通过数",
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": null,
+      "notes": "采用Terminal-Bench / Harbor格式。年份依据作者仓库2026年公开记录；目录核验不代表已复跑任务。数据许可需逐项核实。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/Chenghao-Wu/compchem-bench"
+        },
+        {
+          "label": "年代依据",
+          "url": "https://api.github.com/repos/Chenghao-Wu/compchem-bench"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "Chenghao-Wu/compchem-bench",
+        "path": "tasks"
+      },
+      "date_source": "https://api.github.com/repos/Chenghao-Wu/compchem-bench"
+    },
+    {
+      "id": "oprd-target",
+      "name": "OPRD-target",
+      "kind": "benchmark",
+      "family_id": "oprd-target",
+      "topics": [
+        "retrosynthesis"
+      ],
+      "description": "制造化学逆合成评估目标及原始工艺论文DOI。",
+      "url": "https://github.com/KagakuLab/OPRD-target",
+      "publication_year": 2026,
+      "targets": [
+        "多步逆合成",
+        "制造路线规划"
+      ],
+      "data_origin": "文献 / 目标分子整理",
+      "record_count": 2219,
+      "record_unit": "独立目标分子",
+      "count_note": "作者README报告；文献范围1997–2022不是公开年份",
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": null,
+      "notes": "只提供目标结构和论文引用，不含数字化路线；一个分子可关联多篇论文。年份依据2026年作者仓库公开记录。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://github.com/KagakuLab/OPRD-target"
+        },
+        {
+          "label": "年代依据",
+          "url": "https://api.github.com/repos/KagakuLab/OPRD-target"
+        }
+      ],
+      "monitor": {
+        "type": "github",
+        "repo": "KagakuLab/OPRD-target",
+        "path": "OPRD-target_1997_2022.csv"
+      },
+      "date_source": "https://api.github.com/repos/KagakuLab/OPRD-target"
+    },
+    {
+      "id": "cheminsight",
+      "name": "ChemInsight",
+      "kind": "benchmark",
+      "family_id": "cheminsight",
+      "topics": [
+        "chemistry-ai"
+      ],
+      "description": "通过覆盖范围与推理深度两维指标评估结构化化学理解及多步推理。",
+      "url": "https://arxiv.org/abs/2611.11794",
+      "publication_year": 2026,
+      "targets": [
+        "化学理解",
+        "多步推理"
+      ],
+      "data_origin": "论文 / 专家构建问题",
+      "record_count": 203,
+      "record_unit": "问题",
+      "count_note": "2026-11-09预印本：203题、50个题组；两者不相加",
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": null,
+      "notes": "已核实论文，独立数据下载与数据许可待确认；尚未配置上游数据修订监测。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://arxiv.org/abs/2611.11794"
+        }
+      ],
+      "date_source": "https://arxiv.org/abs/2611.11794"
+    },
+    {
+      "id": "deltascience",
+      "name": "DeltaScience · 化学任务",
+      "kind": "benchmark",
+      "family_id": "deltascience",
+      "topics": [
+        "chemistry-ai",
+        "retrosynthesis",
+        "bioactivity",
+        "selectivity"
+      ],
+      "description": "Bohrium的可执行科学智能体评测平台，包含药物设计、逆合成、计算化学与化学信息学任务。",
+      "url": "https://deltascience.bohrium.com/",
+      "publication_year": 2026,
+      "targets": [
+        "科研智能体",
+        "药物设计",
+        "逆合成",
+        "计算化学"
+      ],
+      "data_origin": "专家构建 / 可执行任务",
+      "record_count": null,
+      "record_unit": null,
+      "count_note": null,
+      "data_license": "待核实",
+      "verified_at": "2026-11-27",
+      "first_seen": "2026-11-27",
+      "doi": null,
+      "notes": "整个平台按一个评估套件计；化学子任务不拆成独立套件。公开题单按官方主分类为化学筛选，实时明细见deltascience.json；跨学科标签可能覆盖更多任务。以2026年首次核验为年份依据，未确认更早发布年份。题目和数据的下载条件与许可需逐项核实。",
+      "evidence": [
+        {
+          "label": "官方来源 / 原始论文",
+          "url": "https://deltascience.bohrium.com/"
+        }
+      ],
+      "monitor": {
+        "type": "deltascience"
+      },
+      "date_source": "https://deltascience.bohrium.com/"
     }
   ]
 }

@@ -1,86 +1,96 @@
-# ChemWatch · 化学数据观测站
+# ChemWatch · Chemical Data Observatory
 
-**公开的化学数据集与 benchmark 目录，以及可嵌入你自己 AI 的监测 skill。**
+**English** | [简体中文](README.zh-CN.md)
 
-[打开网页](https://cynara517.github.io/chemwatch/) · [公开目录 JSON](https://cynara517.github.io/chemwatch/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
+**A public catalog of chemical datasets and benchmarks, with a portable monitoring CLI and Agent Skill for your own AI.**
 
-浏览网页、安装工具、读取目录都无需 ChatGPT 或 GitHub 登录。CLI只依赖Python 3.10+标准库；你的AI负责理解报告，运行和调度由你选择的harness或本地watcher承担。
+[Website](https://cynara517.github.io/chemwatch/) · [Public catalog JSON](https://cynara517.github.io/chemwatch/data/catalog.json) · [Agent Skill](skills/chemwatch-monitor/SKILL.md)
 
-## 一行安装 CLI + skill
+Browsing the website, installing the tools and reading the catalog require no ChatGPT or GitHub account. The CLI uses only the Python 3.10+ standard library. Your AI interprets reports; your chosen harness or the local watcher handles execution and scheduling.
 
-macOS / Linux，安装到当前用户，不需要sudo：
+## Install the CLI and skill
+
+On macOS / Linux, install for the current user without sudo:
 
 ```sh
 curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --agent codex
 ```
 
-安装内容：`~/.local/bin/chemwatch` CLI、`~/.local/share/chemwatch/chemwatch-monitor`运行时，以及`~/.agents/skills/chemwatch-monitor` skill链接。Codex可发现标准SKILL.md；若未显示，请刷新skills或重启客户端。[Codex skills文档](https://learn.chatgpt.com/docs/build-skills)
+This installs the CLI at `~/.local/bin/chemwatch`, the runtime at `~/.local/share/chemwatch/chemwatch-monitor`, and a skill link at `~/.agents/skills/chemwatch-monitor`. If the skill does not appear in Codex, refresh skills or restart the client. See the [Codex skills documentation](https://learn.chatgpt.com/docs/build-skills).
 
-对于DeepSeek Harness或其他支持Agent Skills的AI，把实际加载的skills根目录传给安装器。例如使用项目级标准目录：
+For DeepSeek Harness or another Agent Skills-compatible AI, pass the skills directory actually used by that harness. For example, a project-level directory:
 
 ```sh
 curl -fsSL https://cynara517.github.io/chemwatch/install.sh | sh -s -- --skill-dir ./.agents/skills
 ```
 
-不同harness的技能目录与调度能力可能不同；使用该harness实际支持的目录。安装器不会更改模型提供商、API key或无关配置。它验证技能包SHA-256，并拒绝覆盖不属于它的同名skill或CLI。
+Skill paths and scheduling capabilities vary by harness. The installer does not change your model provider, API keys or unrelated configuration. It verifies the skill archive's SHA-256 checksum and refuses to overwrite an unrelated skill or CLI with the same name.
 
-安装后，在AI里说：
+After installation, ask your AI:
 
-> 使用 chemwatch-monitor，每天监测逆合成、偶联与杂环、青霉素和红霉素生产相关的数据集与benchmark。有新条目、来源变化或检查失败时报告并附原始来源，无变化保持安静。
+> Use chemwatch-monitor to check chemistry reasoning benchmarks, retrosynthesis, coupling and heterocycles, and penicillin and erythromycin production datasets daily. Report new entries, source changes or failed checks with original-source links. Stay quiet when nothing changes.
 
-也可以让AI先读取本仓库的`skills/chemwatch-monitor/SKILL.md`，识别自己支持的skills路径，再执行安装命令。
+You can also ask your AI to read `skills/chemwatch-monitor/SKILL.md`, identify its supported skill directory, and run the appropriate installation command.
 
-## 直接用CLI监测
+## Monitor from the CLI
 
-如果`~/.local/bin`已在PATH上，下面可以省略该前缀。
+You can omit `~/.local/bin/` if it is already on your PATH.
 
 ```sh
-~/.local/bin/chemwatch list --topic retrosynthesis --json
-~/.local/bin/chemwatch follow --topic retrosynthesis --topic coupling --topic bioprocess
+~/.local/bin/chemwatch list --topic chemistry-ai --json
+~/.local/bin/chemwatch follow --topic chemistry-ai --topic retrosynthesis --topic bioprocess
 ~/.local/bin/chemwatch check --json
 ~/.local/bin/chemwatch watch --background --interval 86400
 ~/.local/bin/chemwatch watch --status
 ~/.local/bin/chemwatch watch --stop
 ```
 
-`follow`保存订阅并建立首次基线；`check`检查一次；`watch`是实际的本地后台进程。仅安装skill或保存网页偏好不会启动监测。watcher需要电脑开机，未注册开机服务；要在关机时继续监测，可使用harness云端调度或自己的GitHub Actions订阅工作流。
+`follow` saves a subscription and establishes its first baseline; `check` runs once; `watch` starts a real local background process. Installing the skill or saving website preferences alone does not start monitoring. The watcher requires your computer to stay on and does not register a startup service. To monitor while your computer is off, use a harness's cloud scheduler or your own GitHub Actions subscription workflow.
 
-多个topic按“或”匹配：`retrosynthesis`, `coupling`, `materials`, `yield`, `free-energy`, `selectivity`, `bioactivity`, `bioprocess`, `penicillin`, `erythromycin`。
+Multiple topics match with OR: `chemistry-ai`, `retrosynthesis`, `coupling`, `materials`, `yield`, `free-energy`, `selectivity`, `bioactivity`, `bioprocess`, `penicillin`, `erythromycin`.
 
-默认公开源来自本GitHub仓库，包含新增目录条目。也可指定自己的JSON源：
+The default public source comes from this repository and includes newly reviewed catalog entries. You can also use another catalog JSON source:
 
 ```sh
 ~/.local/bin/chemwatch sync --source https://cynara517.github.io/chemwatch/data/catalog.json --topic yield --probe --json
 ```
 
-状态、订阅、待发邮件和JSON/Markdown报告保存在`${XDG_STATE_HOME:-~/.local/state}/chemwatch/`，与工作目录无关。使用`follow --config /absolute/path/subscription.json`可管理独立订阅；check/watch使用同一`--config`。
+State, subscriptions, pending emails and JSON/Markdown reports are stored under `${XDG_STATE_HOME:-~/.local/state}/chemwatch/`, independently of your working directory. Use `follow --config /absolute/path/subscription.json` for a separate subscription, and pass the same `--config` to `check` and `watch`.
 
-第一次只建立基线，不把所有历史条目当作新发现。没有变化不创建新报告、默认不输出；带`--json`始终返回结构化状态。目录新增、元数据变化、移出订阅范围、上游revision变化分别报告。仓库提交变化不自动等于数据记录增长。API失败保留上次成功版本。
+The first run establishes a baseline without reporting every historical entry as new. Unchanged runs create no new report and are quiet by default; `--json` always returns structured status. New entries, metadata changes, entries leaving the subscription and upstream revisions are reported separately. Repository commits do not automatically mean more data records. API failures retain the last successful revision.
 
-退出码：0成功；1目录/配置读取失败；2部分探测或邮件失败。GitHub匿名API有额度，可选`GITHUB_TOKEN`提高额度。HTTPS失败应修复本机证书或正确设置SSL_CERT_FILE，不应关闭验证。
+Exit codes: 0 for success, 1 for catalog/configuration failure, and 2 for partial probe or email failures. An optional `GITHUB_TOKEN` increases the GitHub API allowance. Fix your local certificates or set `SSL_CERT_FILE` correctly if HTTPS verification fails; do not disable verification.
 
-## 可选邮件
+## Optional email
 
-在订阅者的运行环境设置`CHEMWATCH_SMTP_HOST`、`CHEMWATCH_SMTP_FROM`，必要时设置`CHEMWATCH_SMTP_USER`、`CHEMWATCH_SMTP_PASSWORD`。默认STARTTLS/587；可用`CHEMWATCH_SMTP_MODE=ssl`与`CHEMWATCH_SMTP_PORT=465`。
+Set `CHEMWATCH_SMTP_HOST` and `CHEMWATCH_SMTP_FROM` in the subscriber's environment, plus `CHEMWATCH_SMTP_USER` and `CHEMWATCH_SMTP_PASSWORD` if required. The default is STARTTLS on port 587; use `CHEMWATCH_SMTP_MODE=ssl` and `CHEMWATCH_SMTP_PORT=465` for implicit TLS.
 
 ```sh
 ~/.local/bin/chemwatch follow --topic erythromycin --email you@example.com
 ~/.local/bin/chemwatch watch --background
 ```
 
-只有显式指定邮箱才会发变化邮件。初始基线不发；失败报告保留待重试。SMTP响应丢失仍可能重复投递，Message-ID保持稳定。
+Change emails are sent only when an email address is explicitly configured. The initial baseline sends no email. Failed delivery remains pending for retry. A lost SMTP response can still cause a duplicate delivery; the Message-ID remains stable.
 
-云端个人订阅见`templates/subscribe.yml`：复制到你自己仓库的`.github/workflows/subscribe.yml`，修改主题和公开源，配置自己的SMTP Secrets，再启用其schedule。状态通过Actions cache保存。安装者无需向本项目提供邮箱密码。
+For personal cloud subscriptions, copy `templates/subscribe.yml` into your own repository's `.github/workflows/subscribe.yml`, set the topics and public source, configure your own SMTP Secrets, and enable its schedule. State is retained through Actions cache. You do not need to share email credentials with this project.
 
-## 公开站点如何更新
+## How the public site updates
 
-`.github/workflows/refresh-and-publish.yml`在main推送、手动运行，以及每天02:00 UTC（北京时间10:00）执行：测试 → 来源探测 → 保存真实快照 → 打包skill → 发布GitHub Pages。
+`.github/workflows/refresh-and-publish.yml` runs on pushes to `main`, manual dispatch and daily at 02:00 UTC (10:00 China Standard Time). It runs tests, probes sources, saves real observations, packages the skill and publishes GitHub Pages. Reviewed catalog changes are built locally and committed with their source. Scheduled runs may start later than the configured time.
 
-已登记的来源分别监测 GitHub 数据路径或仓库提交、Hugging Face 数据集修订，以及 Zenodo 存档版本与校验和。新资源收录仍需人工核验；编辑`scripts/build_catalog.py`并运行它。目录按family_id统计数据集家族，benchmark套件与持续数据库单列；保留记录的原单位。
+Registered sources monitor DeltaScience's public chemistry task catalog, GitHub repository or data-path commits, Hugging Face dataset revisions, and Zenodo archive versions and checksums. New resources still require source review: edit `scripts/build_catalog.py` and run it. Dataset families are deduplicated by `family_id`; benchmark suites and ongoing databases are counted separately. Original record units are preserved.
 
-在新fork中使用时，在Settings → Pages选择GitHub Actions。将公开源与安装器地址改为自己的仓库；此项目没有网站账户系统，也没有私有平台托管依赖。
+For a fork, select GitHub Actions in Settings → Pages and update the public-source and installer URLs. The project has no website account system or private hosting dependency.
 
-## 本地开发与验证
+### Catalog additions — November 27, 2026
+
+The new `chemistry-ai` topic covers chemistry reasoning and agents across website filters, CLI subscriptions and daily discovery searches. Additions include ChemBench, ChemIQ, ChemToolBench, CompChemBench, OPRD-target, ChemInsight and [DeltaScience](https://deltascience.bohrium.com/). Each catalog entry records its original sources, date evidence and version/count caveats. ChemInsight is currently verified from its paper; a separate data download and data license remain unconfirmed.
+
+DeltaScience counts as one suite. Daily monitoring reads the official public task table, selects the primary Chemistry category, publishes a [per-task snapshot](dist/data/deltascience.json), and detects changes to task IDs, titles and research directions. This scope does not include every cross-disciplinary chemistry tag. Individual tasks are not counted as separate datasets or benchmark suites. Parsing failures retain the last successful snapshot and expose an error. Task downloads and licenses require per-task verification.
+
+Automatic refresh does not automatically admit every new benchmark. Daily jobs refresh observations and discovery candidates; admission to the reviewed catalog requires checking original papers or author resources. Keyword searches and bounded sampling cannot guarantee complete coverage.
+
+## Local development and validation
 
 ```sh
 python3 scripts/build_catalog.py
@@ -90,31 +100,35 @@ python3 -m unittest discover -s tests -v
 python3 -m http.server 8888 --directory dist
 ```
 
-打开http://localhost:8888。网页静态，无前端构建依赖。`scripts/package.py`将根目录CLI复制进自包含skill，生成技能ZIP、SHA-256清单、完整源码包与站点安装器。根目录`chemwatch.py`是运行时源码。
+Open [localhost:8888](http://localhost:8888). The site is static, with no frontend build dependencies. `scripts/package.py` copies the root CLI into the self-contained skill and generates the skill ZIP, SHA-256 manifest, source toolkit and website installer. `chemwatch.py` at the repository root is the runtime source of truth.
 
-当前计数与逐项证据见 [公开目录](dist/data/catalog.json)。已覆盖逆合成、C–C/C–N/C–H与杂环实验、材料评估、自由能、选择性、药物活性及工业青霉素/红霉素。IndPenSim是100批工业规模模拟；EFP是406批真实工业生产数据。C–O/C–S/C–B专用集和分离纯化等数据待补，不将覆盖缺口伪装成全领域数量。
+See the [catalog](dist/data/catalog.json) for current counts and item-level evidence. Coverage includes chemistry reasoning and agents, retrosynthesis, C–C/C–N/C–H and heterocycle experiments, materials evaluation, free energy, selectivity, bioactivity and industrial penicillin/erythromycin production. IndPenSim contains 100 industrial-scale simulated batches; EFP contains 406 real industrial production batches. Dedicated C–O/C–S/C–B and separation/purification datasets remain coverage gaps.
 
-### 历史时间线
+### Historical timelines
 
-首页可按指标与专题切换累计、年度和对数视图。每个点可查数值与来源。[历史序列 JSON](dist/data/timeseries.json) 与建站以来的 [收录快照](dist/data/history.json) 分开发布。
+The website supports cumulative, annual and logarithmic views by metric and topic, with values and sources for each point. [Historical series](dist/data/timeseries.json) and [catalog coverage snapshots](dist/data/history.json) are published separately.
 
-| 指标 | 日期及计量方式 |
+| Metric | Dates and counting method |
 | --- | --- |
-| 数据集家族、benchmark 套件 | 据本目录最早已核实的论文或公开版本年份回溯，家族或套件计一次。尚未收录的资源不会出现在曲线上。 |
-| Materials Cloud 数据集 DOI | 按 DataCite 仓库标识 ethz.marvel 和 Dataset 类型统计每年发表的 DOI，逐年相加与整库总数核对。一个研究的不同版本可能分别有 DOI。[仓库说明](https://archive.materialscloud.org/about) |
-| CSD 晶体结构 | 按 CCDC 统计表中的文献发表年。1965 年前的 4,045 条为合并基数，年度图从 1965 年开始。末两年带部分数据标记。[官方统计表](https://www.ccdc.cam.ac.uk/media/CSD-Publication-Year-Statistics-2026.pdf) |
-| ChEMBL 活性记录 | 从 release notes 取准备日期、activities 总数，逐年选择最后版本。只计算相邻年份的净差，缺测保持空值，订正可带来负值。[EMBL-EBI 版本档案](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/) |
+| Dataset families and benchmark suites | Reconstructed from the earliest verified paper or public-release year in this catalog, counting each family or suite once. Resources not yet cataloged are absent. Entries with only a first-verification year explicitly state this limitation. |
+| Materials Cloud dataset DOIs | Annual publication counts from DataCite for repository identifier `ethz.marvel` and type Dataset, reconciled against the repository total. Different versions can have separate DOIs. [Archive documentation](https://archive.materialscloud.org/about). |
+| CSD crystal structures | Literature publication year from CCDC's statistics. The 4,045 pre-1965 entries form a combined baseline; annual views start in 1965. The final two years are marked partial. [Official statistics](https://www.ccdc.cam.ac.uk/media/CSD-Publication-Year-Statistics-2026.pdf). |
+| ChEMBL activity records | Preparation dates and activity totals from release notes, using the final release per year. Annual changes use adjacent years only; gaps remain missing and corrections may be negative. [EMBL-EBI release archive](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/). |
 
-每日发布任务重新统计 Materials Cloud 的各年份，扫描 ChEMBL 新版本并校验当年 CSD 统计文件。更换 CSD 版本时使用 pdftotext 或 pypdf 解析表格。采集异常会在历史 JSON 中标记，同时保留上次成功观测。论文版及镜像可提供年代或修订证据，一个来源对应的候选数不作为新增资源数。
+Daily publishing refreshes Materials Cloud's annual counts, scans new ChEMBL releases and checks the current-year CSD statistics file. CSD PDF updates use `pdftotext` or `pypdf` to parse the table. Failures are recorded in the historical JSON while retaining the previous successful observation. Papers and mirrors may establish dates or revisions; search candidate counts do not represent new resources.
 
-### OpenReview 公开投稿
+### Public OpenReview submissions
 
-每天通过 OpenReview API 2 与旧会场使用的 API 1 按题名检索，分页读取全部命中，核对主帖身份与投稿邀请，去除审稿、评论和外部文献导入；自由能及抗生素生产等主题另查化学或发酵上下文。每个公开投稿 forum ID 在总量中计一次，主题之间允许重叠。曲线按投稿记录创建日期 cdate（UTC）归年，odate 单列为首次公开日期；无创建日期的记录只保留在明细。场次文字按来源照录，同一作品跨会场投稿可有多个主帖。API 或分页异常时保留上次完整快照。读者可逐条复核 [检索词、查询与投稿明细](dist/data/openreview.json)。投稿不会自动改变资源家族数、评估套件数或实验记录数。
+Daily title searches use OpenReview API 2 and API 1 for older venues, reading all result pages. Root-post and submission-invitation checks exclude reviews, comments and imported external references. Ambiguous topics also require chemistry or fermentation context. Each public forum ID counts once overall; topic memberships may overlap.
 
-### 新资源线索
+Curves use the submission record's creation date (`cdate`, UTC); `odate` is shown separately as the first-public date. Records without a creation date remain in the detailed list only. Venue text is preserved from the source. The same work submitted to different venues may have multiple forums. API or pagination failures retain the previous complete snapshot. Inspect [queries and submission records](dist/data/openreview.json) to audit the data. Submissions do not automatically increase dataset-family, benchmark-suite or experimental-record counts.
 
-每日对 9 个专题分别查询 OpenReview、Europe PMC、Crossref、GitHub 和 Hugging Face，发布每个平台各专题最近一批待审核线索。Europe PMC 与 Crossref 查询限近 365 天。Europe PMC 按发表日期排序，Crossref 从相关度前 30 条中筛选题名再按日期排序；仓库和数据卡按更新时间取样，按关键词筛选后每组最多展示 5 项。每组附实际查询、最后成功时间与失败状态。完整查询与结果见 [发现记录](dist/data/discovery.json)，已核验资源另存入目录。论文检索覆盖受 Europe PMC 学科范围影响，历史盘点还使用出版社、作者与数据存档。
+### Discovery candidates
 
-本目录提供资源元数据与链接，不分发原始化学实验数据；各来源许可独立核实，软件许可不自动用于数据。
+Daily searches cover 10 topics across OpenReview, Europe PMC, Crossref, GitHub and Hugging Face. Europe PMC and Crossref searches cover the past 365 days. Europe PMC sorts by publication date; Crossref filters titles from the top 30 relevance results and then sorts by date. Repository and dataset-card searches sample recently updated results, apply keyword filters and show at most five candidates per group.
 
-代码MIT许可。设计受[Scaling Biology](https://wconnell.github.io/scaling-bio/)启发，独立实现。
+Each group includes its actual query, last successful timestamp and error status. [Discovery JSON](dist/data/discovery.json) contains full queries and results; reviewed resources belong in the catalog. Europe PMC coverage is constrained by its subject scope. Historical review also uses publishers, authors and data archives.
+
+This catalog distributes resource metadata and links, not raw chemical experimental data. Verify each source's data license separately: a software license does not automatically cover its datasets.
+
+Code is MIT-licensed. Design inspired by [Scaling Biology](https://wconnell.github.io/scaling-bio/), independently implemented.

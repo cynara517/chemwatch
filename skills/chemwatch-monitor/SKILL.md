@@ -1,6 +1,6 @@
 ---
 name: chemwatch-monitor
-description: Discover and monitor chemical datasets and benchmarks with ChemWatch. Use for retrosynthesis, coupling and heterocycles, materials, yield, free energy, ee/selectivity, bioactivity, or industrial penicillin/erythromycin data subscriptions and change reports.
+description: Discover and monitor chemical datasets and benchmarks with ChemWatch. Use for chemistry reasoning and agents, retrosynthesis, coupling and heterocycles, materials, yield, free energy, ee/selectivity, bioactivity, or industrial penicillin/erythromycin data subscriptions and change reports.
 ---
 
 # ChemWatch monitor
@@ -13,6 +13,7 @@ Map the user's interests to these stable topic IDs; multiple topics mean OR:
 
 | Interest | Topic |
 | --- | --- |
+| Chemistry reasoning, LLM evaluation, tool use, computational agents | `chemistry-ai` |
 | Retrosynthesis, route planning | `retrosynthesis` |
 | C–C/C–N/C–H and other coupling, heterocycles | `coupling` |
 | Materials benchmarks | `materials` |

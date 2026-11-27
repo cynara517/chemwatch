@@ -437,5 +437,101 @@
       "Multistep retrosynthesis",
       "Total synthesis routes"
     ]
+  },
+  "chembench": {
+    "name": "ChemBench",
+    "description": "General chemistry knowledge and reasoning evaluation for language models.",
+    "notes": "The first preprint appeared in 2024. Framework commits do not imply question growth; the multimodal extension is not counted separately.",
+    "count_note": "2025 Nature Chemistry paper edition; not a live question count.",
+    "record_unit": "Q&A pairs",
+    "data_origin": "Expert-curated questions",
+    "targets": [
+      "Chemical knowledge",
+      "Chemical reasoning"
+    ],
+    "data_license": "Unverified"
+  },
+  "chemiq": {
+    "name": "ChemIQ",
+    "description": "Short-answer evaluation of molecular understanding, reaction reasoning and NMR elucidation.",
+    "notes": "First public preprint: 2025; journal volume: 2026. Additional error-analysis questions are excluded from the 816 questions.",
+    "count_note": "Current main question set in the author repository; NMR questions updated in July 2025.",
+    "record_unit": "questions",
+    "data_origin": "Algorithmically generated questions",
+    "targets": [
+      "Molecular understanding",
+      "Chemical reasoning",
+      "NMR elucidation"
+    ],
+    "data_license": "Unverified"
+  },
+  "chemtoolbench": {
+    "name": "ChemToolBench",
+    "description": "Chemistry and materials tool-selection, parameter-filling and multistep tool-use evaluation released with CheMatAgent.",
+    "notes": "Includes training and evaluation splits; training samples are not counted as test questions.",
+    "count_note": null,
+    "record_unit": null,
+    "data_origin": "Constructed tool-use tasks",
+    "targets": [
+      "Tool selection",
+      "Parameter configuration",
+      "Multistep tool use"
+    ],
+    "data_license": "Apache-2.0 (dataset card)"
+  },
+  "compchembench": {
+    "name": "CompChemBench",
+    "description": "Evaluates agents preparing inputs, running simulations, analyzing outputs and repairing computational chemistry workflows.",
+    "notes": "Uses Terminal-Bench / Harbor format. Year is supported by the author repository created in 2026. Catalog review does not mean the tasks were rerun; data licenses require per-item verification.",
+    "count_note": "46 tasks declared in the author v1.1 data card, not an independently measured pass count.",
+    "record_unit": "tasks",
+    "data_origin": "Expert-built executable tasks",
+    "targets": [
+      "Computational chemistry workflows",
+      "Scientific computing",
+      "Failure recovery"
+    ],
+    "data_license": "Unverified"
+  },
+  "oprd-target": {
+    "name": "OPRD-target",
+    "description": "Manufacturing chemistry targets and source-paper DOIs for retrosynthesis evaluation.",
+    "notes": "Provides target structures and citations, not digitized routes. A molecule can link to multiple papers. Year follows the author repository created in 2026.",
+    "count_note": "2,219 unique targets reported by the authors; 1997–2022 is the literature period, not the release year.",
+    "record_unit": "unique target molecules",
+    "data_origin": "Curated literature targets",
+    "targets": [
+      "Multistep retrosynthesis",
+      "Manufacturing route planning"
+    ],
+    "data_license": "Unverified"
+  },
+  "cheminsight": {
+    "name": "ChemInsight",
+    "description": "Evaluates structured chemistry understanding and multistep reasoning with scope and depth scores.",
+    "notes": "Paper verified; a separate data download and data license remain unconfirmed. No upstream data-revision monitor is configured.",
+    "count_note": "November 9, 2026 preprint: 203 questions in 50 bundles; these units are not summed.",
+    "record_unit": "questions",
+    "data_origin": "Paper / expert-built questions",
+    "targets": [
+      "Chemical understanding",
+      "Multistep reasoning"
+    ],
+    "data_license": "Unverified"
+  },
+  "deltascience": {
+    "name": "DeltaScience · Chemistry tasks",
+    "description": "Bohrium executable scientific-agent evaluation platform with drug design, retrosynthesis, computational chemistry and cheminformatics tasks.",
+    "notes": "Counted as one suite, not one per chemistry task. Live details in deltascience.json use the official primary Chemistry category; cross-disciplinary tags may cover more tasks. Year denotes first verification in 2026, not a confirmed first release. Download conditions and data licenses require per-task review.",
+    "data_origin": "Expert-built executable tasks",
+    "data_license": "Unverified",
+    "targets": [
+      "Scientific agents",
+      "Drug design",
+      "Retrosynthesis",
+      "Computational chemistry"
+    ],
+    "count_note": null,
+    "record_unit": null
   }
 }

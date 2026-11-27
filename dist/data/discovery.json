@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T10:24:26.751085Z",
+  "checked_at": "2026-11-27T03:36:11.296409Z",
   "limit_per_query": 5,
   "feeds": {
     "papers/retrosynthesis": {
@@ -1018,6 +1018,93 @@
       "error": null,
       "query_url": "data/openreview.json",
       "items": []
+    },
+    "papers/chemistry-ai": {
+      "query": "TITLE_ABS:\"chemistry\" AND (TITLE_ABS:dataset OR TITLE_ABS:benchmark) AND FIRST_PDATE:[2025-11-27 TO 2026-11-27]",
+      "query_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22chemistry%22+AND+%28TITLE_ABS%3Adataset+OR+TITLE_ABS%3Abenchmark%29+AND+FIRST_PDATE%3A%5B2025-11-27+TO+2026-11-27%5D&format=json&pageSize=5&sort=FIRST_PDATE_D+desc",
+      "last_success": "2026-11-27T03:36:11.292823Z",
+      "items": [
+        {
+          "title": "Low oxygen-enriched reverse gasification of lignite: syngas composition, calorific value and multi-phase pollutant behaviour",
+          "url": "https://europepmc.org/article/PPR/PPR1379068",
+          "date": "2026-11-26"
+        },
+        {
+          "title": "Chemia: An LLM-Powered Automated Machine Learning Framework for Chemistry and Materials Discovery",
+          "url": "https://europepmc.org/article/PPR/PPR1378717",
+          "date": "2026-11-26"
+        },
+        {
+          "title": "Principal component analysis in analytical chemistry: finding patterns in complex data.",
+          "url": "https://europepmc.org/article/MED/43023870",
+          "date": "2026-11-26"
+        },
+        {
+          "title": "The interplay between composition and structure in (A2+)(Mn(C2N3)3)2 perovskite-type coordination polymers.",
+          "url": "https://europepmc.org/article/MED/43084713",
+          "date": "2026-11-25"
+        },
+        {
+          "title": "AI-Driven Prediction of Drug Target Interactions for New Chemical Entities",
+          "url": "https://europepmc.org/article/PPR/PPR1378017",
+          "date": "2026-11-25"
+        }
+      ]
+    },
+    "crossref/chemistry-ai": {
+      "query": "chemistry dataset benchmark",
+      "query_url": "https://api.crossref.org/works?query.bibliographic=chemistry+dataset+benchmark&filter=from-pub-date%3A2025-11-27%2Cuntil-pub-date%3A2026-11-27&rows=30&select=DOI%2Ctitle%2Cpublished",
+      "last_success": "2026-11-27T03:35:59.165407Z",
+      "items": []
+    },
+    "github/chemistry-ai": {
+      "query": "\"chemistry\" in:name,description fork:false",
+      "query_url": "https://api.github.com/search/repositories?q=%22chemistry%22+in%3Aname%2Cdescription+fork%3Afalse&sort=updated&order=desc&per_page=30",
+      "last_success": "2026-11-27T03:35:54.957596Z",
+      "items": [
+        {
+          "title": "Quantum-Accelerators/quacc",
+          "url": "https://github.com/Quantum-Accelerators/quacc",
+          "date": "2026-11-27T02:38:36Z"
+        },
+        {
+          "title": "calebkam/compchemx",
+          "url": "https://github.com/calebkam/compchemx",
+          "date": "2026-11-27T01:57:00Z"
+        }
+      ]
+    },
+    "huggingface/chemistry-ai": {
+      "query": "chemistry",
+      "query_url": "https://huggingface.co/api/datasets?search=chemistry&sort=lastModified&direction=-1&limit=30&full=true",
+      "last_success": "2026-11-27T03:35:54.194058Z",
+      "items": [
+        {
+          "title": "Anticloud/anticloud-chainer-chemistry",
+          "url": "https://huggingface.co/datasets/Anticloud/anticloud-chainer-chemistry",
+          "date": "2026-11-17T13:53:09.000Z"
+        },
+        {
+          "title": "TerryJCZhang/OpenSciReasoning-Chemistry-20K",
+          "url": "https://huggingface.co/datasets/TerryJCZhang/OpenSciReasoning-Chemistry-20K",
+          "date": "2026-11-17T00:19:21.000Z"
+        },
+        {
+          "title": "materials-industrial-ai/Cooling-Water-Chemistry-and-Treatment-Answer-Verification-Dataset",
+          "url": "https://huggingface.co/datasets/materials-industrial-ai/Cooling-Water-Chemistry-and-Treatment-Answer-Verification-Dataset",
+          "date": "2026-11-15T02:26:48.000Z"
+        },
+        {
+          "title": "HYUKI5/wassname__social_chemistry_101",
+          "url": "https://huggingface.co/datasets/HYUKI5/wassname__social_chemistry_101",
+          "date": "2026-11-13T04:36:12.000Z"
+        },
+        {
+          "title": "MehdiAstaraki/chemistry-generated-qa",
+          "url": "https://huggingface.co/datasets/MehdiAstaraki/chemistry-generated-qa",
+          "date": "2026-11-05T21:35:51.000Z"
+        }
+      ]
     }
   },
   "errors": [
